@@ -17,19 +17,30 @@
 
 ?>
 <?php
+
+add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 /**
- * Dequeue the Parent Theme styles.
- *
- * Hooked to the wp_enqueue_scripts action, with a late priority (100),
- * so that it runs after the parent style was enqueued.
+ * Dequeue the Storefront Parent theme core CSS
  */
-function give_dequeue_plugin_css() {
-	wp_dequeue_style( 'storefront-woocommerce-style' );
+function sf_child_theme_dequeue_style() {
 	wp_dequeue_style( 'storefront-style' );
-	//wp_deregister_style( 'storefront-icons' );
-	//wp_deregister_style( 'storefront-fonts' );
+	wp_dequeue_style( 'storefront-woocommerce-style' );
 }
-add_action( 'wp_enqueue_scripts', 'give_dequeue_plugin_css', 100 );
+
+/**
+ * Set WooCommerce image dimensions upon theme activation
+ */
+// Remove each style one by one
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+	unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
+	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+	return $enqueue_styles;
+}
+
+// Or just remove them all in one line
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 /**
  * Creates a nicely formatted and more specific title element text
@@ -96,7 +107,7 @@ if ( ! function_exists( 'mannering_storefront_child_setup' ) ) :
 		// Add Theme support Custom background.
 		$defaults = array(
 			'default-color'          => '',
-			'default-image'          => get_stylesheet_directory_uri() . 'assets//images/bg.jpg',
+			'default-image'          => get_stylesheet_directory_uri() . '/assets/images/bg.jpg',
 			'wp-head-callback'       => '_custom_background_cb',
 			'admin-head-callback'    => '',
 			'admin-preview-callback' => '',
@@ -219,7 +230,7 @@ add_action( 'wp_enqueue_scripts', 'mannering_storefront_child_add_google_fonts' 
 function mannering_storefront_child_setup() {
 // 	load_child_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages' );
 // load custom translation file for the parent theme
-load_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages/storefront' );
+load_theme_textdomain( 'storefront', get_template_directory() . '/languages/storefront' );
 // load translation file for the child theme
 load_child_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages' );
 }
@@ -276,9 +287,9 @@ add_action( 'wp_enqueue_scripts', 'mannering_storefront_child_scripts_own' );
 	 */
 function mannering_storefront_child_register_styles() {
 
-	$parent_style = 'mannering-storefront-child-style';
+	wp_enqueue_style( 'mannering-storefront-child-style', get_stylesheet_directory_uri() . '/style.css' );
 
-	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'woocommerce-css', get_stylesheet_directory_uri() . '/assets/css/woocommerce/woocommerce.css' );
 
 	wp_enqueue_style( 'bx-slider', get_stylesheet_directory_uri() . '/assets/js/bxslider-4-master/jquery.bxslider.css', false, '1.1', 'all' );
 	wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/assets/fonts/fontawesome/css/font-awesome.min.css', false, '1.1', 'all' );

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 48em) {
   /*
 Theme Name: mannering_music
 
@@ -65,48 +65,7 @@ WooCommerce styles override
   ul.products li.product .button {
     display: block;
   }
-}
-@media only screen and (max-width: 1920px) and (min-width: 48em) {
-  ul.products li.product {
-    width: 30.79667%;
-    float: left;
-    margin-right: 3.8%;
-  }
 
-  ul.products li.product.first {
-    clear: both;
-  }
-
-  ul.products li.product.last {
-    margin-right: 0;
-  }
-
-  ul.products.columns-1 li.product {
-    float: none;
-    width: 100%;
-  }
-
-  ul.products.columns-2 li.product {
-    width: 48.1%;
-  }
-
-  ul.products.columns-3 li.product {
-    width: 30.79667%;
-  }
-
-  ul.products.columns-4 li.product {
-    width: 22.15%;
-  }
-
-  ul.products.columns-5 li.product {
-    width: 16.96%;
-  }
-
-  ul.products.columns-6 li.product {
-    width: 13.49333%;
-  }
-}
-@media only screen and (max-width: 1920px) {
  /**
 * Single product
 */
@@ -291,7 +250,7 @@ WooCommerce styles override
 * Checkout
 */
 }
-@media only screen and (max-width: 1920px) and (min-width: 768px) {
+@media only screen and (max-width: 48em) and (min-width: 768px) {
   .col2-set .form-row-first {
     float: left;
     margin-right: 3.8%;
@@ -307,7 +266,7 @@ WooCommerce styles override
     width: 48.1%;
   }
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 48em) {
  /**
 * General WooCommerce components
 */
@@ -524,7 +483,7 @@ WooCommerce styles override
     z-index: 9999;
   }
 }
-@media only screen and (max-width: 1920px) and (min-width: 48em) {
+@media only screen and (max-width: 48em) and (min-width: 48em) {
     /**
 	 * Header cart
 	 */
@@ -544,7 +503,7 @@ WooCommerce styles override
     display: block;
   }
 }
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 48em) {
  /**
 * WooCommerce widgets
 */

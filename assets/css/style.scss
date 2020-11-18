@@ -629,7 +629,7 @@ License: GNU General Public License v2 or later
         display: block;
 
         #pageContainer {
-          display: none;
+          display: block;
 
           .bxslider img {
             max-width: 100%;
@@ -2200,6 +2200,8 @@ License: GNU General Public License v2 or later
                         height: 45px;
                         width: 15%;
                         margin: 0;
+                        line-height: 30px;
+                        font-size: 1em;
 
                         &:hover {
                           background-color: $color2;
@@ -2255,7 +2257,7 @@ License: GNU General Public License v2 or later
 
                         button.button {
                           display: inline-block;
-                          line-height: 40px;
+                          line-height: 30px;
                           width: 30%;
                           -webkit-flex: 0 0 auto;
                           -ms-flex: 0 0 auto;
@@ -5220,7 +5222,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                         }
                       }
                     }
@@ -7380,7 +7382,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                         }
                       }
                     }
@@ -9524,7 +9526,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                         }
                       }
                     }
@@ -11672,7 +11674,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                         }
                       }
                     }
@@ -13831,7 +13833,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                         }
                       }
                     }
@@ -15978,7 +15980,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                           width: 35%;
                         }
                       }
@@ -18123,7 +18125,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                         }
                       }
                     }
@@ -20287,7 +20289,7 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
+                          font-size: 1em;
                           width: 40%;
                         }
                       }
@@ -22542,8 +22544,8 @@ License: GNU General Public License v2 or later
                         }
 
                         button.button {
-                          font-size: 0.9em;
-                          width: 40%;
+                          font-size: 1em;
+                          
                         }
                       }
                     }
@@ -24717,7 +24719,7 @@ License: GNU General Public License v2 or later
 
                         button.button {
                           font-size: 0.9em;
-                          width: 40%;
+                          
                         }
                       }
                     }
@@ -26882,7 +26884,7 @@ License: GNU General Public License v2 or later
 
                         button.button {
                           font-size: 0.9em;
-                          width: 40%;
+                          
                         }
                       }
                     }
@@ -29082,7 +29084,7 @@ License: GNU General Public License v2 or later
 
                         button.button {
                           font-size: 0.9em;
-                          width: 40%;
+                          
                         }
                       }
                     }

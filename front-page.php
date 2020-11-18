@@ -25,6 +25,8 @@
 		<div class="bx-wrapper">
 			<div class="bx-viewport">
 				<ul class="bxslider">
+
+				
 					<li>
 						<article class="slider-text">
 							<h1>CLEARANCE <span>SALE</span></h1>
@@ -36,7 +38,7 @@
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
 							<br/>
 						</article>
-						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/3/2018/12/manneringhiphop.png" alt="hip-hop-albums"/>
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/2/2020/11/manneringhiphop.png" alt="hip-hop-albums"/>
 					</li>
 
 					<li>
@@ -49,7 +51,7 @@
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
 						</article>
-						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/3/2018/12/manneringjazz.png" alt="jazz-albums"/>
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/2/2020/11/manneringjazz.png" alt="jazz-albums"/>
 					</li>
 
 					<li>
@@ -63,7 +65,7 @@
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
 						</article>
-						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/3/2018/12/manneringcountry.png" alt="country-albums"/>
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/2/2020/11/manneringcountry.png" alt="country-albums"/>
 					</li>
 
 					<li>
@@ -77,7 +79,7 @@
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
 						</article>
-						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/3/2018/12/manneringhiphop.png" alt="hip-hop-albums"/>
+						<img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/uploads/sites/2/2020/11/manneringhiphop.png" alt="hip-hop-albums"/>
 					</li>
 				</ul>
 			</div>
