@@ -23,9 +23,9 @@
 
 <article class="textbox">
 
-	<h1><?php esc_html_e( 'Music Videos', 'mannering-storefront-child-theme' ); ?></h1>
+	<h1><?php esc_html_e( 'Music Videos', 'mannering-storefront-child' ); ?></h1>
 
-	<p><?php esc_html_e( 'Watch classic and the latest Hip Hop, Jazz and Country music videos from a wide selection of music videos.', 'mannering-storefront-child-theme' ); ?></p>
+	<p><?php esc_html_e( 'Watch classic and the latest Hip Hop, Jazz and Country music videos from a wide selection of music videos.', 'mannering-storefront-child' ); ?></p>
 
 	<br/>
 
@@ -35,7 +35,7 @@
 
 
 
-	<?php get_template_part( 'template-parts/content', 'video' ); ?>
+	<?php get_template_part( 'content', 'video' ); ?>
 
 
 

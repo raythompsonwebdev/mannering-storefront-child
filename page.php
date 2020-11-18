@@ -1,6 +1,6 @@
 <?php
 /**
- * *PHP version 7
+ * *PHP version 5
  *
  * * The template for displaying all pages
  *
@@ -12,7 +12,7 @@
  * Page | core/page.php.
  *
  * @category   Page
- * @package    mannering_music
+ * @package    Mannering Storefront Child Theme
  * @subpackage Page
  * @author     Raymond Thompson <ray_thomp@hushmail.com>
  * @copyright  2017 Raymond Thompson
@@ -22,25 +22,23 @@
  */
 
  get_header(); ?>
+		
+		<main id="main_text" class="site-main" role="main">
 
-<main id="main_text" class="site-main" role="main">
+            <h1 ><?php the_title(); ?></h1>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+			<?php if (have_posts()) :
+					//while (have_posts()) :
+						the_post(); 
 
-			get_template_part( 'template-parts/content', 'page' );
+				get_template_part( 'content', 'page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
 
-		endwhile; // End of the loop.
-		?>
+				//endwhile;
 
-	</main><!-- #main -->
+			endif; ?>
 
-<?php
-get_sidebar();
-get_footer();
+		</main><!-- #main -->
+
+
+<?php get_footer(); ?>

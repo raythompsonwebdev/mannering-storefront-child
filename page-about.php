@@ -25,7 +25,7 @@
 		<?php the_title(); ?>
 	</h1>
 
-	<?php get_template_part( 'template-parts/content', 'page' ); ?>
+	<?php get_template_part( 'content', 'page' ); ?>
 
 </main>
 

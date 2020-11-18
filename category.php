@@ -72,7 +72,7 @@ get_header(); ?>
 		?>
 
 
-		<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+		<?php get_template_part( 'content', get_post_format() ); ?>
 	 
 
 	<?php endwhile; ?>
@@ -81,7 +81,7 @@ get_header(); ?>
 
 <?php else : ?>
 
-	<?php get_template_part( 'template-parts/content', 'none' ); ?>
+	<?php get_template_part( 'content', 'none' ); ?>
 
 <?php endif; ?>
 
