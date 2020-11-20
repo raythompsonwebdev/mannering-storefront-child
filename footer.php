@@ -30,7 +30,7 @@
 	</div>
 	<?php
 
-if ( has_nav_menu( 'Secondary Menu' ) ) {
+//if ( has_nav_menu( 'Secondary Menu' ) ) {
 	// If there is, adds the Top Menu area.
 	wp_nav_menu(
 		array(
@@ -38,7 +38,7 @@ if ( has_nav_menu( 'Secondary Menu' ) ) {
 			'container' => 'ul',
 		)
 	);
-}
+//}
 ?>
 
 

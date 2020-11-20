@@ -228,11 +228,11 @@ add_action( 'wp_enqueue_scripts', 'mannering_storefront_child_add_google_fonts' 
  * Translations can be filed in the /languages/ directory.
  */
 function mannering_storefront_child_setup() {
-// 	load_child_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages' );
-// load custom translation file for the parent theme
-load_theme_textdomain( 'storefront', get_template_directory() . '/languages/storefront' );
-// load translation file for the child theme
-load_child_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages' );
+	// 	load_child_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages' );
+	// load custom translation file for the parent theme
+	load_theme_textdomain( 'storefront', get_template_directory() . '/languages/storefront' );
+	// load translation file for the child theme
+	load_child_theme_textdomain( 'mannering_music', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'mannering_storefront_child_setup' );
 
@@ -260,7 +260,6 @@ function mannering_storefront_child_scripts_own() {
 	);
 
 	foreach ( $conditional_scripts as $handle => $src ) {
-
 		wp_enqueue_script( $handle, $src, array(), '', false );
 	}
 	add_filter(
@@ -287,11 +286,12 @@ add_action( 'wp_enqueue_scripts', 'mannering_storefront_child_scripts_own' );
 	 */
 function mannering_storefront_child_register_styles() {
 
-	wp_enqueue_style( 'mannering-storefront-child-style', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'mannering-storefront-child-style', get_stylesheet_directory_uri() . '/style.css',false, '1.1', 'all' );
 
-	wp_enqueue_style( 'woocommerce-css', get_stylesheet_directory_uri() . '/assets/css/woocommerce/woocommerce.css' );
+	wp_enqueue_style( 'woocommerce-css', get_stylesheet_directory_uri() . '/assets/css/woocommerce/woocommerce.css', false, '1.1', 'all' );
 
 	wp_enqueue_style( 'bx-slider', get_stylesheet_directory_uri() . '/assets/js/bxslider-4-master/jquery.bxslider.css', false, '1.1', 'all' );
+
 	wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/assets/fonts/fontawesome/css/font-awesome.min.css', false, '1.1', 'all' );
 
 }
