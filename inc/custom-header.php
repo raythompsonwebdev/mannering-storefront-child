@@ -8,40 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package mannering_music
+ * @package mannering-woocommerce-child
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses mannering_music_header_style()
+ * @uses mannering_woocommerce_child_header_style()
  */
-function mannering_music_custom_header_setup() {
+function mannering_woocommerce_child_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'mannering_music_custom_header_args',
+			'mannering_woocommerce_child_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
-				'width'              => 1600,
+				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'mannering_music_header_style',
-				
+				'wp-head-callback'   => 'mannering_woocommerce_child_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'mannering_music_custom_header_setup' );
+add_action( 'after_setup_theme', 'mannering_woocommerce_child_custom_header_setup' );
 
-if ( ! function_exists( 'mannering_music_header_style' ) ) :
+if ( ! function_exists( 'mannering_woocommerce_child_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see mannering_music_custom_header_setup().
+	 * @see mannering_woocommerce_child_custom_header_setup().
 	 */
-	function mannering_music_header_style() {
+	function mannering_woocommerce_child_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
@@ -77,5 +76,3 @@ if ( ! function_exists( 'mannering_music_header_style' ) ) :
 		<?php
 	}
 endif;
-
-

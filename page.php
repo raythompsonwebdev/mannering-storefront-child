@@ -1,29 +1,21 @@
 <?php
 /**
- * *PHP version 7
- *
- * * The template for displaying all pages
+ * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
  * different template.
  *
- * Page | core/page.php.
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @category   Page
- * @package    mannering_music
- * @subpackage Page
- * @author     Raymond Thompson <ray_thomp@hushmail.com>
- * @copyright  2017 Raymond Thompson
- * @license    http://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
- * @version    GIT: https://github.com/raythompsonwebdev/mannering-music.git
- * @link       http:www.raythompsonwebdev.co.uk.mannering-music
+ * @package mannering-woocommerce-child
  */
 
- get_header(); ?>
+get_header();
+?>
 
-<main id="main_text" class="site-main" role="main">
+	<main id="primary" class="site-main">
 
 		<?php
 		while ( have_posts() ) :

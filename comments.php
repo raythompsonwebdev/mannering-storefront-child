@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mannering_music
+ * @package mannering-woocommerce-child
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$mannering_music_comment_count = get_comments_number();
-			if ( '1' === $mannering_music_comment_count ) {
+			$mannering_woocommerce_child_comment_count = get_comments_number();
+			if ( '1' === $mannering_woocommerce_child_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'mannering_music' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'mannering-woocommerce-child' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $mannering_music_comment_count, 'comments title', 'mannering_music' ) ),
-					number_format_i18n( $mannering_music_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $mannering_woocommerce_child_comment_count, 'comments title', 'mannering-woocommerce-child' ) ),
+					number_format_i18n( $mannering_woocommerce_child_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'mannering_music' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'mannering-woocommerce-child' ); ?></p>
 			<?php
 		endif;
 

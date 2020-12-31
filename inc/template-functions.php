@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package mannering_music
+ * @package mannering-woocommerce-child
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function mannering_music_body_classes( $classes ) {
+function mannering_woocommerce_child_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -24,14 +24,14 @@ function mannering_music_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'mannering_music_body_classes' );
+add_filter( 'body_class', 'mannering_woocommerce_child_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function mannering_music_pingback_header() {
+function mannering_woocommerce_child_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
-add_action( 'wp_head', 'mannering_music_pingback_header' );
+add_action( 'wp_head', 'mannering_woocommerce_child_pingback_header' );

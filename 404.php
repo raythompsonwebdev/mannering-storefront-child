@@ -1,82 +1,60 @@
 <?php
 /**
- * *PHP version 7
+ * The template for displaying 404 pages (not found)
  *
- * 404 page | core/404.php.
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @category   Error_Page
- * @package    mannering_music
- * @subpackage Error_Page
- * @author     Raymond Thompson <ray_thomp@hushmail.com>
- * @copyright  2017 Raymond Thompson
- * @license    http://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
- * @version    GIT: https://github.com/raythompsonwebdev/mannering-music.git
- * @link       http:www.raythompsonwebdev.co.uk.mannering-music
+ * @package mannering-woocommerce-child
  */
-get_header(); ?>
 
-<section id="content">
+get_header();
+?>
 
-	<main id="main_text" role="main">
+	<main id="primary" class="site-main">
 
 		<section class="error-404 not-found">
 			<header class="page-header">
-				<h1 class="page-title">
-					<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mannering_music' ); ?>
-				</h1>
+				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mannering-woocommerce-child' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="page-content">
-				<p>
+				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mannering-woocommerce-child' ); ?></p>
+
 					<?php
-					esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mannering_music' );
-				?>
-				</p>
+					get_search_form();
 
-				<?php
-		get_search_form();
-
-		the_widget( 'WP_Widget_Recent_Posts' );
-	?>
-
-				<div class="widget widget_categories">
-					<h2 class="widget-title">
-						<?php esc_html_e( 'Most Used Categories', 'mannering_music' ); ?>
-					</h2>
-					<ul>
-						<?php
-					wp_list_categories(
-						array(
-							'orderby'    => 'count',
-							'order'      => 'DESC',
-							'show_count' => 1,
-							'title_li'   => '',
-							'number'     => 10,
-						)
-					);
+					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
-					</ul>
-				</div><!-- .widget -->
 
-				<?php
+					<div class="widget widget_categories">
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mannering-woocommerce-child' ); ?></h2>
+						<ul>
+							<?php
+							wp_list_categories(
+								array(
+									'orderby'    => 'count',
+									'order'      => 'DESC',
+									'show_count' => 1,
+									'title_li'   => '',
+									'number'     => 10,
+								)
+							);
+							?>
+						</ul>
+					</div><!-- .widget -->
 
-		/* translators: %1$s: smiley */
-		$archive_content = '<p>' . sprintf( esc_html_e( 'Try looking in the monthly archives. %1$s', 'mannering_music' ), convert_smilies( ':)' ) ) . '</p>';
+					<?php
+					/* translators: %1$s: smiley */
+					$mannering_woocommerce_child_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'mannering-woocommerce-child' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$mannering_woocommerce_child_archive_content" );
 
-		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-		the_widget( 'WP_Widget_Tag_Cloud' );
-	?>
+					the_widget( 'WP_Widget_Tag_Cloud' );
+					?>
 
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
 
 	</main><!-- #main -->
 
-
-	<?php get_sidebar(); ?>
-
-
-
-</section>
-<?php get_footer(); ?>
+<?php
+get_footer();

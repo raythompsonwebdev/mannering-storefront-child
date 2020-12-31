@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mannering_music
+ * @package mannering-woocommerce-child
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				mannering_music_posted_on();
-				mannering_music_posted_by();
+				mannering_woocommerce_child_posted_on();
+				mannering_woocommerce_child_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php mannering_music_post_thumbnail(); ?>
+	<?php mannering_woocommerce_child_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mannering_music' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mannering-woocommerce-child' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mannering_music' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mannering-woocommerce-child' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php mannering_music_entry_footer(); ?>
+		<?php mannering_woocommerce_child_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
