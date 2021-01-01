@@ -38,12 +38,32 @@ function mannering_woocommerce_child_woocommerce_setup() {
 add_action( 'after_setup_theme', 'mannering_woocommerce_child_woocommerce_setup' );
 
 /**
+ * Set WooCommerce image dimensions upon theme activation.
+ */
+//Remove each style one by one
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+	unset( $enqueue_styles['woocommerce-general'] );    // Remove the gloss.
+	unset( $enqueue_styles['woocommerce-layout'] );     // Remove the layout.
+	unset( $enqueue_styles['woocommerce-smallscreen'] );    // Remove the smallscreen optimisation.
+	return $enqueue_styles;
+}
+
+//remove description from category pages
+// add_action( 'after_setup_theme', 'my_remove_parent_theme_stuff', 0 );
+// function my_remove_parent_theme_stuff() {
+//     remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10);
+//     remove_action( 'woocommerce_archive_description', 'woocommerce_product_archive_description', 10);
+
+// }
+
+/**
  * WooCommerce specific scripts & stylesheets.
  *
  * @return void
  */
 function mannering_woocommerce_child_woocommerce_scripts() {
-	wp_enqueue_style( 'mannering-woocommerce-child-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), _S_VERSION );
+	wp_enqueue_style( 'mannering-woocommerce-child-woocommerce-style', get_template_directory_uri() . '/woocommerce.css', array(), MANNERING_WOOCOMMERCE_CHILD_VERSION );
 
 	$font_path   = WC()->plugin_url() . '/assets/fonts/';
 	$inline_font = '@font-face {

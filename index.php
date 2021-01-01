@@ -7,7 +7,14 @@
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @category   Index_Page
+ * 
+ * @subpackage Index_Page
+ * @author     Raymond Thompson <ray_thomp@hushmail.com>
+ * @copyright  2017 Raymond Thompson
+ * @license    http://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
+ * @version    GIT: https://github.com/raythompsonwebdev/mannering-music.git
+ * @link       http:www.raythompsonwebdev.co.uk.mannering-music
  *
  * @package mannering-woocommerce-child
  */
