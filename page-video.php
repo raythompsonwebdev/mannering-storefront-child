@@ -23,9 +23,9 @@
 
 <article class="textbox">
 
-	<h1><?php esc_html_e( 'Music Videos', 'mannering_music' ); ?></h1>
+	<h1><?php esc_html_e( 'Music Videos', 'mannering-woocommerce-child' ); ?></h1>
 
-	<p><?php esc_html_e( 'Watch classic and the latest Hip Hop, Jazz and Country music videos from a wide selection of music videos.', 'mannering_music' ); ?></p>
+	<p><?php esc_html_e( 'Watch classic and the latest Hip Hop, Jazz and Country music videos from a wide selection of music videos.', 'mannering-woocommerce-child' ); ?></p>
 
 	<br/>
 

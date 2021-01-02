@@ -26,7 +26,7 @@ License: GNU General Public License v2 or later
 
 /*1920*/
 @media only screen and (max-width: 1920px) {
-	/*wrapper*/
+	/* wrapper */
 	#page {
 		margin-left: auto;
 		margin-right: auto;
@@ -53,7 +53,7 @@ License: GNU General Public License v2 or later
 					position: relative;
 					top: 0;
 					left: 0;
-					width: 6%;
+					width: 5%;
 					-webkit-flex: 1 0 auto;
 					-ms-flex: 1 0 auto;
 					flex: 1 0 auto;
@@ -69,7 +69,8 @@ License: GNU General Public License v2 or later
 						text-decoration: none;
 						line-height: 40px;
 						width: 100%;
-						height: auto;
+						height: 100%;
+						padding: 3%;
 
 						div.site-firstletter {
 							font-size: 1em;
@@ -96,25 +97,22 @@ License: GNU General Public License v2 or later
 				}
 
 				.site-title {
-					width: 93%;
+					width: 94%;
 					-webkit-flex: 0 0 auto;
 					-ms-flex: 0 0 auto;
 					flex: 0 0 auto;
 					hgroup {
-						width: 50%;
 						display: block;
-						float: left;
-						height: 4em;
+						height: auto;
 						font-family: ($FontList);
-
 						h1#logo {
 							margin: 0;
 							font-size: 2.1em;
 							width: 100%;
-							height: 40px;
 							font-weight: bold;
 							text-shadow: 1px 1px $color7;
-							line-height: 40px;
+							height: 35px;
+							line-height: 35px;
 							display: block;
 							letter-spacing: 0.03em;
 							float: left;
@@ -179,6 +177,7 @@ License: GNU General Public License v2 or later
 							font-size: 0.7em;
 							font-weight: normal;
 							padding: 0;
+							margin:0;
 							clear: left;
 							color: $color10;
 						}
@@ -247,7 +246,7 @@ License: GNU General Public License v2 or later
 			margin-bottom: 1em;
 
 			ul#menu-main {
-				width: 70%;
+				width: 100%;
 				height: 100%;
 				margin: 0;
 				display: -webkit-flex;
@@ -298,9 +297,9 @@ License: GNU General Public License v2 or later
 			height: auto;
 			margin: 0;
 			margin: 5% auto;
-			width: 100%;
-			display: block;
+			display: inline-block;
 			@include boredrady(5px);
+			clear: both;
 
 			h1 {
 				background-color: $color6;
@@ -335,7 +334,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box*/
+			/* Search-box */
 			#search_form {
 				margin: 0;
 				height: auto;
@@ -418,7 +417,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+			/* Search-box end */
 			.blogs {
 				background-color: $color6;
 				height: 14.34871%;
@@ -605,7 +604,7 @@ License: GNU General Public License v2 or later
 				display: block;
 			}
 
-			/*global contact form style*/
+			/* global contact form style */
 			form {
 				margin: 0 auto;
 				font-weight: normal;
@@ -672,7 +671,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*front-page slider*/
+			/* front-page slider */
 			#slider {
 				width: 94%;
 				margin: 0 auto;
@@ -878,7 +877,7 @@ License: GNU General Public License v2 or later
 					float: right;
 				}
 
-				//contact page form
+			/* contact page form */
 				#contact-form-a {
 					width: 40%;
 					height: auto;
@@ -979,7 +978,7 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*error labels*/
+				/* error labels */
 				#registerForm label.error {
 					font-size: 1.2em;
 					width: 30%;
@@ -1025,14 +1024,14 @@ License: GNU General Public License v2 or later
 					color: $color2;
 				}
 
-				/*about-page-images*/
+				/* about-page-images */
 				.aboutpage-img {
 					width: 7%;
 					margin: 0 0.5em 0 0;
 					float: left;
 				}
 
-				/*contact-page-details*/
+				/* contact-page-details */
 				ul#contact-details {
 					display: block;
 
@@ -1041,12 +1040,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+				/* contact-page-map */
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					min-height: 150px;
 					width: 100%;
@@ -1386,7 +1385,7 @@ License: GNU General Public License v2 or later
 									font-weight: bold;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -1418,7 +1417,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Music-Page-Tabs-Menu*/
+			/* Music-Page-Tabs-Menu */
 			div#container {
 				.audioExcerpt {
 					width: 100%;
@@ -2054,7 +2053,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			background-color: $color6;
 			clear: both;
 			height: 155px;
@@ -2062,14 +2061,16 @@ License: GNU General Public License v2 or later
 			margin: 0;
 			padding: 1%;
 			@include boredrady(5px);
+			display:flex;
 
 			.social-btns {
 				height: 40px;
 				margin: 0;
 				padding: 0;
-				float: right;
 				width: 20%;
-				display: block;
+				-webkit-flex: 1 0 auto;
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
 
 				ul {
 					width: 100%;
@@ -2114,6 +2115,9 @@ License: GNU General Public License v2 or later
 				width: 22%;
 				height: 100%;
 				margin: 0;
+				-webkit-flex: 1 0 auto;
+				-ms-flex: 1 0 auto;
+				flex: 1 0 auto;
 
 				li.menu-item {
 					background-color: $color6;
@@ -2157,7 +2161,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /*1440*/
@@ -2166,67 +2170,51 @@ License: GNU General Public License v2 or later
 		width: 85%;
 
 		header.site-header {
-			clear: both;
+			height: 80px;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					a {
 
-			.site-logo {
-				a {
-					line-height: 40px;
-
-					div.screen-reader-text {
-						overflow: hidden;
-
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
-				}
-			}
-
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
-
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
-
-			hgroup {
-				width: 50%;
-				height: 4em;
-
-				h1#logo {
-					font-size: 2em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
 				}
 
-				h1#logo-blog {
-					font-size: 2em;
-					height: 40px;
+				.site-title {
+					width: 94%;
+					hgroup {
 
-					span {
-						height: 100%;
+						h1#logo {
+							font-size: 2em;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h1#logo-blog {
+							font-size: 2em;
+							height: 40px;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.7em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.7em;
 				}
 			}
 
@@ -2258,7 +2246,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -2290,7 +2278,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -2330,7 +2318,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -2625,12 +2613,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.6em;
@@ -2828,7 +2816,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -2848,7 +2836,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -3168,7 +3156,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 
@@ -3223,7 +3211,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /*1280*/
@@ -3232,67 +3220,60 @@ License: GNU General Public License v2 or later
 		width: 90%;
 
 		header.site-header {
-			clear: both;
+			height: 75px;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					width:5%;
+					a {
+						line-height: 40px;
 
-			.site-logo {
-				a {
-					line-height: 40px;
+						div.screen-reader-text {
+							overflow: hidden;
 
-					div.screen-reader-text {
-						overflow: hidden;
+							&:focus {
+								font-size: 0.875rem;
+							}
+						}
 
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
 				}
-			}
+				.site-title {
+					width: 94%;
+					hgroup {
 
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
+						h1#logo {
+							font-size: 1.9em;
 
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
+							span {
+								height: 100%;
+							}
 
-			hgroup {
-				width: 50%;
-				height: 4em;
+							span:last-of-type {
+								height: 100%;
+							}
+						}
 
-				h1#logo {
-					font-size: 1.9em;
+						h1#logo-blog {
+							font-size: 1.9em;
+							height: 40px;
 
-					span {
-						height: 100%;
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.7em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.9em;
-					height: 40px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.7em;
 				}
 			}
 
@@ -3325,7 +3306,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -3360,7 +3341,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -3400,7 +3381,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -3696,12 +3677,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.5em;
@@ -3893,7 +3874,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -3913,7 +3894,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -4282,7 +4263,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /*1024*/
@@ -4291,70 +4272,53 @@ License: GNU General Public License v2 or later
 		width: 96%;
 
 		header.site-header {
-			clear: both;
+			height: 70px;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					width:5%;
+					a {
 
-			.site-logo {
-				a {
-					line-height: 40px;
-
-					div.screen-reader-text {
-						overflow: hidden;
-
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
+				}
+				.site-title {
+					width: 95%;
+					hgroup {
 
-					div.site-firstletter {
-						font-size: 1em;
+						h1#logo {
+							font-size: 1.8em;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h1#logo-blog {
+							font-size: 1.8em;
+							height: 35px;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.65em;
+						}
 					}
 				}
 			}
-
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
-
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
-
-			hgroup {
-				width: 47%;
-				height: 4em;
-
-				h1#logo {
-					font-size: 1.8em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.8em;
-					height: 40px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.65em;
-				}
-			}
-
 			.header_icons {
 				width: 30%;
 
@@ -4384,7 +4348,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -4414,7 +4378,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -4454,7 +4418,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -4738,12 +4702,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.4em;
@@ -4935,7 +4899,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -4955,7 +4919,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -5322,7 +5286,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 @media only screen and (max-width: 960px) {
@@ -5331,66 +5295,50 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					a {
 
-			.site-logo {
-				a {
-					line-height: 40px;
-
-					div.screen-reader-text {
-						overflow: hidden;
-
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
-				}
-			}
-
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
-
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
-
-			hgroup {
-				width: 47%;
-				height: 4em;
-
-				h1#logo {
-					font-size: 1.7em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
 				}
 
-				h1#logo-blog {
-					font-size: 1.7em;
-					height: 40px;
+				.site-title {
+					width: 93%;
+					hgroup {
 
-					span {
-						height: 100%;
+						h1#logo {
+							font-size: 1.7em;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h1#logo-blog {
+							font-size: 1.7em;
+							height: 40px;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.65em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.65em;
 				}
 			}
 
@@ -5423,7 +5371,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -5453,7 +5401,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -5493,7 +5441,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -5789,12 +5737,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.3em;
@@ -5984,7 +5932,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -6005,7 +5953,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -6314,7 +6262,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 
@@ -6369,7 +6317,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /*800*/
@@ -6379,69 +6327,59 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					a {
 
-			.site-logo {
-				a {
-					line-height: 40px;
+						div.screen-reader-text {
+							overflow: hidden;
 
-					div.screen-reader-text {
-						overflow: hidden;
+							&:focus {
+								font-size: 0.875rem;
+							}
+						}
 
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
+				}
+				.site-title {
+					width: 93%;
+					hgroup {
 
-					div.site-firstletter {
-						font-size: 1em;
+						h1#logo {
+							font-size: 1.6em;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h1#logo-blog {
+							font-size: 1.6em;
+							height: 40px;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.6em;
+						}
 					}
 				}
 			}
-
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
-
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
-
-			hgroup {
-				width: 47%;
-				height: 4em;
-
-				h1#logo {
-					font-size: 1.6em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.6em;
-					height: 40px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.6em;
-				}
-			}
-
 			.header_icons {
 				width: 30%;
 
@@ -6471,7 +6409,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -6499,7 +6437,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -6539,7 +6477,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -6837,12 +6775,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.3em;
@@ -7030,7 +6968,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -7050,7 +6988,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -7359,7 +7297,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 
@@ -7414,7 +7352,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### Mobile Phones Portrait -Apple iPhone 6#### */
@@ -7424,66 +7362,51 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			height: 70px;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					a {
+						line-height: 40px;
 
-			.site-logo {
-				a {
-					line-height: 40px;
-
-					div.screen-reader-text {
-						overflow: hidden;
-
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
 				}
-			}
+				.site-title {
+					width: 91%;
+					hgroup {
 
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
+						h1#logo {
+							font-size: 1.5em;
 
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
+							span {
+								height: 100%;
+							}
 
-			hgroup {
-				width: 47%;
-				height: 4em;
+							span:last-of-type {
+								height: 100%;
+							}
+						}
 
-				h1#logo {
-					font-size: 1.5em;
+						h1#logo-blog {
+							font-size: 1.5em;
+							height: 40px;
 
-					span {
-						height: 100%;
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.6em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.5em;
-					height: 40px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.6em;
 				}
 			}
 
@@ -7516,7 +7439,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -7544,7 +7467,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -7584,7 +7507,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -7900,12 +7823,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.2em;
@@ -8095,7 +8018,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -8115,7 +8038,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -8424,7 +8347,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 
@@ -8479,7 +8402,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -8489,65 +8412,58 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					width:8%;
+					a {
+						div.screen-reader-text {
+							overflow: hidden;
 
-			.site-logo {
-				a {
-					div.screen-reader-text {
-						overflow: hidden;
+							&:focus {
+								font-size: 0.875rem;
+							}
+						}
 
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
 				}
-			}
+				.site-title {
+					width: 90%;
+					hgroup {
 
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
+						h1#logo {
+							font-size: 1.4em;
+							height: 30px;
 
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
+							span {
+								height: 100%;
+							}
 
-			hgroup {
-				width: 47%;
-				height: 4em;
+							span:last-of-type {
+								height: 100%;
+							}
+						}
 
-				h1#logo {
-					font-size: 1.4em;
-					height: 35px;
+						h1#logo-blog {
+							font-size: 1.5em;
+							height: 35px;
 
-					span {
-						height: 100%;
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.6em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.5em;
-					height: 35px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.6em;
 				}
 			}
 
@@ -8580,7 +8496,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -8608,7 +8524,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -8648,7 +8564,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -8940,12 +8856,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.2em;
@@ -9139,7 +9055,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -9159,7 +9075,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -9470,7 +9386,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 
@@ -9525,7 +9441,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### I Phone 5 Landscape #### */
@@ -9535,63 +9451,49 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					width: 10%;
+					a {
 
-			.site-logo {
-				a {
-					div.screen-reader-text {
-						overflow: hidden;
-
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
 				}
-			}
+				.site-title {
+					width: 87%;
+					hgroup {
 
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
+						h1#logo {
+							font-size: 1.4em;
 
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
+							span {
+								height: 100%;
+							}
 
-			hgroup {
-				width: 47%;
-				height: 4em;
+							span:last-of-type {
+								height: 100%;
+							}
+						}
 
-				h1#logo {
-					font-size: 1.2em;
+						h1#logo-blog {
+							font-size: 1.4em;
 
-					span {
-						height: 100%;
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.55em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.2em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.55em;
 				}
 			}
 
@@ -9624,7 +9526,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav {
+		nav#site-navigation {
 			height: 45px;
 
 			ul#menu-main {
@@ -9632,7 +9534,7 @@ License: GNU General Public License v2 or later
 					height: 45px;
 
 					a {
-						font-size: 0.6em;
+						font-size: 0.65em;
 
 						&:hover {
 							font-weight: bold;
@@ -9650,7 +9552,7 @@ License: GNU General Public License v2 or later
 			a {
 				font-size: 0.85em;
 			}
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -9689,7 +9591,7 @@ License: GNU General Public License v2 or later
 					}
 				}
 			}
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -9987,12 +9889,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.2em;
@@ -10183,7 +10085,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -10203,7 +10105,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -10514,7 +10416,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 
@@ -10569,7 +10471,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -10579,73 +10481,55 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
-			height: 110px;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					a {
 
-			.site-logo {
-				a {
-					width: 83%;
-
-					div.screen-reader-text {
-						overflow: hidden;
-
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
+				}
 
-					div.site-firstletter {
-						font-size: 1em;
+				.site-title {
+					width: 87%;
+					hgroup {
+
+						h1#logo {
+							font-size: 1.5em;
+							height: 30px;
+							line-height: 30px;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h1#logo-blog {
+							font-size: 1.5em;
+							height: 30px;
+							line-height: 30px;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.45em;
+						}
 					}
 				}
 			}
-
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
-
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
-
-			hgroup {
-				width: 84%;
-				height: 4em;
-
-				h1#logo {
-					font-size: 1.5em;
-					height: 30px;
-					line-height: 35px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.5em;
-					height: 30px;
-					line-height: 35px;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.45em;
-				}
-			}
-
 			.header_icons {
 				width: 50%;
 				position: absolute;
@@ -10687,14 +10571,14 @@ License: GNU General Public License v2 or later
 		.menu-toggle {
 			position: fixed;
 			z-index: 100;
-			top: 4.9em;
-			left: 77vw;
+			top: 4em;
+			left: 66vw;
 			padding: 0.7em;
 			font-size: 1em;
 			text-transform: uppercase;
 			background-color: #000;
 			color: #fff;
-			border: solid 2px #fff;
+			border: solid 1px #fff;
 			transition: all ease-out 400ms;
 		}
 
@@ -10708,12 +10592,7 @@ License: GNU General Public License v2 or later
 			bottom: 1em;
 		}
 
-		.menu-toggle:hover,
-		.menu-toggle:focus {
-			text-decoration: underline;
-		}
-
-		nav {
+		nav#site-navigation {
 			position: fixed;
 			top: 7.2em;
 			z-index: 100;
@@ -10771,7 +10650,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -10811,7 +10690,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -11107,12 +10986,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.2em;
@@ -11305,7 +11184,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -11325,7 +11204,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -11637,7 +11516,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 				width: 45%;
@@ -11691,7 +11570,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -11700,65 +11579,50 @@ License: GNU General Public License v2 or later
 		width: 98%;
 
 		header.site-header {
-			clear: both;
-			height: 110px;
 
-			.site-logo {
-				a {
-					div.screen-reader-text {
-						overflow: hidden;
+			.site-branding {
 
-						&:focus {
-							font-size: 0.875rem;
+				.site-logo {
+					width:11%;
+					a {
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
-				}
-			}
-
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
-
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
-
-			hgroup {
-				width: 70%;
-				height: 4em;
-
-				h1#logo {
-					font-size: 1.4em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
 				}
 
-				h1#logo-blog {
-					font-size: 1.4em;
+				.site-title {
+					width:87%;
+					hgroup {
 
-					span {
-						height: 100%;
+						h1#logo {
+							font-size: 1.4em;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h1#logo-blog {
+							font-size: 1.4em;
+
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.5em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.5em;
 				}
 			}
 
@@ -11788,32 +11652,13 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		.menu-toggle,
-		.menu-main-container.toggled ul {
-			display: block;
-		}
-
 		.menu-toggle {
-			left: 76vw;
+			left: 65vw;
 			font-size: 0.9em;
 		}
 
-		.menu-toggle.hide {
-			left: 110vw;
-		}
 
-		/* Make sure the button doesn't hide when menu is open. */
-
-		.toggled .menu-toggle.hide {
-			bottom: 1em;
-		}
-
-		.menu-toggle:hover,
-		.menu-toggle:focus {
-			text-decoration: underline;
-		}
-
-		nav {
+		nav#site-navigation {
 			top: 7.2em;
 
 			ul#menu-main {
@@ -11838,7 +11683,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav.hide {
+		nav#site-navigation.hide {
 			left: -5.5em;
 		}
 
@@ -11852,7 +11697,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -11892,7 +11737,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -12184,12 +12029,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.2em;
@@ -12378,7 +12223,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -12398,7 +12243,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -12710,7 +12555,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 				width: 45%;
@@ -12764,7 +12609,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -12774,63 +12619,56 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
 
-			.site-logo {
-				a {
-					div.screen-reader-text {
-						overflow: hidden;
+					a {
+						div.screen-reader-text {
+							overflow: hidden;
 
-						&:focus {
-							font-size: 0.875rem;
+							&:focus {
+								font-size: 0.875rem;
+							}
+						}
+
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
 				}
-			}
+				.site-title {
+					width:83%;
+					hgroup {
 
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
+						h1#logo {
+							font-size: 1.3em;
 
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
+							span {
+								height: 100%;
+							}
 
-			hgroup {
-				height: 4em;
-				width: 82%;
+							span:last-of-type {
+								height: 100%;
+							}
+						}
 
-				h1#logo {
-					font-size: 1.3em;
+						h1#logo-blog {
+							font-size: 1.3em;
 
-					span {
-						height: 100%;
+							span {
+								height: 100%;
+							}
+
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.5em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.3em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.5em;
 				}
 			}
 
@@ -12859,33 +12697,12 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		.menu-toggle,
-		.menu-main-container.toggled ul {
-			display: block;
-		}
-
 		.menu-toggle {
-			top: 4.8em;
-			left: 78vw;
-			font-size: 0.9em;
+			left: 62vw;
+			font-size: 0.85em;
 		}
 
-		.menu-toggle.hide {
-			left: 110vw;
-		}
-
-		/* Make sure the button doesn't hide when menu is open. */
-
-		.toggled .menu-toggle.hide {
-			bottom: 1em;
-		}
-
-		.menu-toggle:hover,
-		.menu-toggle:focus {
-			text-decoration: underline;
-		}
-
-		nav {
+		nav#site-navigation {
 			top: 7.2em;
 
 			ul#menu-main {
@@ -12910,7 +12727,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav.hide {
+		nav#site-navigation.hide {
 			left: -5.5em;
 		}
 
@@ -12924,7 +12741,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.8em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -12964,7 +12781,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -13252,12 +13069,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.2em;
@@ -13459,7 +13276,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -13479,7 +13296,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -13800,7 +13617,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				height: 40px;
 				width: 45%;
@@ -13854,7 +13671,7 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -13864,62 +13681,53 @@ License: GNU General Public License v2 or later
 
 		header.site-header {
 			clear: both;
+			.site-branding {
+				display: -webkit-flex;
+				.site-logo {
+					a {
+						div.screen-reader-text {
+							overflow: hidden;
 
-			.site-logo {
-				a {
-					div.screen-reader-text {
-						overflow: hidden;
+							&:focus {
+								font-size: 0.875rem;
+							}
+						}
 
-						&:focus {
-							font-size: 0.875rem;
+						div.site-firstletter {
+							font-size: 1em;
 						}
 					}
-
-					div.site-firstletter {
-						font-size: 1em;
-					}
 				}
-			}
+				.site-title {
+					hgroup {
+						h1#logo {
+							font-size: 1.3em;
 
-			.site-logo a:focus,
-			.site-logo a:hover {
-				outline: 2px solid white;
-			}
+							span {
+								height: 100%;
+							}
 
-			.site-logo a:focus .site-firstletter,
-			.site-logo a:hover .site-firstletter {
-				background: $color4;
-			}
+							span:last-of-type {
+								height: 100%;
+							}
+						}
 
-			hgroup {
-				height: 4em;
+						h1#logo-blog {
+							font-size: 1.3em;
 
-				h1#logo {
-					font-size: 1.2em;
+							span {
+								height: 100%;
+							}
 
-					span {
-						height: 100%;
+							span:last-of-type {
+								height: 100%;
+							}
+						}
+
+						h2 {
+							font-size: 0.45em;
+						}
 					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h1#logo-blog {
-					font-size: 1.2em;
-
-					span {
-						height: 100%;
-					}
-
-					span:last-of-type {
-						height: 100%;
-					}
-				}
-
-				h2 {
-					font-size: 0.45em;
 				}
 			}
 
@@ -13948,33 +13756,13 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		.menu-toggle,
-		.menu-main-container.toggled ul {
-			display: block;
-		}
-
 		.menu-toggle {
-			top: 5.5em;
-			left: 78vw;
+			left: 62vw;
 			font-size: 0.8em;
 		}
 
-		.menu-toggle.hide {
-			left: 120vw;
-		}
 
-		/* Make sure the button doesn't hide when menu is open. */
-
-		.toggled .menu-toggle.hide {
-			bottom: 1em;
-		}
-
-		.menu-toggle:hover,
-		.menu-toggle:focus {
-			text-decoration: underline;
-		}
-
-		nav {
+		nav#site-navigation {
 			top: 7.2em;
 
 			ul#menu-main {
@@ -13999,7 +13787,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		nav.hide {
+		nav#site-navigation.hide {
 			left: -5.5em;
 		}
 
@@ -14013,7 +13801,7 @@ License: GNU General Public License v2 or later
 				font-size: 0.8em;
 			}
 
-			/*Search-box*/
+
 			#search_form {
 				padding: 3%;
 
@@ -14053,7 +13841,7 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-			/*Search-box end*/
+
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -14343,12 +14131,12 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				/*contact-page-map*/
+
 				#mapcontainer {
 					display: block;
 				}
 
-				/*text-box*/
+
 				article.textbox {
 					h1 {
 						font-size: 1.1em;
@@ -14535,7 +14323,7 @@ License: GNU General Public License v2 or later
 									background-color: $color10;
 								}
 
-								/*End of Leftbar specials boxes*/
+
 							}
 						}
 
@@ -14555,7 +14343,7 @@ License: GNU General Public License v2 or later
 			div#container {
 				width: 100%;
 
-				/* Navigation - Tabs */
+
 				ul#tabs {
 					margin-left: 0%;
 
@@ -14867,7 +14655,7 @@ License: GNU General Public License v2 or later
 			}
 		}
 
-		footer {
+		footer.site-footer {
 			.social-btns {
 				ul {
 					width: 100%;
@@ -14918,5 +14706,5 @@ License: GNU General Public License v2 or later
 		}
 	}
 
-	/*end of wrapper*/
+
 }

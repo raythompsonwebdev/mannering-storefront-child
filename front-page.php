@@ -7,7 +7,7 @@
  * Front page | core/front-page.php.
  *
  * @category   Front_Page
- * @package    mannering_music
+ * @package    mannering-woocommerce-child
  * @subpackage Front_Page
  * @author     Raymond Thompson <ray_thomp@hushmail.com>
  * @copyright  2017 Raymond Thompson
@@ -32,7 +32,7 @@
 							<h1>CLEARANCE <span>SALE</span></h1>
 							<h2>UP TO 10&#37; OFF</h2>
 							<div class="features-list">
-								<h3> <?php esc_html_e( 'Check out our end of season sale on the latest Hip Hop music from our vast collection.', 'mannering_music' ); ?>
+								<h3> <?php esc_html_e( 'Check out our end of season sale on the latest Hip Hop music from our vast collection.', 'mannering-woocommerce-child' ); ?>
 								</h3>
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
@@ -47,7 +47,7 @@
 							<h2>UP TO 10&#37; OFF</h2>
 							<div class="features-list">
 								<h3>
-								<?php esc_html_e( 'Check out our end of season sale on the latest Jazz music from our vast collection.', 'mannering_music' ); ?></h3>
+								<?php esc_html_e( 'Check out our end of season sale on the latest Jazz music from our vast collection.', 'mannering-woocommerce-child' ); ?></h3>
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
 						</article>
@@ -60,7 +60,7 @@
 							<h2>UP TO 10&#37; OFF</h2>
 							<div class="features-list">
 								<h3>
-								<?php esc_html_e( 'Check out our end of season sale on the latest Country music from our vast collection.', 'mannering_music' ); ?>
+								<?php esc_html_e( 'Check out our end of season sale on the latest Country music from our vast collection.', 'mannering-woocommerce-child' ); ?>
 								</h3>
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
@@ -74,7 +74,7 @@
 							<h2>UP TO 10&#37; OFF</h2>
 							<div class="features-list">
 								<h3>
-								<?php esc_html_e( 'Check out our end of season sale on the latest Jazz music albums from our vast collection.', 'mannering_music' ); ?>
+								<?php esc_html_e( 'Check out our end of season sale on the latest Jazz music albums from our vast collection.', 'mannering-woocommerce-child' ); ?>
 								</h3>
 							</div>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>/shop/" class="button">Shop Now</a>
@@ -92,7 +92,7 @@
 
 </section>
 
-<h1><?php esc_html_e( 'Welcome to Mannering Music.', 'mannering_music' ); ?></h1>
+<h1><?php esc_html_e( 'Welcome to Mannering Music.', 'mannering-woocommerce-child' ); ?></h1>
 
 <!--main-section-->
 <main id="primary" role="main" >
@@ -103,7 +103,7 @@
 <!--Hip Hop section -->
 <section class="genre-section group">
 
-	<h1><?php esc_html_e( 'Featured Hip Hop Albums', 'mannering_music' ); ?></h1>
+	<h1><?php esc_html_e( 'Featured Hip Hop Albums', 'mannering-woocommerce-child' ); ?></h1>
 
 	<div class="flex-wrapper">
 
@@ -150,7 +150,7 @@
 			<?php wp_reset_postdata(); ?>
 		<?php else : ?>
 			<p>
-				<?php esc_html_e( 'No Products', 'mannering_music' ); ?>
+				<?php esc_html_e( 'No Products', 'mannering-woocommerce-child' ); ?>
 			</p>
 		<?php endif; ?>
 
@@ -166,7 +166,7 @@
 <!--Country section -->
 <section class="genre-section group">
 
-	<h1><?php esc_html_e( 'Featured Country Albums', 'mannering_music' ); ?></h1>
+	<h1><?php esc_html_e( 'Featured Country Albums', 'mannering-woocommerce-child' ); ?></h1>
 
 	<div class="flex-wrapper">
 
@@ -213,7 +213,7 @@
 			<?php wp_reset_postdata(); ?>
 		<?php else : ?>
 			<p>
-				<?php esc_html_e( 'No Products', 'mannering_music' ); ?>
+				<?php esc_html_e( 'No Products', 'mannering-woocommerce-child' ); ?>
 			</p>
 		<?php endif; ?>
 	</div>
@@ -225,7 +225,7 @@
 <!--Jazz section -->
 <section class="genre-section group">
 
-	<h1><?php esc_html_e( 'Featured Jazz Albums', 'mannering_music' ); ?></h1>
+	<h1><?php esc_html_e( 'Featured Jazz Albums', 'mannering-woocommerce-child' ); ?></h1>
 
 	<div class="flex-wrapper">
 
@@ -269,7 +269,7 @@
 			<?php wp_reset_postdata(); ?>
 		<?php else : ?>
 			<p>
-				<?php esc_html_e( 'No Products', 'mannering_music' ); ?>
+				<?php esc_html_e( 'No Products', 'mannering-woocommerce-child' ); ?>
 			</p>
 		<?php endif; ?>
 	</div>

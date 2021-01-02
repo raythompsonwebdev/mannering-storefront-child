@@ -470,7 +470,7 @@ p.no-comments {
 
 @media only screen and (max-width: 1920px) {
 	#page {
-		/*global contact form style*/
+		/* global contact form style */
 	}
 	#page aside#secondary {
 		min-height: 350px;
@@ -627,7 +627,7 @@ p.no-comments {
 		width: 6%;
 		text-align: center;
 		display: inline-block;
-		line-height: 20px;
+		line-height: 30px;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a {
 		color: #fff;
@@ -661,7 +661,7 @@ p.no-comments {
 		display: inline-block;
 		margin-top: 0.5em;
 		margin-bottom: 1em;
-		width: 100%;
+		width: 98%;
 	}
 	#page #content #primary div.product .woocommerce-tabs ul.tabs {
 		list-style: none;
@@ -962,7 +962,12 @@ p.no-comments {
 		width: 100%;
 		line-height: 35px;
 	}
-	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
+	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount bdi {
+		display: block;
+		line-height: 35px;
+		font-size: 125%;
+	}
+	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
 		width: 5%;
 		display: block;
 		height: 100%;
@@ -2288,7 +2293,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row p label span,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order p label span {
-		width: 90%;
+		width: auto;
 		display: inline-block;
 		color: #fff;
 	}
@@ -2501,7 +2506,6 @@ p.no-comments {
 		/*##woo-commerce -shop -indv-product*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.8em;
 		margin: 0;
 		height: auto;
 	}
@@ -3176,7 +3180,6 @@ p.no-comments {
 		display: inline-block;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.85em;
 		height: auto;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
@@ -3297,7 +3300,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 17%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -3333,7 +3336,7 @@ p.no-comments {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: 4%;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -3855,9 +3858,6 @@ p.no-comments {
 		width: 15%;
 		display: inline-block;
 	}
-	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.8em;
-	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 9%;
 	}
@@ -4001,7 +4001,7 @@ p.no-comments {
 		font-size: 0.8em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: 3%;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -4745,11 +4745,8 @@ p.no-comments {
 	#page #content #primary {
 		width: 100%;
 	}
-	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.7em;
-	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
-		width: 10%;
+		width: 9%;
 	}
 	#page #content #primary article.product {
 		width: 15%;
@@ -4902,7 +4899,7 @@ p.no-comments {
 		font-size: 0.85em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 6%;
+		width: 3%;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -5532,10 +5529,10 @@ p.no-comments {
 		display: inline-block;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.7em;
+		font-size: 0.8em;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
-		width: 11%;
+		width: 10%;
 	}
 	#page #content #primary div.product {
 		padding-top: 1em;
@@ -5548,6 +5545,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel {
 		padding: 0.5em;
+		font-size: 0.9em;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel h2 {
 		font-size: 1.2em;
@@ -5635,7 +5633,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 17%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -5659,9 +5657,11 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content #primary div.product div.summary {
-		width: 100%;
+		width: 98%;
 		clear: both;
 		float: none;
+		display: block;
+		margin: auto;
 	}
 	#page #content #primary div.product div.summary h1.product_title {
 		font-size: 1.1em;
@@ -5709,7 +5709,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary form.cart .button {
 		line-height: 40px;
-		width: 30%;
+		width: 48%;
 	}
 	#page #content #primary div.product div.summary form.cart .button:hover {
 		cursor: pointer;
@@ -6366,11 +6366,8 @@ p.no-comments {
 		/*regular-posts and woo-commerce*/
 		/*woo-commerce*/
 	}
-	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.7em;
-	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
-		width: 12%;
+		width: 10%;
 	}
 	#page #content #primary article.product {
 		width: 15%;
@@ -6488,7 +6485,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 16%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -7158,7 +7155,7 @@ p.no-comments {
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.65em;
+		font-size: 0.75em;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 13%;
@@ -7278,7 +7275,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 15%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -7954,9 +7951,6 @@ p.no-comments {
 		/*regular-posts and woo-commerce*/
 		/*woo-commerce*/
 	}
-	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.65em;
-	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 14%;
 	}
@@ -8074,7 +8068,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 15%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -8139,7 +8133,6 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary form.cart .button {
 		line-height: 40px;
-		width: 40%;
 	}
 	#page #content #primary div.product div.summary form.cart .button:hover {
 		cursor: pointer;
@@ -8772,7 +8765,6 @@ p.no-comments {
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.65em;
 		position: unset;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
@@ -8890,7 +8882,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 14%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -8955,7 +8947,6 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary form.cart .button {
 		line-height: 40px;
-		width: 45%;
 	}
 	#page #content #primary div.product div.summary form.cart .button:hover {
 		cursor: pointer;
@@ -9606,9 +9597,6 @@ p.no-comments {
 		/*regular-posts and woo-commerce*/
 		/*woo-commerce*/
 	}
-	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.6em;
-	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 15%;
 	}
@@ -9723,7 +9711,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 15%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -9786,7 +9774,6 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary form.cart .button {
 		line-height: 40px;
-		width: 45%;
 	}
 	#page #content #primary div.product div.summary form.cart .button:hover {
 		cursor: pointer;
@@ -10402,7 +10389,7 @@ p.no-comments {
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.55em;
+		font-size: 0.7em;
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 16%;
@@ -10519,7 +10506,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 15%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -10582,7 +10569,6 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary form.cart .button {
 		line-height: 40px;
-		width: 45%;
 	}
 	#page #content #primary div.product div.summary form.cart .button:hover {
 		cursor: pointer;
@@ -11206,9 +11192,6 @@ p.no-comments {
 		/*regular-posts and woo-commerce*/
 		/*woo-commerce*/
 	}
-	#page #content #primary nav.woocommerce-breadcrumb {
-		font-size: 0.55em;
-	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 16%;
 	}
@@ -11335,7 +11318,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars span a,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars span a {
-		width: 19%;
+		width: 15%;
 	}
 	#page #content #primary div.product .woocommerce-product-gallery,
 	#page #content #primary div.product .woocommerce-product-gallery--with-images,
@@ -11398,7 +11381,6 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary form.cart .button {
 		line-height: 40px;
-		width: 45%;
 	}
 	#page #content #primary div.product div.summary form.cart .button:hover {
 		cursor: pointer;

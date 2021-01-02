@@ -77,7 +77,9 @@
 	</header><!-- #masthead -->
 
 	<nav id="site-navigation" class="main-navigation">
+
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mannering-woocommerce-child' ); ?></button>
+
 				<?php
 				// Checking if there's anything in Top Menu.
 				// if ( has_nav_menu( 'Primary Menu' ) ) {

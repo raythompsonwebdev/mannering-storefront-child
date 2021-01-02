@@ -111,7 +111,7 @@ WooCommerce styles override
 				}
 			}
 		}
-		/*global contact form style*/
+		/* global contact form style */
 		form {
 			button.button {
 				display: block;
@@ -167,7 +167,7 @@ WooCommerce styles override
 						width: 6%;
 						text-align: center;
 						display: inline-block;
-						line-height: 20px;
+						line-height: 30px;
 					}
 
 					a {
@@ -202,7 +202,7 @@ WooCommerce styles override
 						display: inline-block;
 						margin-top: 0.5em;
 						margin-bottom: 1em;
-						width: 100%;
+						width: 98%;
 
 						ul.tabs {
 							list-style: none;
@@ -316,6 +316,7 @@ WooCommerce styles override
 													label {
 														display: block;
 														line-height: 50px;
+
 													}
 												}
 
@@ -483,7 +484,10 @@ WooCommerce styles override
 							span.woocommerce-Price-amount {
 								width: 100%;
 								line-height: 35px;
-
+								bdi{
+									display:block;
+									line-height:35px;
+									font-size: 125%;
 								span.woocommerce-Price-currencySymbol {
 									width: 5%;
 									display: block;
@@ -491,6 +495,8 @@ WooCommerce styles override
 									text-align: left;
 									float: left;
 								}
+							}
+
 							}
 						}
 
@@ -1970,7 +1976,7 @@ WooCommerce styles override
 												}
 
 												span {
-													width: 90%;
+													width: auto;
 													display: inline-block;
 													color: $color2;
 
@@ -2225,7 +2231,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.8em;
 					margin: 0;
 					height: auto;
 
@@ -3136,7 +3141,6 @@ WooCommerce styles override
 					display: inline-block;
 				}
 				nav.woocommerce-breadcrumb {
-					font-size: 0.85em;
 					height: auto;
 
 					a:first-of-type {
@@ -3242,7 +3246,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 17%;
 													}
 												}
 											}
@@ -3287,7 +3291,7 @@ WooCommerce styles override
 								font-size: 0.9em;
 
 								span.woocommerce-Price-currencySymbol {
-									width: 5%;
+									width: 4%;
 								}
 							}
 						}
@@ -4063,7 +4067,6 @@ WooCommerce styles override
 				}
 
 				nav.woocommerce-breadcrumb {
-					font-size: 0.8em;
 
 					a:first-of-type {
 						width: 9%;
@@ -4201,7 +4204,7 @@ WooCommerce styles override
 
 							span.woocommerce-Price-amount {
 								span.woocommerce-Price-currencySymbol {
-									width: 5%;
+									width: 3%;
 								}
 							}
 						}
@@ -5091,10 +5094,9 @@ WooCommerce styles override
 				width: 100%;
 
 				nav.woocommerce-breadcrumb {
-					font-size: 0.7em;
 
 					a:first-of-type {
-						width: 10%;
+						width: 9%;
 					}
 				}
 
@@ -5252,7 +5254,7 @@ WooCommerce styles override
 								font-size: 0.85em;
 
 								span.woocommerce-Price-currencySymbol {
-									width: 6%;
+									width: 3%;
 								}
 							}
 						}
@@ -6026,10 +6028,10 @@ WooCommerce styles override
 				}
 
 				nav.woocommerce-breadcrumb {
-					font-size: 0.7em;
+					font-size: 0.8em;
 
 					a:first-of-type {
-						width: 11%;
+						width: 10%;
 					}
 				}
 
@@ -6045,6 +6047,7 @@ WooCommerce styles override
 
 						.panel {
 							padding: 0.5em;
+							font-size: 0.9em;
 
 							h2 {
 								font-size: 1.2em;
@@ -6121,7 +6124,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 17%;
 													}
 												}
 											}
@@ -6151,9 +6154,11 @@ WooCommerce styles override
 					}
 
 					div.summary {
-						width: 100%;
+						width: 98%;
 						clear: both;
 						float: none;
+						display: block;
+    		margin: auto;
 
 						h1.product_title {
 							font-size: 1.1em;
@@ -6210,7 +6215,7 @@ WooCommerce styles override
 
 							.button {
 								line-height: 40px;
-								width: 30%;
+								width: 48%;
 
 								&:hover {
 									cursor: pointer;
@@ -7025,10 +7030,9 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.7em;
 
 					a:first-of-type {
-						width: 12%;
+						width: 10%;
 					}
 				}
 
@@ -7134,7 +7138,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 16%;
 													}
 												}
 											}
@@ -7944,7 +7948,7 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.65em;
+					font-size: 0.75em;
 
 					a:first-of-type {
 						width: 13%;
@@ -8051,7 +8055,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 15%;
 													}
 												}
 											}
@@ -8866,7 +8870,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.65em;
 
 					a:first-of-type {
 						width: 14%;
@@ -8971,7 +8974,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 15%;
 													}
 												}
 											}
@@ -9052,7 +9055,6 @@ WooCommerce styles override
 
 							.button {
 								line-height: 40px;
-								width: 40%;
 
 								&:hover {
 									cursor: pointer;
@@ -9800,7 +9802,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.65em;
 					position: unset;
 
 					a:first-of-type {
@@ -9906,7 +9907,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 14%;
 													}
 												}
 											}
@@ -9987,7 +9988,6 @@ WooCommerce styles override
 
 							.button {
 								line-height: 40px;
-								width: 45%;
 
 								&:hover {
 									cursor: pointer;
@@ -10756,7 +10756,7 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.6em;
+
 
 					a:first-of-type {
 						width: 15%;
@@ -10861,7 +10861,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 15%;
 													}
 												}
 											}
@@ -10940,7 +10940,6 @@ WooCommerce styles override
 
 							.button {
 								line-height: 40px;
-								width: 45%;
 
 								&:hover {
 									cursor: pointer;
@@ -11670,7 +11669,7 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.55em;
+					font-size: 0.7em;
 
 					a:first-of-type {
 						width: 16%;
@@ -11776,7 +11775,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 15%;
 													}
 												}
 											}
@@ -11854,7 +11853,6 @@ WooCommerce styles override
 
 							.button {
 								line-height: 40px;
-								width: 45%;
 
 								&:hover {
 									cursor: pointer;
@@ -12589,7 +12587,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-					font-size: 0.55em;
 
 					a:first-of-type {
 						width: 16%;
@@ -12712,7 +12709,7 @@ WooCommerce styles override
 
 												span {
 													a {
-														width: 19%;
+														width: 15%;
 													}
 												}
 											}
@@ -12791,7 +12788,6 @@ WooCommerce styles override
 
 							.button {
 								line-height: 40px;
-								width: 45%;
 
 								&:hover {
 									cursor: pointer;
