@@ -3,10 +3,10 @@ Theme Name: mannering_music
 
 WooCommerce styles override
 */
-@import 'partials/fonts';
-@import 'partials/variables';
-@import 'partials/mixins';
-@import 'partials/woobase';
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/woobase";
 
 @media only screen and (max-width: 1920px) {
 	#page {
@@ -161,7 +161,6 @@ WooCommerce styles override
 					line-height: 20px;
 					width: 100%;
 					margin: 0;
-					height: auto;
 
 					a:first-of-type {
 						width: 6%;
@@ -195,9 +194,6 @@ WooCommerce styles override
 						@include boredrady(5px);
 					}
 
-					/**
-											* Tabs
-											*/
 					.woocommerce-tabs {
 						display: inline-block;
 						margin-top: 0.5em;
@@ -316,7 +312,6 @@ WooCommerce styles override
 													label {
 														display: block;
 														line-height: 50px;
-
 													}
 												}
 
@@ -484,19 +479,18 @@ WooCommerce styles override
 							span.woocommerce-Price-amount {
 								width: 100%;
 								line-height: 35px;
-								bdi{
-									display:block;
-									line-height:35px;
-									font-size: 125%;
-								span.woocommerce-Price-currencySymbol {
-									width: 5%;
+								bdi {
 									display: block;
-									height: 100%;
-									text-align: left;
-									float: left;
+									line-height: 35px;
+									font-size: 125%;
+									span.woocommerce-Price-currencySymbol {
+										width: 5%;
+										display: block;
+										height: 100%;
+										text-align: left;
+										float: left;
+									}
 								}
-							}
-
 							}
 						}
 
@@ -761,7 +755,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 90%;
 								font-size: 0.9em;
 								display: block;
@@ -828,7 +822,7 @@ WooCommerce styles override
 								text-align: right;
 								clear: both;
 								&::before {
-									content: attr(data-title) ': ';
+									content: attr(data-title) ": ";
 									float: left;
 								}
 								.actions::before {
@@ -929,7 +923,7 @@ WooCommerce styles override
 										font-size: 0.85em;
 									}
 
-									input[type='number'] {
+									input[type="number"] {
 										width: 90%;
 										display: block;
 										margin: 0;
@@ -1006,9 +1000,6 @@ WooCommerce styles override
 									float: left;
 									height: 45px;
 									width: 80%;
-
-									display: -webkit-flex;
-									display: -ms-flexbox;
 									display: flex;
 									-webkit-flex-flow: row wrap;
 									-ms-flex-flow: row wrap;
@@ -1033,9 +1024,9 @@ WooCommerce styles override
 										flex: 0 0 auto;
 									}
 
-									input[type='text'],
-									input[type='password'],
-									input[type='email'] {
+									input[type="text"],
+									input[type="password"],
+									input[type="email"] {
 										line-height: 45px;
 										height: 45px;
 										width: 30%;
@@ -1383,8 +1374,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type='text'],
-									input[type='email'] {
+									input[type="text"],
+									input[type="email"] {
 										margin: 0;
 									}
 
@@ -1522,7 +1513,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type='number'] {
+												input[type="number"] {
 													width: 90%;
 													display: block;
 													margin: 0;
@@ -1626,9 +1617,9 @@ WooCommerce styles override
 													flex: 0 0 auto;
 												}
 
-												input[type='text'],
-												input[type='password'],
-												input[type='email'] {
+												input[type="text"],
+												input[type="password"],
+												input[type="email"] {
 													line-height: 45px;
 													height: 45px;
 													width: 30%;
@@ -1780,7 +1771,6 @@ WooCommerce styles override
 									}
 
 									tbody {
-
 										tr.cart_item {
 											td {
 												padding: 0;
@@ -1970,8 +1960,8 @@ WooCommerce styles override
 											label {
 												display: block;
 
-												input[type='checkbox'],
-												input[type='radio'] {
+												input[type="checkbox"],
+												input[type="radio"] {
 													margin: 0 0.5em;
 												}
 
@@ -2217,7 +2207,6 @@ WooCommerce styles override
 /*1440*/
 @media only screen and (max-width: 1440px) {
 	#page {
-
 		form {
 			button.button {
 				width: 20%;
@@ -2520,7 +2509,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -2630,7 +2619,6 @@ WooCommerce styles override
 							}
 						}
 
-
 						div.woocommerce-info {
 							font-size: 0.9em;
 							padding: 0.5em;
@@ -2643,7 +2631,6 @@ WooCommerce styles override
 								}
 							}
 						}
-
 
 						nav.woocommerce-MyAccount-navigation {
 							height: 45px;
@@ -2671,8 +2658,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type='text'],
-									input[type='email'] {
+									input[type="text"],
+									input[type="email"] {
 										margin: 0;
 									}
 
@@ -2700,10 +2687,8 @@ WooCommerce styles override
 							}
 						}
 
-
 						form.woocommerce-cart-form {
 							padding: 0;
-
 
 							table.shop_table {
 								thead {
@@ -2741,7 +2726,6 @@ WooCommerce styles override
 								}
 
 								tbody {
-
 									tr.cart_item {
 										padding: 0;
 
@@ -2775,7 +2759,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type='number'] {
+												input[type="number"] {
 													height: 35px;
 												}
 											}
@@ -2822,9 +2806,9 @@ WooCommerce styles override
 													width: 15%;
 												}
 
-												input[type='text'],
-												input[type='password'],
-												input[type='email'] {
+												input[type="text"],
+												input[type="password"],
+												input[type="email"] {
 													font-size: 0.9em;
 												}
 
@@ -2838,12 +2822,9 @@ WooCommerce styles override
 							}
 						}
 
-
 						form.woocommerce-checkout {
-
 							div#customer_details {
 								padding: 1em;
-
 
 								.col-1,
 								.col-2 {
@@ -2874,7 +2855,6 @@ WooCommerce styles override
 									}
 
 									tbody {
-
 										tr.cart_item {
 											td {
 												padding: 0;
@@ -3007,7 +2987,6 @@ WooCommerce styles override
 							}
 						}
 
-
 						div.wc-proceed-to-checkout {
 							a {
 								width: 25%;
@@ -3017,7 +2996,6 @@ WooCommerce styles override
 								}
 							}
 						}
-
 
 						div.cart-collaterals {
 							div.cart_totals {
@@ -3124,7 +3102,6 @@ WooCommerce styles override
 /*1280*/
 @media only screen and (max-width: 1280px) {
 	#page {
-
 		form {
 			button.button {
 				width: 25%;
@@ -3439,7 +3416,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -3537,7 +3514,6 @@ WooCommerce styles override
 							}
 						}
 
-
 						div.woocommerce-info {
 							padding: 0.5em;
 
@@ -3549,7 +3525,6 @@ WooCommerce styles override
 								}
 							}
 						}
-
 
 						nav.woocommerce-MyAccount-navigation {
 							height: 45px;
@@ -3577,8 +3552,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type='text'],
-									input[type='email'] {
+									input[type="text"],
+									input[type="email"] {
 										margin: 0;
 									}
 
@@ -3606,10 +3581,8 @@ WooCommerce styles override
 							}
 						}
 
-
 						form.woocommerce-cart-form {
 							padding: 0;
-
 
 							table.shop_table {
 								thead {
@@ -3652,7 +3625,6 @@ WooCommerce styles override
 								}
 
 								tbody {
-
 									tr.cart_item {
 										padding: 0;
 
@@ -3686,7 +3658,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type='number'] {
+												input[type="number"] {
 													height: 35px;
 												}
 											}
@@ -3733,9 +3705,9 @@ WooCommerce styles override
 													width: 16%;
 												}
 
-												input[type='text'],
-												input[type='password'],
-												input[type='email'] {
+												input[type="text"],
+												input[type="password"],
+												input[type="email"] {
 													font-size: 0.9em;
 												}
 
@@ -3749,12 +3721,9 @@ WooCommerce styles override
 							}
 						}
 
-
 						form.woocommerce-checkout {
-
 							div#customer_details {
 								padding: 1em;
-
 
 								.col-1,
 								.col-2 {
@@ -3785,7 +3754,6 @@ WooCommerce styles override
 									}
 
 									tbody {
-
 										tr.cart_item {
 											td {
 												padding: 0;
@@ -3916,7 +3884,6 @@ WooCommerce styles override
 							}
 						}
 
-
 						div.wc-proceed-to-checkout {
 							a {
 								width: 25%;
@@ -3926,7 +3893,6 @@ WooCommerce styles override
 								}
 							}
 						}
-
 
 						div.cart-collaterals {
 							div.cart_totals {
@@ -4037,7 +4003,6 @@ WooCommerce styles override
 /*1024*/
 @media only screen and (max-width: 1024px) {
 	#page {
-
 		form {
 			button.button {
 				width: 25%;
@@ -4067,7 +4032,6 @@ WooCommerce styles override
 				}
 
 				nav.woocommerce-breadcrumb {
-
 					a:first-of-type {
 						width: 9%;
 					}
@@ -4353,7 +4317,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -4452,7 +4416,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 
@@ -4464,7 +4427,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 85%;
@@ -4492,8 +4454,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -4521,10 +4483,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -4562,7 +4522,6 @@ WooCommerce styles override
 									}
 
 									tbody {
-
 										tr.cart_item {
 											padding: 0;
 
@@ -4598,7 +4557,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -4645,9 +4604,9 @@ WooCommerce styles override
 														width: 17%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -4661,12 +4620,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -4697,7 +4653,6 @@ WooCommerce styles override
 										}
 
 										tbody {
-
 											tr.cart_item {
 												td {
 													padding: 0;
@@ -4829,7 +4784,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 30%;
@@ -4839,7 +4793,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -4947,8 +4900,6 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 @media only screen and (max-width: 960px) {
@@ -5067,7 +5018,6 @@ WooCommerce styles override
 			}
 		}
 
-
 		form {
 			button.button {
 				width: 25%;
@@ -5094,7 +5044,6 @@ WooCommerce styles override
 				width: 100%;
 
 				nav.woocommerce-breadcrumb {
-
 					a:first-of-type {
 						width: 9%;
 					}
@@ -5399,7 +5348,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -5497,7 +5446,6 @@ WooCommerce styles override
 							}
 						}
 
-
 						div.woocommerce-info {
 							padding: 0.5em;
 
@@ -5509,7 +5457,6 @@ WooCommerce styles override
 								}
 							}
 						}
-
 
 						nav.woocommerce-MyAccount-navigation {
 							font-size: 85%;
@@ -5537,8 +5484,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type='text'],
-									input[type='email'] {
+									input[type="text"],
+									input[type="email"] {
 										margin: 0;
 									}
 
@@ -5566,10 +5513,8 @@ WooCommerce styles override
 							}
 						}
 
-
 						form.woocommerce-cart-form {
 							padding: 0;
-
 
 							table.shop_table {
 								thead {
@@ -5607,7 +5552,6 @@ WooCommerce styles override
 								}
 
 								tbody {
-
 									tr.cart_item {
 										padding: 0;
 
@@ -5643,7 +5587,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type='number'] {
+												input[type="number"] {
 													height: 35px;
 												}
 											}
@@ -5690,9 +5634,9 @@ WooCommerce styles override
 													width: 18%;
 												}
 
-												input[type='text'],
-												input[type='password'],
-												input[type='email'] {
+												input[type="text"],
+												input[type="password"],
+												input[type="email"] {
 													font-size: 0.9em;
 												}
 
@@ -5706,12 +5650,9 @@ WooCommerce styles override
 							}
 						}
 
-
 						form.woocommerce-checkout {
-
 							div#customer_details {
 								padding: 1em;
-
 
 								.col-1,
 								.col-2 {
@@ -5742,7 +5683,6 @@ WooCommerce styles override
 									}
 
 									tbody {
-
 										tr.cart_item {
 											td {
 												padding: 0;
@@ -5873,7 +5813,6 @@ WooCommerce styles override
 							}
 						}
 
-
 						div.wc-proceed-to-checkout {
 							a {
 								width: 30%;
@@ -5883,7 +5822,6 @@ WooCommerce styles override
 								}
 							}
 						}
-
 
 						div.cart-collaterals {
 							div.cart_totals {
@@ -5990,14 +5928,11 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 /*800*/
 @media only screen and (max-width: 800px) {
 	#page {
-
 		form {
 			button.button {
 				width: 25%;
@@ -6158,7 +6093,7 @@ WooCommerce styles override
 						clear: both;
 						float: none;
 						display: block;
-    		margin: auto;
+						margin: auto;
 
 						h1.product_title {
 							font-size: 1.1em;
@@ -6325,7 +6260,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 85%;
 								font-size: 0.85em;
 
@@ -6422,7 +6357,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 
@@ -6434,7 +6368,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 80%;
@@ -6462,8 +6395,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -6491,10 +6424,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -6537,7 +6468,6 @@ WooCommerce styles override
 									}
 
 									tbody {
-
 										tr.cart_item {
 											padding: 0;
 
@@ -6573,7 +6503,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -6622,9 +6552,9 @@ WooCommerce styles override
 														width: 19%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -6639,12 +6569,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -6675,7 +6602,6 @@ WooCommerce styles override
 										}
 
 										tbody {
-
 											tr.cart_item {
 												td {
 													padding: 0;
@@ -6806,7 +6732,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 35%;
@@ -6926,8 +6851,6 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 //768px
@@ -6937,7 +6860,6 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait -Apple iPhone 6#### */
 @media only screen and (max-width: 667px) {
 	#page {
-
 		form {
 			button.button {
 				width: 35%;
@@ -6959,11 +6881,11 @@ WooCommerce styles override
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -7030,7 +6952,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-
 					a:first-of-type {
 						width: 10%;
 					}
@@ -7322,7 +7243,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.8em;
 
@@ -7417,7 +7338,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 								font-size: 0.8em;
@@ -7430,7 +7350,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 75%;
@@ -7468,8 +7387,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -7497,10 +7416,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -7576,7 +7493,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -7623,9 +7540,9 @@ WooCommerce styles override
 														width: 20%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -7640,12 +7557,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -7808,7 +7722,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 40%;
@@ -7818,7 +7731,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -7927,14 +7839,11 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 640px) {
 	#page {
-
 		form {
 			button.button {
 				width: 45%;
@@ -8242,7 +8151,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -8343,7 +8252,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 
@@ -8355,7 +8263,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 70%;
@@ -8389,8 +8296,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -8418,10 +8325,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -8495,7 +8400,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -8544,9 +8449,9 @@ WooCommerce styles override
 														font-size: 0.9em;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -8560,12 +8465,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -8727,7 +8629,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 45%;
@@ -8737,7 +8638,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -8846,8 +8746,6 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 /* #### I Phone 5 Landscape #### */
@@ -8857,7 +8755,6 @@ WooCommerce styles override
 	}
 
 	#page {
-
 		form {
 			button.button {
 				width: 45%;
@@ -8870,7 +8767,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-
 					a:first-of-type {
 						width: 14%;
 					}
@@ -9169,7 +9065,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -9270,7 +9166,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 
@@ -9282,7 +9177,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 65%;
@@ -9321,8 +9215,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -9350,10 +9244,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -9427,7 +9319,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -9478,9 +9370,9 @@ WooCommerce styles override
 														width: 25%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -9495,12 +9387,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -9662,7 +9551,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 50%;
@@ -9672,7 +9560,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -9781,14 +9668,11 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 480px) {
 	#page {
-
 		form {
 			button.button {
 				width: 60%;
@@ -10102,7 +9986,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -10215,7 +10099,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 								font-size: 0.7em;
@@ -10228,7 +10111,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								position: unset;
@@ -10274,8 +10156,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -10303,10 +10185,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -10382,7 +10262,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -10433,9 +10313,9 @@ WooCommerce styles override
 														width: 25%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -10449,12 +10329,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -10485,7 +10362,6 @@ WooCommerce styles override
 										}
 
 										tbody {
-
 											tr.cart_item {
 												td {
 													padding: 0;
@@ -10616,7 +10492,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 55%;
@@ -10626,7 +10501,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -10737,13 +10611,11 @@ WooCommerce styles override
 			}
 		}
 	}
-
 }
 
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 414px) {
 	#page {
-
 		form {
 			button.button {
 				width: 60%;
@@ -10756,8 +10628,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-
-
 					a:first-of-type {
 						width: 15%;
 					}
@@ -11043,7 +10913,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.8em;
 
@@ -11138,7 +11008,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 								font-size: 0.7em;
@@ -11151,7 +11020,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 65%;
@@ -11184,8 +11052,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -11213,10 +11081,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -11292,7 +11158,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -11344,9 +11210,9 @@ WooCommerce styles override
 														width: 25%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -11360,12 +11226,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -11396,7 +11259,6 @@ WooCommerce styles override
 										}
 
 										tbody {
-
 											tr.cart_item {
 												td {
 													padding: 0;
@@ -11527,7 +11389,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 55%;
@@ -11537,7 +11398,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -11648,14 +11508,11 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 360px) {
 	#page {
-
 		form {
 			button.button {
 				width: 60%;
@@ -11956,7 +11813,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.8em;
 
@@ -12038,7 +11895,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 								font-size: 0.6em;
@@ -12051,7 +11907,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 65%;
@@ -12088,8 +11943,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -12117,10 +11972,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -12197,7 +12050,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -12255,9 +12108,9 @@ WooCommerce styles override
 														width: 25%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -12271,12 +12124,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -12307,7 +12157,6 @@ WooCommerce styles override
 										}
 
 										tbody {
-
 											tr.cart_item {
 												td {
 													padding: 0;
@@ -12445,7 +12294,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 65%;
@@ -12455,7 +12303,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -12566,14 +12413,11 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 320px) {
 	#page {
-
 		form {
 			button.button {
 				width: 60%;
@@ -12587,7 +12431,6 @@ WooCommerce styles override
 		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
-
 					a:first-of-type {
 						width: 16%;
 					}
@@ -12889,7 +12732,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^='nofollow'] {
+							a[rel^="nofollow"] {
 								width: 75%;
 								font-size: 0.75em;
 
@@ -12971,7 +12814,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.woocommerce-info {
 								padding: 0.5em;
 								font-size: 0.6em;
@@ -12984,7 +12826,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 65%;
@@ -13017,8 +12858,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type='text'],
-										input[type='email'] {
+										input[type="text"],
+										input[type="email"] {
 											margin: 0;
 										}
 
@@ -13046,10 +12887,8 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-cart-form {
 								padding: 0;
-
 
 								table.shop_table {
 									thead {
@@ -13125,7 +12964,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type='number'] {
+													input[type="number"] {
 														height: 35px;
 													}
 												}
@@ -13183,9 +13022,9 @@ WooCommerce styles override
 														width: 25%;
 													}
 
-													input[type='text'],
-													input[type='password'],
-													input[type='email'] {
+													input[type="text"],
+													input[type="password"],
+													input[type="email"] {
 														font-size: 0.9em;
 													}
 
@@ -13199,12 +13038,9 @@ WooCommerce styles override
 								}
 							}
 
-
 							form.woocommerce-checkout {
-
 								div#customer_details {
 									padding: 1em;
-
 
 									.col-1,
 									.col-2 {
@@ -13235,7 +13071,6 @@ WooCommerce styles override
 										}
 
 										tbody {
-
 											tr.cart_item {
 												td {
 													padding: 0;
@@ -13373,7 +13208,6 @@ WooCommerce styles override
 								}
 							}
 
-
 							div.wc-proceed-to-checkout {
 								a {
 									width: 75%;
@@ -13383,7 +13217,6 @@ WooCommerce styles override
 									}
 								}
 							}
-
 
 							div.cart-collaterals {
 								div.cart_totals {
@@ -13494,6 +13327,4 @@ WooCommerce styles override
 			}
 		}
 	}
-
-
 }

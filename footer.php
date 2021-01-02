@@ -5,7 +5,7 @@
  * Contains the closing of the #content div and all content after.
  *
  * @category   Footer_Page
- * @package    mannering_music
+ *
  * @subpackage Footer_Page
  * @author     Raymond Thompson <ray_thomp@hushmail.com>
  * @copyright  2017 Raymond Thompson
@@ -20,18 +20,18 @@
 </div><!-- #main-content -->
 	<footer id="colophon" class="site-footer">
 		<?php
-			//if ( has_nav_menu( 'Secondary Menu' ) ) {
+			// if ( has_nav_menu( 'Secondary Menu' ) ) {
 				// If there is, adds the Top Menu area.
 				wp_nav_menu(
 					array(
-						'menu'      => 'secondary',
-						'container' => 'ul',
-						'menu_id' => 'menu-secondary',
-						'theme_location' => 'Secondary'
+						'menu'           => 'secondary',
+						'container'      => 'ul',
+						'menu_id'        => 'menu-secondary',
+						'theme_location' => 'Secondary',
 					)
 				);
-			//}
-		?>
+				// }
+				?>
 		<div class="social-btns">
 			<ul>
 				<li><a href="#"><i class="fa fa-twitter soc"></i></a></li>
@@ -57,9 +57,9 @@
 				?>
 
 		<?php
-			$dt             = time();
-			$mysql_datetime = strftime( '%Y-%m-%d %H:%M:%S', $dt );
-			printf( esc_html__( 'Page was last updated :', 'mannering_music' ), esc_html( $mysql_datetime, 'mannering_music' ), 'mannering_music' );
+			// $dt             = time();
+			// $mysql_datetime = strftime( '%Y-%m-%d %H:%M:%S', $dt );
+			// printf( esc_html__( 'Page was last updated :', 'mannering_music' ),  $mysql_datetime);
 
 		?>
 

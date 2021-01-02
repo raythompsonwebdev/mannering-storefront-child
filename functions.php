@@ -39,7 +39,6 @@ if ( ! function_exists( 'mannering_woocommerce_child_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
@@ -52,6 +51,7 @@ if ( ! function_exists( 'mannering_woocommerce_child_setup' ) ) :
 
 		// Create three new image sizes.
 		add_image_size( 'featured-image', 783, 9999 );
+
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -148,10 +148,10 @@ add_action( 'widgets_init', 'mannering_woocommerce_child_widgets_init' );
 /**
  * Google fonts.
  */
-function mannering_music_add_google_fonts() {
+function mannering_woocommerce_child_add_google_fonts() {
 	wp_enqueue_style( 'storefront-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins', '1.1', true );
 }
-add_action( 'wp_enqueue_scripts', 'mannering_music_add_google_fonts' );
+add_action( 'wp_enqueue_scripts', 'mannering_woocommerce_child_add_google_fonts' );
 
 /**
  * Enqueue scripts and styles.
@@ -162,15 +162,13 @@ function mannering_woocommerce_child_scripts() {
 
 	wp_enqueue_style( 'woocommerce-css', get_stylesheet_directory_uri() . '/woocommerce.css', false, MANNERING_WOOCOMMERCE_CHILD_VERSION, 'all' );
 
-	wp_enqueue_script( 'mannering-woocommerce-child-navigation', get_template_directory_uri() . '/js/navigation.js', array(), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
-
-	wp_enqueue_style( 'bx-slider', get_stylesheet_directory_uri() . '/js/bxslider-4-master/jquery.bxslider.css', false, MANNERING_WOOCOMMERCE_CHILD_VERSION, 'all' );
-
 	wp_enqueue_style( 'fontawesome', get_stylesheet_directory_uri() . '/fonts/fontawesome/css/font-awesome.min.css', false, MANNERING_WOOCOMMERCE_CHILD_VERSION, 'all' );
 
-	wp_enqueue_script( 'mannering-woocommerce-child-index', get_stylesheet_directory_uri() . '/js/index.js', array( 'jquery' ), '20161110', true );
+	wp_enqueue_script( 'mannering-woocommerce-child-navigation', get_template_directory_uri() . '/js/navigation.js', array(), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
 
-	wp_enqueue_script( 'mannering-woocommerce-child-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
+	wp_enqueue_script( 'mannering-woocommerce-child-index', get_template_directory_uri() . '/js/index.js', array( 'jquery' ), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
+
+	wp_enqueue_script( 'mannering-woocommerce-child-navigation', get_template_directory_uri() . '/js/navigation.js', array(), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -195,21 +193,6 @@ function mannering_woocommerce_child_front_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mannering_woocommerce_child_front_scripts' );
 
-/**
- * Audio Page functions.
- *
- * @return void
- */
-function mannering_woocommerce_child_audio_audio_scripts() {
-
-	if ( is_page( 'audio' ) ) {
-		wp_enqueue_script( 'tabs', get_stylesheet_directory_uri() . '/js/tabs.js', array( 'jquery' ), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
-
-		wp_enqueue_script( 'audio', get_stylesheet_directory_uri() . '/js/audio-script.js', array( 'jquery' ), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
-
-	}
-}
-add_action( 'wp_enqueue_scripts', 'mannering_woocommerce_child_audio_audio_scripts' );
 
 /**
  * Implement the Custom Header feature.

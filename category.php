@@ -20,7 +20,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 
-	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+	<?php $mannering_woocommerce_child_post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
 	<?php /* If this is a category archive */ if ( is_category() ) { ?>
 
@@ -28,42 +28,42 @@ get_header(); ?>
 
 		<?php
 		/* If this is a tag archive */
-} elseif ( is_tag() ) {
-	?>
+	} elseif ( is_tag() ) {
+		?>
  <h2>Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
 
-	<?php
-	/* If this is a daily archive */
-} elseif ( is_day() ) {
-	?>
+		<?php
+		/* If this is a daily archive */
+	} elseif ( is_day() ) {
+		?>
  <h2>Archive for <?php the_time( get_option( 'F, Js, Y' ) ); ?></h2>
 
-	<?php
-	/* If this is a monthly archive */
-} elseif ( is_month() ) {
-	?>
+		<?php
+		/* If this is a monthly archive */
+	} elseif ( is_month() ) {
+		?>
  <h2>Archive for <?php the_time( get_option( 'F, Y' ) ); ?></h2>
 
-	<?php
-	/* If this is a yearly archive */
-} elseif ( is_year() ) {
-	?>
+		<?php
+		/* If this is a yearly archive */
+	} elseif ( is_year() ) {
+		?>
  <h2>Archive for <?php the_time( get_option( 'Y' ) ); ?></h2>
 
-	<?php
-	/* If this is an author archive */
-} elseif ( is_author() ) {
-	?>
+		<?php
+		/* If this is an author archive */
+	} elseif ( is_author() ) {
+		?>
  <h2>Author Archive</h2>
 
-	<?php
-	/* If this is a paged archive */
-} elseif ( isset( $_GET['paged'] ) && ! empty( $_GET['paged'] ) ) {// input var okay; sanitization okay.
-	?>
+		<?php
+		/* If this is a paged archive */
+	} elseif ( isset( $_GET['paged'] ) && ! empty( $_GET['paged'] ) ) {// input var okay; sanitization okay.
+		?>
 
  <h2>Blog <?php the_title(); ?></h2>
 
-<?php } ?>
+	<?php } ?>
 
 
 	<?php
@@ -73,7 +73,7 @@ get_header(); ?>
 
 
 		<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-	 
+
 
 	<?php endwhile; ?>
 
@@ -89,7 +89,7 @@ get_header(); ?>
 </main>
 
 		<!--main-end-->
-		
+
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

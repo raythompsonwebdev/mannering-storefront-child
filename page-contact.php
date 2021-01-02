@@ -16,7 +16,7 @@
  * @link       http:www.raythompsonwebdev.co.uk.storefront
  */
 
- get_header(); ?>
+get_header(); ?>
 
 <!--Content box-->
 
@@ -36,23 +36,23 @@
 		<label for="name">
 			<?php esc_html_e( 'Full Name', 'mannering-woocommerce-child' ); ?>
 		</label>
-		<input type="text" id="name" name="name" title="<?php echo esc_attr( 'Please enter your name', 'mannering-woocommerce-child' ); ?>"
-		 required autofocus placeholder="Last, First" value="">
+		<input type="text" id="name" name="name" title="<?php esc_html_e( 'Please enter your name', 'mannering-woocommerce-child' ); ?>"
+		required autofocus placeholder="Last, First" value="">
 
 		<br />
 
 		<label for="email">
 			<?php esc_html_e( 'E-mail', 'mannering-woocommerce-child' ); ?>
 		</label>
-		<input id="email" name="email" type="email" placeholder="enter email address here" title="<?php echo esc_attr( 'Please Enter Your Email Address', 'mannering-woocommerce-child' ); ?>"
-		 required autocomplete="off">
+		<input id="email" name="email" type="email" placeholder="<?php esc_html_e( 'enter email address here', 'mannering-woocommerce-child' ); ?>" title="<?php esc_html_e( 'Please Enter Your Email Address', 'mannering-woocommerce-child' ); ?>"
+		required autocomplete="off">
 
 		<br />
 
 		<label for="message">
 			<?php esc_html_e( 'Message', 'mannering-woocommerce-child' ); ?>
 		</label>
-		<textarea name="message" id="message" cols="30" rows="10" placeholder="Write message here (No HTML Allowed)"><?php //echo esc_textarea( $text ); ?></textarea>
+		<textarea name="message" id="message" cols="30" rows="10" placeholder="Write message here (No HTML Allowed)"></textarea>
 
 		<br /><br />
 

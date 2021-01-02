@@ -1,6 +1,6 @@
 <?php
 /**
- * mannering-woocommerce-child Theme Customizer
+ * Mannering-woocommerce-child Theme Customizer
  *
  * @package mannering-woocommerce-child
  */

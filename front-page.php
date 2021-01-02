@@ -108,17 +108,17 @@
 	<div class="flex-wrapper">
 
 		<?php
-		$params   = array(
+		$mannering_woocommerce_child_params   = array(
 			'posts_per_page' => 5,
 			'post_type'      => 'product',
 			'product_cat'    => 'hip-hop',
-		); // 1.
-		$wc_query = new WP_Query( $params ); // 2.
+		);
+		$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 		?>
-		<?php if ( $wc_query->have_posts() ) : // 3. ?>
+		<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) : // 3. ?>
 			<?php
-			while ( $wc_query->have_posts() ) : // 4.
-				$wc_query->the_post(); // 4.1.
+			while ( $mannering_woocommerce_child_wc_query->have_posts() ) : // 4.
+				$mannering_woocommerce_child_wc_query->the_post(); // 4.1.
 				?>
 
 				<figure class="grid-1-of-5">
@@ -171,17 +171,17 @@
 	<div class="flex-wrapper">
 
 		<?php
-		$params   = array(
+		$mannering_woocommerce_child_params   = array(
 			'posts_per_page' => 5,
 			'post_type'      => 'product',
 			'product_cat'    => 'country',
 		);
-		$wc_query = new WP_Query( $params );
+		$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 		?>
-		<?php if ( $wc_query->have_posts() ) : ?>
+		<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) : ?>
 			<?php
-			while ( $wc_query->have_posts() ) :
-				$wc_query->the_post();
+			while ( $mannering_woocommerce_child_wc_query->have_posts() ) :
+				$mannering_woocommerce_child_wc_query->the_post();
 				?>
 				<figure class="grid-1-of-5">
 
@@ -230,17 +230,17 @@
 	<div class="flex-wrapper">
 
 		<?php
-		$params   = array(
+		$mannering_woocommerce_child_params   = array(
 			'posts_per_page' => 5,
 			'post_type'      => 'product',
 			'product_cat'    => 'jazz',
 		);
-		$wc_query = new WP_Query( $params );
+		$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 		?>
-		<?php if ( $wc_query->have_posts() ) : ?>
+		<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) : ?>
 			<?php
-			while ( $wc_query->have_posts() ) :
-				$wc_query->the_post();
+			while ( $mannering_woocommerce_child_wc_query->have_posts() ) :
+				$mannering_woocommerce_child_wc_query->the_post();
 				?>
 				<figure class="grid-1-of-5">
 

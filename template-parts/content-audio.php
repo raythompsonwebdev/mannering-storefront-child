@@ -4,36 +4,36 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mannering-storefront-child-theme.
+ * @package mannering-woocommerce-child.
  */
 
 ?>
 
-<!--tab menu-->
+<!-- tab menu -->
 	<ul id="tabs" class="clearfix">
 		<li><a href="#">Hip Hop</a></li>
 		<li><a href="#">Country</a></li>
 		<li><a href="#">Jazz</a></li>
 	</ul>
 
-	<!--tab content-->
+	<!-- tab content -->
 	<div class="tab-content">
 
-		<!--tab Hip Hop-->
+		<!-- tab Hip Hop -->
 		<div class="tab">
 			<?php
-				$params = array(
+				$mannering_woocommerce_child_params = array(
 					'posts_per_page' => 5,
 					'post_type'      => 'product',
 					'product_cat'    => 'hip-hop',
 
-				); // 1.
-				$wc_query = new WP_Query( $params ); // 2.
+				);
+				$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 				?>
-			<?php if ( $wc_query->have_posts() ) : // 3. ?>
+			<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) :  ?>
 				<?php
-				while ( $wc_query->have_posts() ) : // 4.
-					$wc_query->the_post(); // 4.1.
+				while ( $mannering_woocommerce_child_wc_query->have_posts() ) :
+					$mannering_woocommerce_child_wc_query->the_post();
 					?>
 				<article class="hiphop_panel">
 
@@ -51,7 +51,7 @@
 						<?php endif; ?>
 
 						<ul>
-							<li><?php the_title(); // 4.2. ?></li>
+							<li><?php the_title(); ?></li>
 							<li></li>
 							<li></li>
 						</ul>
@@ -97,10 +97,10 @@
 				</article>
 
 			<?php endwhile; ?>
-				<?php wp_reset_postdata(); // 5. ?>
+				<?php wp_reset_postdata(); ?>
 			<?php else : ?>
 			<p>
-				<?php esc_html__( 'No Products', 'mannering-storefront-child-theme' ); // 6. ?>
+				<?php esc_html__( 'No Products', 'mannering-woocommerce-child' );  ?>
 			</p>
 			<?php endif; ?>
 
@@ -109,17 +109,17 @@
 		<!--tab Country-->
 		<div class="tab">
 			<?php
-				$params   = array(
+				$mannering_woocommerce_child_params   = array(
 					'posts_per_page' => 5,
 					'post_type'      => 'product',
 					'product_cat'    => 'country',
 				);
-				$wc_query = new WP_Query( $params );
+				$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 				?>
-			<?php if ( $wc_query->have_posts() ) : ?>
+			<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) : ?>
 				<?php
-				while ( $wc_query->have_posts() ) :
-					$wc_query->the_post();
+				while ( $mannering_woocommerce_child_wc_query->have_posts() ) :
+					$mannering_woocommerce_child_wc_query->the_post();
 					?>
 				<article class="hiphop_panel">
 
@@ -190,7 +190,7 @@
 				<?php wp_reset_postdata(); ?>
 			<?php else : ?>
 			<p>
-				<?php esc_html_e( 'No Products', 'mannering-storefront-child-theme' ); ?>
+				<?php esc_html_e( 'No Products', 'mannering-woocommerce-child' ); ?>
 			</p>
 			<?php endif; ?>
 
@@ -199,18 +199,18 @@
 		<!--tab Jazz-->
 		<div class="tab">
 			<?php
-				$params = array(
+				$mannering_woocommerce_child_params = array(
 					'posts_per_page' => 5,
 					'post_type'      => 'product',
 					'product_cat'    => 'jazz',
 
 				);
-				$wc_query = new WP_Query( $params );
+				$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 				?>
-			<?php if ( $wc_query->have_posts() ) : ?>
+			<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) : ?>
 				<?php
-				while ( $wc_query->have_posts() ) :
-					$wc_query->the_post();
+				while ( $mannering_woocommerce_child_wc_query->have_posts() ) :
+					$mannering_woocommerce_child_wc_query->the_post();
 					?>
 				<article class="hiphop_panel">
 					<!-- audio info panel - image & text -->
@@ -275,7 +275,7 @@
 				<?php wp_reset_postdata(); ?>
 			<?php else : ?>
 
-			<p><?php esc_html_e( 'No Products', 'mannering-storefront-child-theme' ); ?></p>
+			<p><?php esc_html_e( 'No Products', 'mannering-woocommerce-child' ); ?></p>
 
 			<?php endif; ?>
 

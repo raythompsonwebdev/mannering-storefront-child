@@ -32,7 +32,7 @@ function mannering_woocommerce_child_jetpack_setup() {
 	add_theme_support(
 		'jetpack-content-options',
 		array(
-			'post-details' => array(
+			'post-details'    => array(
 				'stylesheet' => 'mannering-woocommerce-child-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
