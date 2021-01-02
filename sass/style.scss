@@ -10632,10 +10632,10 @@ License: GNU General Public License v2 or later
 				}
 			}
 		}
-
-		nav.hide {
-			left: -5.5em;
+		.open{
+			display:block;
 		}
+
 
 		aside#secondary {
 			min-height: 200px;

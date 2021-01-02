@@ -9275,8 +9275,8 @@ body {
 		background-color: #ecac00;
 		color: #3b3b3f;
 	}
-	#page nav.hide {
-		left: -5.5em;
+	#page .open {
+		display: block;
 	}
 	#page aside#secondary {
 		min-height: 200px;
