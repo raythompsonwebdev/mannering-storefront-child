@@ -3,142 +3,145 @@ Theme Name: mannering_music
 
 WooCommerce styles override
 */
-@import "partials/fonts";
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/woobase";
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/woobase';
 
 @media only screen and (max-width: 1920px) {
 	#page {
-		aside#secondary {
-			min-height: 350px;
+		#content {
+			aside#secondary {
+				min-height: 350px;
 
-			section.widget_shopping_cart {
-				width: 100%;
+				section.widget_shopping_cart {
+					width: 100%;
 
-				h2.widget-title {
-					text-align: center;
-					padding: 0;
-					margin: 0;
-				}
-
-				div.widget_shopping_cart_content {
-					width: 70%;
-					margin: auto;
-
-					ul.woocommerce-mini-cart,
-					ul.cart_list {
+					h2.widget-title {
+						text-align: center;
+						padding: 0;
 						margin: 0;
+					}
 
-						li.woocommerce-mini-cart-item {
-							display: block;
+					div.widget_shopping_cart_content {
+						width: 60%;
+						margin: auto;
 
-							a.remove_from_cart_button {
-								width: 100%;
-								text-align: center;
-								background-color: $color1;
-								color: $color7;
-								&:hover {
-									background-color: $color7;
-									color: $color1;
+						ul.woocommerce-mini-cart,
+						ul.cart_list {
+							margin: 0;
+
+							li.woocommerce-mini-cart-item {
+								display: block;
+
+								a.remove_from_cart_button {
+									width: 100%;
+									text-align: center;
+									background-color: $color1;
+									color: $color2;
+									font-size: 2em;
+									&:hover {
+										background-color: $color2;
+										color: $color1;
+									}
 								}
-							}
 
-							a {
-								width: 100%;
-								text-align: center;
-								font-size: 85%;
-								height:auto;
-								img.attachment-woocommerce_thumbnail {
-									width: 45%;
-									margin: 0.5em auto;
-									display: block;
-								}
-							}
-
-							span.quantity {
-								width: 100%;
-								display: flex;
-								line-height: 35px;
-								font-size: 85%;
-								span.woocommerce-Price-amount {
-									width: 80%;
-									line-height: 35px;
-									margin: 0 auto;
-									display: block;
-									bdi {
+								a {
+									width: 100%;
+									text-align: center;
+									font-size: 70%;
+									height: auto;
+									background-color: unset;
+									img.attachment-woocommerce_thumbnail {
+										width: 50%;
+										margin: 0.5em auto;
 										display: block;
 									}
+								}
 
-									span.woocommerce-Price-currencySymbol {
-										width: 40%;
-										display: inline-block;
+								span.quantity {
+									width: 100%;
+									display: flex;
+									line-height: 35px;
+									font-size: 85%;
+									span.woocommerce-Price-amount {
+										width: 80%;
 										line-height: 35px;
-										text-align: center;
+										margin: 0 auto;
+										display: block;
+										bdi {
+											display: block;
+										}
+
+										span.woocommerce-Price-currencySymbol {
+											width: 40%;
+											display: inline-block;
+											line-height: 35px;
+											text-align: center;
+										}
 									}
 								}
 							}
 						}
-					}
-					p.woocommerce-mini-cart__total {
-						display: flex;
-						strong {
-							line-height: 35px;
-						}
-						span.woocommerce-Price-amount {
-							width: 100%;
-							line-height: 35px;
-							margin: 0 auto;
-							display: block;
-							bdi {
-								display: block;
-								width: 100%;
-							}
-
-							span.woocommerce-Price-currencySymbol {
-								width: 40%;
-								display: inline-block;
+						p.woocommerce-mini-cart__total {
+							display: flex;
+							strong {
 								line-height: 35px;
-								text-align: center;
+							}
+							span.woocommerce-Price-amount {
+								width: 100%;
+								line-height: 35px;
+								margin: 0 auto;
+								display: block;
+								bdi {
+									display: block;
+									width: 100%;
+								}
+
+								span.woocommerce-Price-currencySymbol {
+									width: 40%;
+									display: inline-block;
+									line-height: 35px;
+									text-align: center;
+								}
+							}
+						}
+
+						p.woocommerce-mini-cart__buttons {
+							a {
+								text-decoration: none;
+								margin: 0.5em 0;
 							}
 						}
 					}
+				}
+			}
+			/* global contact form style */
+			form {
+				button.button {
+					display: block;
+					text-align: center;
+					margin: 0 auto;
+					width: 15%;
+					background-color: $color1;
+					color: $color7;
+					@include boredrady(5px);
+					@include transitioner(all 0.2s ease-in-out);
 
-					p.woocommerce-mini-cart__buttons {
-						a {
-							text-decoration: none;
-						}
+					&:hover {
+						font-weight: bold;
+						background-color: $color2;
+						color: $color7;
+						border: 2px solid $color7;
+						filter: alpha(opacity=99);
+						-moz-opacity: 0.99;
+						-khtml-opacity: 0.99;
+						opacity: 0.99;
+						cursor: pointer;
 					}
 				}
 			}
-		}
-		/* global contact form style */
-		form {
-			button.button {
-				display: block;
-				text-align: center;
-				margin: 0 auto;
-				width: 15%;
-				background-color: $color1;
-				color: $color7;
-				@include boredrady(5px);
-				@include transitioner(all 0.2s ease-in-out);
 
-				&:hover {
-					font-weight: bold;
-					background-color: $color2;
-					color: $color7;
-					border: 2px solid $color7;
-					filter: alpha(opacity=99);
-					-moz-opacity: 0.99;
-					-khtml-opacity: 0.99;
-					opacity: 0.99;
-					cursor: pointer;
-				}
-			}
-		}
-
-		#content {
 			#primary {
 				margin-right: 0.5em;
 				width: 79%;
@@ -756,7 +759,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 90%;
 								font-size: 0.9em;
 								display: block;
@@ -823,7 +826,7 @@ WooCommerce styles override
 								text-align: right;
 								clear: both;
 								&::before {
-									content: attr(data-title) ": ";
+									content: attr(data-title) ': ';
 									float: left;
 								}
 								.actions::before {
@@ -924,7 +927,7 @@ WooCommerce styles override
 										font-size: 0.85em;
 									}
 
-									input[type="number"] {
+									input[type='number'] {
 										width: 90%;
 										display: block;
 										margin: 0;
@@ -988,7 +991,7 @@ WooCommerce styles override
 									margin: 0;
 									line-height: 30px;
 									font-size: 1em;
-									padding:0;
+									padding: 0;
 
 									&:hover {
 										background-color: $color2;
@@ -1026,9 +1029,9 @@ WooCommerce styles override
 										flex: 0 0 auto;
 									}
 
-									input[type="text"],
-									input[type="password"],
-									input[type="email"] {
+									input[type='text'],
+									input[type='password'],
+									input[type='email'] {
 										line-height: 45px;
 										height: 45px;
 										width: 30%;
@@ -1376,8 +1379,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type="text"],
-									input[type="email"] {
+									input[type='text'],
+									input[type='email'] {
 										margin: 0;
 									}
 
@@ -1515,7 +1518,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type="number"] {
+												input[type='number'] {
 													width: 90%;
 													display: block;
 													margin: 0;
@@ -1618,9 +1621,9 @@ WooCommerce styles override
 													flex: 0 0 auto;
 												}
 
-												input[type="text"],
-												input[type="password"],
-												input[type="email"] {
+												input[type='text'],
+												input[type='password'],
+												input[type='email'] {
 													line-height: 45px;
 													height: 45px;
 													width: 30%;
@@ -1838,7 +1841,7 @@ WooCommerce styles override
 
 											td {
 												ul#shipping_method {
-													margin:0;
+													margin: 0;
 													li {
 														line-height: 40px;
 														label {
@@ -1964,8 +1967,8 @@ WooCommerce styles override
 											label {
 												display: block;
 
-												input[type="checkbox"],
-												input[type="radio"] {
+												input[type='checkbox'],
+												input[type='radio'] {
 													margin: 0 0.5em;
 												}
 
@@ -2107,7 +2110,7 @@ WooCommerce styles override
 
 												ul#shipping_method {
 													width: 100%;
-													margin:0;
+													margin: 0;
 													display: block;
 
 													li {
@@ -2161,7 +2164,6 @@ WooCommerce styles override
 														p.form-row-wide {
 															white-space: pre-wrap;
 															line-height: unset;
-
 														}
 													}
 												}
@@ -2213,17 +2215,119 @@ WooCommerce styles override
 /*1440*/
 @media only screen and (max-width: 1440px) {
 	#page {
-		form {
-			button.button {
-				width: 30%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 30%;
+
+					&:hover {
+						width: 30%;
+					}
 				}
 			}
-		}
+			aside#secondary {
+				min-height: 350px;
 
-		#content {
+				section.widget_shopping_cart {
+					width: 100%;
+
+					h2.widget-title {
+						text-align: center;
+					}
+
+					div.widget_shopping_cart_content {
+						width: 60%;
+
+						ul.woocommerce-mini-cart,
+						ul.cart_list {
+							margin: 0;
+
+							li.woocommerce-mini-cart-item {
+								display: block;
+
+								a.remove_from_cart_button {
+									width: 100%;
+									text-align: center;
+									background-color: $color1;
+									color: $color2;
+									font-size: 2em;
+									&:hover {
+										background-color: $color2;
+										color: $color1;
+									}
+								}
+
+								a {
+									width: 100%;
+									text-align: center;
+									font-size: 70%;
+									height: auto;
+									background-color: unset;
+									img.attachment-woocommerce_thumbnail {
+										width: 50%;
+										margin: 0.5em auto;
+										display: block;
+									}
+								}
+
+								span.quantity {
+									width: 100%;
+									display: flex;
+									line-height: 35px;
+									font-size: 85%;
+									span.woocommerce-Price-amount {
+										width: 80%;
+										line-height: 35px;
+										margin: 0 auto;
+										display: block;
+										bdi {
+											display: block;
+										}
+
+										span.woocommerce-Price-currencySymbol {
+											width: 40%;
+											display: inline-block;
+											line-height: 35px;
+											text-align: center;
+										}
+									}
+								}
+							}
+						}
+						p.woocommerce-mini-cart__total {
+							display: flex;
+							strong {
+								line-height: 35px;
+							}
+							span.woocommerce-Price-amount {
+								width: 100%;
+								line-height: 35px;
+								margin: 0 auto;
+								display: block;
+								bdi {
+									display: block;
+									width: 100%;
+								}
+
+								span.woocommerce-Price-currencySymbol {
+									width: 40%;
+									display: inline-block;
+									line-height: 35px;
+									text-align: center;
+								}
+							}
+						}
+
+						p.woocommerce-mini-cart__buttons {
+							a {
+								text-decoration: none;
+								margin: 0.5em 0;
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				nav.woocommerce-breadcrumb {
 					margin: 0;
@@ -2515,7 +2619,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -2664,8 +2768,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type="text"],
-									input[type="email"] {
+									input[type='text'],
+									input[type='email'] {
 										margin: 0;
 									}
 
@@ -2765,7 +2869,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type="number"] {
+												input[type='number'] {
 													height: 35px;
 												}
 											}
@@ -2812,9 +2916,9 @@ WooCommerce styles override
 													width: 20%;
 												}
 
-												input[type="text"],
-												input[type="password"],
-												input[type="email"] {
+												input[type='text'],
+												input[type='password'],
+												input[type='email'] {
 													font-size: 0.9em;
 												}
 
@@ -3108,16 +3212,120 @@ WooCommerce styles override
 /*1280*/
 @media only screen and (max-width: 1280px) {
 	#page {
-		form {
-			button.button {
-				width: 25%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 25%;
+
+					&:hover {
+						width: 25%;
+					}
 				}
 			}
-		}
-		#content {
+			aside#secondary {
+				min-height: 350px;
+
+				section.widget_shopping_cart {
+					width: 100%;
+
+					h2.widget-title {
+						text-align: center;
+					}
+
+					div.widget_shopping_cart_content {
+						width: 60%;
+						margin: auto;
+
+						ul.woocommerce-mini-cart,
+						ul.cart_list {
+							margin: 0;
+
+							li.woocommerce-mini-cart-item {
+								display: block;
+
+								a.remove_from_cart_button {
+									width: 100%;
+									text-align: center;
+									background-color: $color1;
+									color: $color2;
+									font-size: 2em;
+									&:hover {
+										background-color: $color2;
+										color: $color1;
+									}
+								}
+
+								a {
+									width: 100%;
+									text-align: center;
+									font-size: 70%;
+									height: auto;
+									background-color: unset;
+									img.attachment-woocommerce_thumbnail {
+										width: 50%;
+										margin: 0.5em auto;
+										display: block;
+									}
+								}
+
+								span.quantity {
+									width: 100%;
+									display: flex;
+									line-height: 35px;
+									font-size: 85%;
+									span.woocommerce-Price-amount {
+										width: 80%;
+										line-height: 35px;
+										margin: 0 auto;
+										display: block;
+										bdi {
+											display: block;
+										}
+
+										span.woocommerce-Price-currencySymbol {
+											width: 40%;
+											display: inline-block;
+											line-height: 35px;
+											text-align: center;
+										}
+									}
+								}
+							}
+						}
+						p.woocommerce-mini-cart__total {
+							display: flex;
+							strong {
+								line-height: 35px;
+							}
+							span.woocommerce-Price-amount {
+								width: 100%;
+								line-height: 35px;
+								margin: 0 auto;
+								display: block;
+								bdi {
+									display: block;
+									width: 100%;
+								}
+
+								span.woocommerce-Price-currencySymbol {
+									width: 40%;
+									display: inline-block;
+									line-height: 35px;
+									text-align: center;
+								}
+							}
+						}
+
+						p.woocommerce-mini-cart__buttons {
+							a {
+								text-decoration: none;
+								margin: 0.5em 0;
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				article.product {
 					width: 15%;
@@ -3422,7 +3630,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -3558,8 +3766,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type="text"],
-									input[type="email"] {
+									input[type='text'],
+									input[type='email'] {
 										margin: 0;
 									}
 
@@ -3664,7 +3872,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type="number"] {
+												input[type='number'] {
 													height: 35px;
 												}
 											}
@@ -3711,9 +3919,9 @@ WooCommerce styles override
 													width: 20%;
 												}
 
-												input[type="text"],
-												input[type="password"],
-												input[type="email"] {
+												input[type='text'],
+												input[type='password'],
+												input[type='email'] {
 													font-size: 0.9em;
 												}
 
@@ -4009,28 +4217,132 @@ WooCommerce styles override
 /*1024*/
 @media only screen and (max-width: 1024px) {
 	#page {
-		form {
-			button.button {
-				width: 25%;
-
-				&:hover {
-					width: 25%;
-				}
-			}
-		}
-
-		.count {
-			font-size: 0.75em;
-
-			a {
-				margin: 0 auto;
-
-				&:hover {
-					font-weight: bold;
-				}
-			}
-		}
 		#content {
+			form {
+				button.button {
+					width: 25%;
+
+					&:hover {
+						width: 25%;
+					}
+				}
+			}
+
+			.count {
+				font-size: 0.75em;
+
+				a {
+					margin: 0 auto;
+
+					&:hover {
+						font-weight: bold;
+					}
+				}
+			}
+			aside#secondary {
+				min-height: 350px;
+
+				section.widget_shopping_cart {
+					width: 100%;
+
+					h2.widget-title {
+						text-align: center;
+					}
+
+					div.widget_shopping_cart_content {
+						width: 60%;
+						margin: auto;
+
+						ul.woocommerce-mini-cart,
+						ul.cart_list {
+							margin: 0;
+
+							li.woocommerce-mini-cart-item {
+								display: block;
+
+								a.remove_from_cart_button {
+									width: 100%;
+									text-align: center;
+									background-color: $color1;
+									color: $color2;
+									font-size: 2em;
+									&:hover {
+										background-color: $color2;
+										color: $color1;
+									}
+								}
+
+								a {
+									width: 100%;
+									text-align: center;
+									font-size: 70%;
+									height: auto;
+									background-color: unset;
+									img.attachment-woocommerce_thumbnail {
+										width: 50%;
+										margin: 0.5em auto;
+										display: block;
+									}
+								}
+
+								span.quantity {
+									width: 100%;
+									display: flex;
+									line-height: 35px;
+									font-size: 85%;
+									span.woocommerce-Price-amount {
+										width: 80%;
+										line-height: 35px;
+										margin: 0 auto;
+										display: block;
+										bdi {
+											display: block;
+										}
+
+										span.woocommerce-Price-currencySymbol {
+											width: 40%;
+											display: inline-block;
+											line-height: 35px;
+											text-align: center;
+										}
+									}
+								}
+							}
+						}
+						p.woocommerce-mini-cart__total {
+							display: flex;
+							strong {
+								line-height: 35px;
+							}
+							span.woocommerce-Price-amount {
+								width: 100%;
+								line-height: 35px;
+								margin: 0 auto;
+								display: block;
+								bdi {
+									display: block;
+									width: 100%;
+								}
+
+								span.woocommerce-Price-currencySymbol {
+									width: 40%;
+									display: inline-block;
+									line-height: 35px;
+									text-align: center;
+								}
+							}
+						}
+
+						p.woocommerce-mini-cart__buttons {
+							a {
+								text-decoration: none;
+								margin: 0.5em 0;
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				article.product {
 					width: 15%;
@@ -4323,7 +4635,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -4460,8 +4772,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -4563,7 +4875,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -4610,9 +4922,9 @@ WooCommerce styles override
 														width: 20%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -4910,142 +5222,135 @@ WooCommerce styles override
 
 @media only screen and (max-width: 960px) {
 	#page {
-		aside#secondary {
-			height: auto;
-			min-height: unset;
-			width: 100%;
-
-			section.widget_shopping_cart {
+		#content {
+			aside#secondary {
+				height: auto;
+				min-height: unset;
 				width: 100%;
-				float: left;
-				display: block;
-				margin: 0;
 
-				h2.widget-title {
-					text-align: center;
-					padding: 0;
-					margin: 0;
+				section.widget_shopping_cart {
 					width: 100%;
-				}
-
-				div.hide_cart_widget_if-empty {
-					width: 30%;
 					float: left;
 					display: block;
-				}
+					margin: 0;
 
-				div.widget_shopping_cart_content {
-					width: 70%;
-					margin: auto;
-
-					ul.woocommerce-mini-cart,
-					ul.cart_list {
+					h2.widget-title {
+						text-align: center;
+						padding: 0;
 						margin: 0;
+						width: 100%;
+					}
 
-						li.woocommerce-mini-cart-item {
-							display: block;
+					div.hide_cart_widget_if-empty {
+						width: 30%;
+						float: left;
+						display: block;
+					}
 
-							a.remove_from_cart_button {
-								width: 100%;
-								text-align: center;
-								background-color: $color1;
-								color: $color7;
-								&:hover {
-									background-color: $color7;
-									color: $color1;
+					div.widget_shopping_cart_content {
+						width: 60%;
+
+						ul.woocommerce-mini-cart,
+						ul.cart_list {
+							margin: 0;
+
+							li.woocommerce-mini-cart-item {
+								display: block;
+
+								a.remove_from_cart_button {
+									width: 100%;
+
+									&:hover {
+										background-color: $color7;
+									}
 								}
-							}
 
-							a {
-								width: 100%;
-								text-align: center;
-								font-size: 85%;
-								img.attachment-woocommerce_thumbnail {
-									width: 45%;
-									margin: 0.5em auto;
-									display: block;
-								}
-							}
-
-							span.quantity {
-								width: 100%;
-								display: flex;
-								line-height: 35px;
-								font-size: 85%;
-								span.woocommerce-Price-amount {
-									width: 80%;
-									line-height: 35px;
-									margin: 0 auto;
-									display: block;
-									bdi {
+								a {
+									width: 100%;
+									img.attachment-woocommerce_thumbnail {
 										display: block;
 									}
+								}
 
-									span.woocommerce-Price-currencySymbol {
-										width: 40%;
-										display: inline-block;
+								span.quantity {
+									width: 100%;
+									display: flex;
+									line-height: 35px;
+									font-size: 85%;
+									span.woocommerce-Price-amount {
+										width: 80%;
 										line-height: 35px;
-										text-align: center;
+										margin: 0 auto;
+										display: block;
+										bdi {
+											display: block;
+										}
+
+										span.woocommerce-Price-currencySymbol {
+											width: 40%;
+											display: inline-block;
+											line-height: 35px;
+											text-align: center;
+										}
 									}
 								}
 							}
 						}
-					}
-					p.woocommerce-mini-cart__total {
-						display: flex;
-						strong {
-							line-height: 35px;
-						}
-						span.woocommerce-Price-amount {
-							width: 100%;
-							line-height: 35px;
-							margin: 0 auto;
-							display: block;
-							bdi {
-								display: block;
-								width: 100%;
-							}
-
-							span.woocommerce-Price-currencySymbol {
-								width: 40%;
-								display: inline-block;
+						p.woocommerce-mini-cart__total {
+							display: flex;
+							strong {
 								line-height: 35px;
-								text-align: center;
+							}
+							span.woocommerce-Price-amount {
+								width: 100%;
+								line-height: 35px;
+								margin: 0 auto;
+								display: block;
+								bdi {
+									display: block;
+									width: 100%;
+								}
+
+								span.woocommerce-Price-currencySymbol {
+									width: 40%;
+									display: inline-block;
+									line-height: 35px;
+									text-align: center;
+								}
+							}
+						}
+
+						p.woocommerce-mini-cart__buttons {
+							a {
+								text-decoration: none;
 							}
 						}
 					}
+				}
+			}
 
-					p.woocommerce-mini-cart__buttons {
-						a {
-							text-decoration: none;
-						}
+			form {
+				button.button {
+					width: 25%;
+
+					&:hover {
+						width: 25%;
 					}
 				}
 			}
-		}
 
-		form {
-			button.button {
-				width: 25%;
+			.count {
+				font-size: 0.75em;
 
-				&:hover {
-					width: 25%;
+				a {
+					margin: 0 auto;
+
+					&:hover {
+						font-weight: bold;
+					}
 				}
 			}
-		}
 
-		.count {
-			font-size: 0.75em;
-
-			a {
-				margin: 0 auto;
-
-				&:hover {
-					font-weight: bold;
-				}
-			}
-		}
-		#content {
 			#primary {
 				width: 100%;
 
@@ -5354,7 +5659,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -5490,8 +5795,8 @@ WooCommerce styles override
 										line-height: 40px;
 									}
 
-									input[type="text"],
-									input[type="email"] {
+									input[type='text'],
+									input[type='email'] {
 										margin: 0;
 									}
 
@@ -5593,7 +5898,7 @@ WooCommerce styles override
 													font-size: 0.85em;
 												}
 
-												input[type="number"] {
+												input[type='number'] {
 													height: 35px;
 												}
 											}
@@ -5640,9 +5945,9 @@ WooCommerce styles override
 													width: 20%;
 												}
 
-												input[type="text"],
-												input[type="password"],
-												input[type="email"] {
+												input[type='text'],
+												input[type='password'],
+												input[type='email'] {
 													font-size: 0.9em;
 												}
 
@@ -5939,29 +6244,113 @@ WooCommerce styles override
 /*800*/
 @media only screen and (max-width: 800px) {
 	#page {
-		form {
-			button.button {
-				width: 25%;
-
-				&:hover {
-					width: 25%;
-				}
-			}
-		}
-
-		.count {
-			font-size: 0.75em;
-
-			a {
-				margin: 0 auto;
-
-				&:hover {
-					font-weight: bold;
-				}
-			}
-		}
-
 		#content {
+			form {
+				button.button {
+					width: 25%;
+
+					&:hover {
+						width: 25%;
+					}
+				}
+			}
+
+			.count {
+				font-size: 0.75em;
+
+				a {
+					margin: 0 auto;
+
+					&:hover {
+						font-weight: bold;
+					}
+				}
+			}
+
+			aside#secondary {
+				height: auto;
+
+				section.widget_shopping_cart {
+					width: 100%;
+
+					h2.widget-title {
+						text-align: center;
+					}
+
+					div.hide_cart_widget_if-empty {
+						width: 30%;
+					}
+
+					div.widget_shopping_cart_content {
+						width: 60%;
+
+						ul.woocommerce-mini-cart,
+						ul.cart_list {
+							margin: 0;
+
+							li.woocommerce-mini-cart-item {
+								display: block;
+
+								a.remove_from_cart_button {
+									width: 100%;
+
+									&:hover {
+										background-color: $color7;
+									}
+								}
+
+								a {
+									width: 100%;
+									img.attachment-woocommerce_thumbnail {
+										display: block;
+									}
+								}
+
+								span.quantity {
+									width: 100%;
+
+									span.woocommerce-Price-amount {
+										width: 80%;
+
+										bdi {
+											display: block;
+										}
+
+										span.woocommerce-Price-currencySymbol {
+											width: 40%;
+										}
+									}
+								}
+							}
+						}
+						p.woocommerce-mini-cart__total {
+							display: flex;
+							strong {
+								line-height: 35px;
+							}
+							span.woocommerce-Price-amount {
+								width: 100%;
+
+								bdi {
+									display: block;
+									width: 100%;
+								}
+
+								span.woocommerce-Price-currencySymbol {
+									width: 40%;
+								}
+							}
+						}
+
+						p.woocommerce-mini-cart__buttons {
+							a {
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				article.product {
 					width: 15%;
@@ -6266,7 +6655,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 85%;
 								font-size: 0.85em;
 
@@ -6348,6 +6737,7 @@ WooCommerce styles override
 				div.post,
 				article.page {
 					div.entry-content {
+						padding: 0.5em;
 						.woocommerce {
 							.woocommerce-notices-wrapper {
 								margin: 0;
@@ -6401,8 +6791,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -6509,7 +6899,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -6558,9 +6948,9 @@ WooCommerce styles override
 														width: 20%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -6866,96 +7256,96 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait -Apple iPhone 6#### */
 @media only screen and (max-width: 667px) {
 	#page {
-		form {
-			button.button {
-				width: 35%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 35%;
+
+					&:hover {
+						width: 35%;
+					}
 				}
 			}
-		}
 
-		aside#secondary {
-			article.side-bar-box {
-				width: 32%;
-				margin: 0.5em;
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
+					margin: 0.5em;
 
-				h2 {
-					font-size: 1.3em;
-					line-height: 40px;
-				}
-
-				form#searchform {
-					input[type="text"] {
-						height: 35px;
+					h2 {
+						font-size: 1.3em;
+						line-height: 40px;
 					}
 
-					input[type="submit"] {
-						width: 20%;
-					}
-				}
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
 
-				ul {
-					display: block;
-
-					li {
-						margin: 0.5em;
-						padding: 0.5em;
-
-						a {
-							font-size: 0.8em;
-							line-height: 20px;
+						input[type='submit'] {
+							width: 20%;
 						}
 					}
-				}
 
-				ul.product_list_widget {
-					li {
-						width: 45%;
+					ul {
+						display: block;
 
-						a {
-							font-size: 0.8em;
-							line-height: 15px;
+						li {
+							margin: 0.5em;
+							padding: 0.5em;
 
-							img {
-								width: 40%;
+							a {
+								font-size: 0.8em;
+								line-height: 20px;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+								line-height: 15px;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									width: 50%;
+									font-size: 0.9em;
+								}
 							}
 
-							span.product-title {
+							span.woocommerce-Price-amount {
 								width: 50%;
 								font-size: 0.9em;
-							}
-						}
 
-						span.woocommerce-Price-amount {
-							width: 50%;
-							font-size: 0.9em;
-
-							span.woocommerce-Price-currencySymbol {
-								width: 10%;
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
 							}
 						}
 					}
-				}
 
-				ul#recentcomments {
-					width: 100%;
+					ul#recentcomments {
+						width: 100%;
 
-					li.recentcomments {
-						span.comment-author-link {
-							width: auto;
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
 
-							a.url {
-								display: block;
+								a.url {
+									display: block;
+								}
 							}
 						}
 					}
 				}
 			}
-		}
 
-		#content {
 			#primary {
 				nav.woocommerce-breadcrumb {
 					a:first-of-type {
@@ -7249,7 +7639,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.8em;
 
@@ -7393,8 +7783,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -7499,7 +7889,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -7546,9 +7936,9 @@ WooCommerce styles override
 														width: 20%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -7850,17 +8240,96 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 640px) {
 	#page {
-		form {
-			button.button {
-				width: 45%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 45%;
+
+					&:hover {
+						width: 45%;
+					}
 				}
 			}
-		}
 
-		#content {
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
+					margin: 0.5em;
+
+					h2 {
+						font-size: 1.3em;
+						line-height: 40px;
+					}
+
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
+
+						input[type='submit'] {
+							width: 20%;
+						}
+					}
+
+					ul {
+						display: block;
+
+						li {
+							margin: 0.5em;
+							padding: 0.5em;
+
+							a {
+								font-size: 0.8em;
+								line-height: 20px;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+								line-height: 15px;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									width: 50%;
+									font-size: 0.9em;
+								}
+							}
+
+							span.woocommerce-Price-amount {
+								width: 50%;
+								font-size: 0.9em;
+
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
+							}
+						}
+					}
+
+					ul#recentcomments {
+						width: 100%;
+
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
+
+								a.url {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				nav.woocommerce-breadcrumb {
 					font-size: 0.75em;
@@ -8157,7 +8626,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -8302,8 +8771,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -8406,7 +8875,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -8455,9 +8924,9 @@ WooCommerce styles override
 														font-size: 0.9em;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -8761,16 +9230,88 @@ WooCommerce styles override
 	}
 
 	#page {
-		form {
-			button.button {
-				width: 45%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 45%;
+
+					&:hover {
+						width: 45%;
+					}
 				}
 			}
-		}
-		#content {
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
+
+					h2 {
+						font-size: 1.3em;
+					}
+
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
+
+						input[type='submit'] {
+							width: 20%;
+						}
+					}
+
+					ul {
+						display: block;
+
+						li {
+							margin: 0.5em;
+
+							a {
+								font-size: 0.8em;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									font-size: 0.9em;
+								}
+							}
+
+							span.woocommerce-Price-amount {
+								font-size: 0.9em;
+
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
+							}
+						}
+					}
+
+					ul#recentcomments {
+						width: 100%;
+
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
+
+								a.url {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				nav.woocommerce-breadcrumb {
 					a:first-of-type {
@@ -9071,7 +9612,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -9221,8 +9762,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -9325,7 +9866,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -9336,6 +9877,7 @@ WooCommerce styles override
 
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
+													width: 20%;
 												}
 
 												span.woocommerce-Price-amount {
@@ -9351,7 +9893,7 @@ WooCommerce styles override
 													line-height: 45px;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 15%;
+														width: 20%;
 													}
 												}
 											}
@@ -9376,9 +9918,9 @@ WooCommerce styles override
 														width: 25%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -9584,6 +10126,7 @@ WooCommerce styles override
 												th {
 													text-align: left;
 													width: 15%;
+													font-size: 0.8em;
 												}
 
 												td {
@@ -9600,6 +10143,7 @@ WooCommerce styles override
 											tr.woocommerce-shipping-totals {
 												th {
 													text-indent: 0.5em;
+													font-size: 0.8em;
 												}
 
 												td {
@@ -9613,7 +10157,7 @@ WooCommerce styles override
 
 															label {
 																text-indent: 0.5em;
-																font-size: 0.8em;
+																font-size: 0.75em;
 															}
 
 															input#shipping_method_0_free_shipping1 {
@@ -9679,17 +10223,87 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 480px) {
 	#page {
-		form {
-			button.button {
-				width: 60%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 60%;
+
+					&:hover {
+						width: 60%;
+					}
 				}
 			}
-		}
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
 
-		#content {
+					h2 {
+						font-size: 1.3em;
+					}
+
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
+
+						input[type='submit'] {
+							width: 20%;
+						}
+					}
+
+					ul {
+						display: block;
+
+						li {
+							margin: 0.5em;
+
+							a {
+								font-size: 0.8em;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									font-size: 0.9em;
+								}
+							}
+
+							span.woocommerce-Price-amount {
+								font-size: 0.9em;
+
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
+							}
+						}
+					}
+
+					ul#recentcomments {
+						width: 100%;
+
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
+
+								a.url {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
 			#primary {
 				nav.woocommerce-breadcrumb {
 					position: unset;
@@ -9992,7 +10606,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.85em;
 
@@ -10091,6 +10705,7 @@ WooCommerce styles override
 				div.post,
 				article.page {
 					div.entry-content {
+						padding: 0.25em;
 						.woocommerce {
 							.woocommerce-message {
 								font-size: 0.8em;
@@ -10162,8 +10777,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -10268,7 +10883,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -10294,7 +10909,7 @@ WooCommerce styles override
 													line-height: 20px;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 15%;
+														width: 20%;
 													}
 												}
 											}
@@ -10306,22 +10921,22 @@ WooCommerce styles override
 											td.actions {
 												button.button {
 													width: 30%;
-													font-size: 0.9em;
+													font-size: 1em;
 													&:hover {
 														cursor: pointer;
 													}
 												}
 
 												div.coupon {
-													width: 73%;
+													width: 69%;
 
 													label {
 														width: 25%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -10622,16 +11237,87 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 414px) {
 	#page {
-		form {
-			button.button {
-				width: 60%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 60%;
+
+					&:hover {
+						width: 60%;
+					}
 				}
 			}
-		}
-		#content {
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
+
+					h2 {
+						font-size: 1.3em;
+					}
+
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
+
+						input[type='submit'] {
+							width: 20%;
+						}
+					}
+
+					ul {
+						display: block;
+
+						li {
+							margin: 0.5em;
+
+							a {
+								font-size: 0.8em;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									font-size: 0.9em;
+								}
+							}
+
+							span.woocommerce-Price-amount {
+								font-size: 0.9em;
+
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
+							}
+						}
+					}
+
+					ul#recentcomments {
+						width: 100%;
+
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
+
+								a.url {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
 			#primary {
 				nav.woocommerce-breadcrumb {
 					a:first-of-type {
@@ -10919,7 +11605,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.8em;
 
@@ -11058,8 +11744,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -11164,7 +11850,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -11190,8 +11876,7 @@ WooCommerce styles override
 													line-height: 20px;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 15%;
-														line-height: 15px;
+														width: 20%;
 													}
 												}
 											}
@@ -11202,7 +11887,6 @@ WooCommerce styles override
 
 											td.actions {
 												button.button {
-
 													font-size: 0.9em;
 													&:hover {
 														cursor: pointer;
@@ -11210,15 +11894,15 @@ WooCommerce styles override
 												}
 
 												div.coupon {
-													width: 73%;
+													width: 68%;
 
 													label {
 														width: 25%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -11422,7 +12106,7 @@ WooCommerce styles override
 												th {
 													text-align: left;
 													width: 20%;
-													font-size: 0.8em;
+													font-size: 0.7em;
 												}
 
 												td {
@@ -11439,7 +12123,7 @@ WooCommerce styles override
 											tr.woocommerce-shipping-totals {
 												th {
 													text-indent: 0.5em;
-													font-size: 0.8em;
+													font-size: 0.7em;
 												}
 
 												td {
@@ -11463,7 +12147,7 @@ WooCommerce styles override
 													}
 
 													p.woocommerce-shipping-destination {
-														font-size: 0.65em;
+														font-size: 0.6em;
 													}
 
 													form.woocommerce-shipping-calculator {
@@ -11519,17 +12203,88 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 360px) {
 	#page {
-		form {
-			button.button {
-				width: 60%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 60%;
+
+					&:hover {
+						width: 60%;
+					}
 				}
 			}
-		}
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
 
-		#content {
+					h2 {
+						font-size: 1.3em;
+					}
+
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
+
+						input[type='submit'] {
+							width: 20%;
+						}
+					}
+
+					ul {
+						display: block;
+
+						li {
+							margin: 0.5em;
+
+							a {
+								font-size: 0.8em;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									font-size: 0.9em;
+								}
+							}
+
+							span.woocommerce-Price-amount {
+								font-size: 0.9em;
+
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
+							}
+						}
+					}
+
+					ul#recentcomments {
+						width: 100%;
+
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
+
+								a.url {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+
 			#primary {
 				nav.woocommerce-breadcrumb {
 					font-size: 0.7em;
@@ -11819,7 +12574,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.8em;
 
@@ -11949,8 +12704,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -12056,7 +12811,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -12066,9 +12821,9 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 14%;
 												span.woocommerce-Price-currencySymbol {
-													display: block;
+													display: inline-block;
 													line-height: 15px;
-													width: 100%;
+													width: 22%;
 												}
 
 												span.woocommerce-Price-amount {
@@ -12087,8 +12842,8 @@ WooCommerce styles override
 													text-align: left;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 100%;
-														display: block;
+														width: 22%;
+														display: inline-block;
 														text-align: left;
 													}
 												}
@@ -12100,7 +12855,6 @@ WooCommerce styles override
 
 											td.actions {
 												button.button {
-
 													font-size: 0.8em;
 													&:hover {
 														cursor: pointer;
@@ -12108,15 +12862,15 @@ WooCommerce styles override
 												}
 
 												div.coupon {
-													width: 73%;
+													width: 68%;
 
 													label {
 														width: 25%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -12327,7 +13081,7 @@ WooCommerce styles override
 												th {
 													text-align: left;
 													width: 22%;
-													font-size: 0.75em;
+													font-size: 0.7em;
 												}
 
 												td {
@@ -12344,7 +13098,7 @@ WooCommerce styles override
 											tr.woocommerce-shipping-totals {
 												th {
 													text-indent: 0.5em;
-													font-size: 0.75em;
+													font-size: 0.7em;
 												}
 
 												td {
@@ -12368,7 +13122,7 @@ WooCommerce styles override
 													}
 
 													p.woocommerce-shipping-destination {
-														font-size: 0.65em;
+														font-size: 0.5em;
 													}
 
 													form.woocommerce-shipping-calculator {
@@ -12424,17 +13178,87 @@ WooCommerce styles override
 /* #### Mobile Phones Portrait #### */
 @media only screen and (max-width: 320px) {
 	#page {
-		form {
-			button.button {
-				width: 60%;
-
-				&:hover {
+		#content {
+			form {
+				button.button {
 					width: 60%;
+
+					&:hover {
+						width: 60%;
+					}
 				}
 			}
-		}
+			aside#secondary {
+				article.side-bar-box {
+					width: 32%;
 
-		#content {
+					h2 {
+						font-size: 1.3em;
+					}
+
+					form#searchform {
+						input[type='text'] {
+							height: 35px;
+						}
+
+						input[type='submit'] {
+							width: 20%;
+						}
+					}
+
+					ul {
+						display: block;
+
+						li {
+							margin: 0.5em;
+
+							a {
+								font-size: 0.8em;
+							}
+						}
+					}
+
+					ul.product_list_widget {
+						li {
+							width: 45%;
+
+							a {
+								font-size: 0.8em;
+
+								img {
+									width: 40%;
+								}
+
+								span.product-title {
+									font-size: 0.9em;
+								}
+							}
+
+							span.woocommerce-Price-amount {
+								font-size: 0.9em;
+
+								span.woocommerce-Price-currencySymbol {
+									width: 10%;
+								}
+							}
+						}
+					}
+
+					ul#recentcomments {
+						width: 100%;
+
+						li.recentcomments {
+							span.comment-author-link {
+								width: auto;
+
+								a.url {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
 			#primary {
 				nav.woocommerce-breadcrumb {
 					a:first-of-type {
@@ -12738,7 +13562,7 @@ WooCommerce styles override
 								}
 							}
 
-							a[rel^="nofollow"] {
+							a[rel^='nofollow'] {
 								width: 75%;
 								font-size: 0.75em;
 
@@ -12864,8 +13688,8 @@ WooCommerce styles override
 											line-height: 40px;
 										}
 
-										input[type="text"],
-										input[type="email"] {
+										input[type='text'],
+										input[type='email'] {
 											margin: 0;
 										}
 
@@ -12970,7 +13794,7 @@ WooCommerce styles override
 														font-size: 0.85em;
 													}
 
-													input[type="number"] {
+													input[type='number'] {
 														height: 35px;
 													}
 												}
@@ -12982,7 +13806,6 @@ WooCommerce styles override
 												span.woocommerce-Price-currencySymbol {
 													display: block;
 													line-height: 15px;
-													width: 100%;
 												}
 
 												span.woocommerce-Price-amount {
@@ -13001,7 +13824,6 @@ WooCommerce styles override
 													text-align: left;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 100%;
 														display: block;
 														text-align: left;
 													}
@@ -13014,7 +13836,6 @@ WooCommerce styles override
 
 											td.actions {
 												button.button {
-
 													font-size: 0.8em;
 													&:hover {
 														cursor: pointer;
@@ -13022,15 +13843,15 @@ WooCommerce styles override
 												}
 
 												div.coupon {
-													width: 73%;
+													width: 68%;
 
 													label {
 														width: 25%;
 													}
 
-													input[type="text"],
-													input[type="password"],
-													input[type="email"] {
+													input[type='text'],
+													input[type='password'],
+													input[type='email'] {
 														font-size: 0.9em;
 													}
 
@@ -13282,7 +14103,7 @@ WooCommerce styles override
 													}
 
 													p.woocommerce-shipping-destination {
-														font-size: 0.6em;
+														font-size: 0.5em;
 													}
 
 													form.woocommerce-shipping-calculator {

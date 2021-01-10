@@ -1,6 +1,11 @@
 jQuery(document).ready(function($){
 
-  $('.bxslider').bxSlider();
+  $('.bxslider').bxSlider({
+			auto: true,
+			autoControls: false,
+			stopAutoOnClick: true,
+			pager: false
+	});
 
 });
 

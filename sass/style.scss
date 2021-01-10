@@ -822,9 +822,12 @@ License: GNU General Public License v2 or later
 
 							.bx-pager-item {
 								width: 3%;
+								display: inline-block;
+
 
 								a {
 									text-align: center;
+									text-decoration:none;
 								}
 							}
 						}
@@ -1326,9 +1329,9 @@ License: GNU General Public License v2 or later
 
 					.grid-1-of-5 {
 						width: 19%;
-						-webkit-flex: 1 0 auto;
-						-ms-flex: 1 0 auto;
-						flex: 1 0 auto;
+						-webkit-flex: 0 1 auto;
+						-ms-flex: 0 1 auto;
+						flex: 0 0 auto;
 						margin: 0.25em;
 						@include transitioner(all 0.5s ease-in-out);
 						@include boredrady(5px);
@@ -10591,7 +10594,7 @@ License: GNU General Public License v2 or later
 
 		nav#site-navigation {
 			position: fixed;
-			top: 7.2em;
+			top: 3.2em;
 			z-index: 100;
 			left: -250px;
 			width: 250px;
@@ -11656,7 +11659,7 @@ License: GNU General Public License v2 or later
 
 
 		nav#site-navigation {
-			top: 7.2em;
+			top: 3.2em;
 
 			ul#menu-main {
 				height: 14.1em;
@@ -12700,7 +12703,7 @@ License: GNU General Public License v2 or later
 		}
 
 		nav#site-navigation {
-			top: 7.2em;
+			top: 3.2em;
 
 			ul#menu-main {
 				height: 14.1em;
@@ -13760,7 +13763,7 @@ License: GNU General Public License v2 or later
 
 
 		nav#site-navigation {
-			top: 7.2em;
+			top: 3.2em;
 
 			ul#menu-main {
 				height: 14.1em;

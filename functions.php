@@ -52,6 +52,11 @@ if ( ! function_exists( 'mannering_woocommerce_child_setup' ) ) :
 		// Create three new image sizes.
 		add_image_size( 'featured-image', 783, 9999 );
 
+		// This theme styles the visual editor to resemble the theme style.
+		$font_url = '//https://fonts.googleapis.com/css?family=Poppins';
+		add_editor_style( array( 'css/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
+		add_theme_support('editor-styles');
+
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -109,6 +114,16 @@ if ( ! function_exists( 'mannering_woocommerce_child_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		//enable block editor styles
+		add_theme_support('wp-block-styles');
+
+		//enable wide alignments
+		add_theme_support('align-wide');
+
+		//allow embeds to be responsive.
+		add_theme_support('responsive_embeds');
+
 	}
 endif;
 add_action( 'after_setup_theme', 'mannering_woocommerce_child_setup' );
@@ -152,6 +167,15 @@ function mannering_woocommerce_child_add_google_fonts() {
 	wp_enqueue_style( 'storefront-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins', '1.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'mannering_woocommerce_child_add_google_fonts' );
+
+/**
+ * Block Editor Styling.
+ */
+function mannering_woocommerce_child_block_editor_fonts(){
+	wp_enqueue_style( 'mannering-woocommerce-child-block-editor-fonts', 'https://fonts.googleapis.com/css?family=Poppins', array(), CLASHVIBES_VERSION );
+
+}
+add_action('enqueue_block_editor_assets', 'mannering_woocommerce_child_block_editor_fonts');
 
 /**
  * Enqueue scripts and styles.

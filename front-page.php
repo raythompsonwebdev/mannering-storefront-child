@@ -84,6 +84,7 @@
 				</ul>
 			</div>
 		</div>
+
 	</article>
 
 	<figure id="ie8-image">
@@ -93,10 +94,6 @@
 </section>
 
 <h1><?php esc_html_e( 'Welcome to Mannering Music.', 'mannering-woocommerce-child' ); ?></h1>
-
-<!--main-section-->
-<main id="primary" role="main" >
-</main>
 
 <div class="clearfix"></div>
 
