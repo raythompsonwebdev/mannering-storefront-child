@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  *
  * @category   Index_Page
- * 
+ *
  * @subpackage Index_Page
  * @author     Raymond Thompson <ray_thomp@hushmail.com>
  * @copyright  2017 Raymond Thompson

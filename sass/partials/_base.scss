@@ -959,7 +959,9 @@ body {
 	font-size: 100%;
 	font-weight: normal;
 	margin: 0;
-	background: #fff;
+	padding: 0;
+	width:100%;
+	overflow-x:hidden;
 }
 
 .browsehappy {
