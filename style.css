@@ -2184,7 +2184,7 @@ body {
 	}
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 a.images-1-of-5 {
 		max-width: 100%;
-		margin: 1em 0;
+		margin: 0.5em 0;
 		cursor: pointer;
 		outline: none;
 	}
@@ -2238,7 +2238,7 @@ body {
 		width: 15%;
 		font-weight: bold;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		line-height: 25px;
 		margin: 0;
 		background-color: #2b2b2b;
@@ -2254,7 +2254,7 @@ body {
 		-o-border-radius: 5px;
 		border-radius: 5px;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		background-color: #666666;
 		line-height: 25px;
 		margin: 0;
@@ -3418,10 +3418,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.75em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.7em;
 	}
 	#page #content div#container {
@@ -4206,10 +4206,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.7em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.65em;
 	}
 	#page #content div#container {
@@ -4968,10 +4968,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.65em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.6em;
 	}
 	#page #content div#container {
@@ -5731,11 +5731,11 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.6em;
 		line-height: 20px;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.6em;
 	}
 	#page #content div#container {
@@ -6473,6 +6473,7 @@ body {
 	}
 	#page #content section.genre-section h1 {
 		font-size: 1em;
+		line-height: 35px;
 	}
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 {
 		width: 18.5%;
@@ -6496,10 +6497,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.55em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.55em;
 	}
 	#page #content div#container {
@@ -7273,10 +7274,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.55em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.55em;
 	}
 	#page #content div#container {
@@ -8045,10 +8046,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.5em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.5em;
 	}
 	#page #content div#container {
@@ -8810,10 +8811,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.5em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.5em;
 	}
 	#page #content div#container {
@@ -9636,10 +9637,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.6em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.6em;
 	}
 	#page #content div#container {
@@ -10403,10 +10404,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.5em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.5em;
 	}
 	#page #content div#container {
@@ -11188,10 +11189,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.7em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.7em;
 	}
 	#page #content div#container {
@@ -11966,10 +11967,10 @@ body {
 	#page #content section.genre-section .flex-wrapper .grid-1-of-5 form#front-btn .button:hover {
 		background-color: #ebab00;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 h1 {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 h1 {
 		font-size: 0.65em;
 	}
-	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap_1_of_5 p {
+	#page #content section.genre-section .flex-wrapper .grid-1-of-5 figcaption.cap-1-of-5 p {
 		font-size: 0.6em;
 	}
 	#page #content div#container {
