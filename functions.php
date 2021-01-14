@@ -210,7 +210,10 @@ function mannering_woocommerce_child_front_scripts() {
 
 	if ( is_front_page() ) {
 
-		wp_enqueue_script( 'bx-slider', get_stylesheet_directory_uri() . '/js/bxslider-4-master/jquery.bxslider.min.js', array( 'jquery' ), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
+		wp_enqueue_script( 'bx-slider-js', get_stylesheet_directory_uri() . '/js/bxslider-4-master/dist/jquery.bxslider.js', array( 'jquery' ), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
+
+		wp_enqueue_style( 'bx-slider-css', get_stylesheet_directory_uri() . '/js/bxslider-4-master/dist/jquery.bxslider.css', false, MANNERING_WOOCOMMERCE_CHILD_VERSION, 'all' );
+
 		wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ), MANNERING_WOOCOMMERCE_CHILD_VERSION, true );
 
 	}

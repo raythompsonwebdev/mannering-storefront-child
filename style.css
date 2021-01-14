@@ -1017,7 +1017,7 @@ body {
 		color: #3b3b3f;
 		text-decoration: none;
 		line-height: 40px;
-		width: 100%;
+		width: 94%;
 		height: 100%;
 		padding: 3%;
 	}
@@ -1471,7 +1471,7 @@ body {
 	}
 	#page #content {
 		width: 100%;
-		margin: 0;
+		margin: 0 0 1em 0;
 		padding: 0;
 		min-height: 600px;
 		color: #fff;
@@ -1701,17 +1701,9 @@ body {
 		text-shadow: 0px 1px 1px #181818;
 		background-color: #ecac00;
 	}
-	#page #content #slider #pageContainer .bx-wrapper .bx-viewport .bx-prev {
-		left: 10px;
-		background: url(images/controls.png) no-repeat 0 -32px;
-	}
 	#page #content #slider #pageContainer .bx-wrapper .bx-controls {
 		display: block;
 		height: 35px;
-	}
-	#page #content #slider #pageContainer .bx-wrapper .bx-controls .bx-prev {
-		left: 10px;
-		background: url(images/controls.png) no-repeat 0 -32px;
 	}
 	#page #content #slider #pageContainer .bx-wrapper .bx-pager {
 		bottom: 1em;
@@ -6780,6 +6772,9 @@ body {
 
 /* #### Mobile Phones Portrait -Apple iPhone 6#### */
 @media only screen and (max-width: 667px) {
+	.demo_store {
+		font-size: 0.8em;
+	}
 	#page {
 		width: 98%;
 	}

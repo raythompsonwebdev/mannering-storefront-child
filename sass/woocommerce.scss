@@ -1228,6 +1228,9 @@ WooCommerce styles override
 							color: $color2;
 							background-color: $color1;
 							-webkit-appearance: none;
+							line-height: 35px;
+							text-align: center;
+							text-decoration: none;
 
 							&:hover {
 								background-color: $color2;
@@ -1485,6 +1488,21 @@ WooCommerce styles override
 								}
 								a[href*='example'] {
 								}
+							}
+
+							div.woocommerce-Addresses{
+								margin:0;
+								div.woocommerce-Address{
+									margin:0;
+									header.woocommerce-Address-title{
+										margin:0;
+										h3{
+											color:$color7;
+										}
+									}
+
+								}
+
 							}
 
 							form.woocommerce-EditAccountForm {
@@ -2076,7 +2094,7 @@ WooCommerce styles override
 										}
 
 										button.alt {
-											font-size: 1em;
+											font-size: 1.5em;
 											line-height: 45px;
 										}
 
@@ -2885,7 +2903,7 @@ WooCommerce styles override
 				}
 
 				div.entry-content {
-					padding: 1em;
+					padding: 0.5em;
 
 					.woocommerce {
 						.woocommerce-notices-wrapper {
@@ -5864,7 +5882,18 @@ WooCommerce styles override
 											}
 
 											form.comment-form {
-												padding: 0.5em;
+												padding: 0.25em;
+												p.comment-form-cookies-consent {
+													margin: 1.5em 0;
+
+													input#wp-comment-cookies-consent {
+														width: 5%;
+														height: 20px;
+													}
+													label {
+														font-size:0.9em;
+													}
+												}
 
 												.comment-form-rating {
 													label {
@@ -6227,6 +6256,20 @@ WooCommerce styles override
 						}
 
 						div.woocommerce-MyAccount-content {
+							div.woocommerce-Addresses{
+								margin:0;
+								div.woocommerce-Address{
+									margin:0;
+									header.woocommerce-Address-title{
+										margin:0;
+										h3{
+											font-size:0.9em;
+										}
+									}
+
+								}
+
+							}
 							form.woocommerce-EditAccountForm {
 								p.form-row {
 									margin: 0;
@@ -7245,8 +7288,14 @@ WooCommerce styles override
 				div.post,
 				article.page {
 					div.entry-content {
-						padding: 0.5em;
+						padding: 0.25em;
 						.woocommerce {
+							p.cart-empty {
+											font-size:0.8em;
+							}
+							p.return-to-shop a.wc-backward {
+								font-size: 0.9em;
+							}
 							.woocommerce-notices-wrapper {
 								margin: 0;
 
@@ -9068,11 +9117,11 @@ WooCommerce styles override
 									background-color: $color3;
 
 									h2.woocommerce-Reviews-title {
-										font-size: 1em;
+										font-size: 0.9em;
 									}
 
 									p.woocommerce-noreviews {
-										font-size: 0.9em;
+										font-size: 0.8em;
 									}
 								}
 
@@ -9089,6 +9138,17 @@ WooCommerce styles override
 
 											form.comment-form {
 												padding: 0.5em;
+												p.comment-form-cookies-consent {
+
+
+													input#wp-comment-cookies-consent {
+
+														height: 20px;
+													}
+													label {
+														font-size:0.8em;
+													}
+												}
 
 												.comment-form-rating {
 													label {
@@ -9319,7 +9379,7 @@ WooCommerce styles override
 							}
 
 							a[rel^='nofollow'] {
-								width: 75%;
+								width: 90%;
 								font-size: 0.85em;
 
 								&:hover {
@@ -9433,7 +9493,7 @@ WooCommerce styles override
 
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 70%;
-								height: 45px;
+								height: auto;
 
 								ul {
 									height: auto;
@@ -9449,6 +9509,21 @@ WooCommerce styles override
 							}
 
 							div.woocommerce-MyAccount-content {
+
+								div.woocommerce-Addresses{
+									margin:0;
+									div.woocommerce-Address{
+										margin:0;
+										header.woocommerce-Address-title{
+											margin:0;
+											h3{
+												font-size:0.8em;
+											}
+										}
+
+									}
+								}
+
 								form.woocommerce-EditAccountForm {
 									p.form-row {
 										margin: 0;
@@ -9484,6 +9559,7 @@ WooCommerce styles override
 									width: auto;
 									display: inline-block;
 								}
+
 							}
 
 							form.woocommerce-cart-form {
@@ -10508,24 +10584,25 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-								font-size: 65%;
-								height: 45px;
+								font-size: 90%;
+
+
 
 								ul {
 									height: auto;
-
+									flex-flow:wrap;
 									li {
-										width: 16.25%;
+										width: 24.25%;
+										margin-bottom:0.2em;
 
 										a {
 											display: block;
 										}
 										a[href*='payment-methods'] {
-											font-size: 70%;
+											font-size: 90%;
 										}
 										a[href*='edit-account'] {
-											font-size: 80%;
-										}
+											font-size: 90%;										}
 									}
 								}
 							}
@@ -11586,6 +11663,13 @@ WooCommerce styles override
 					div.entry-content {
 						padding: 0.25em;
 						.woocommerce {
+
+							p.cart-empty {
+								font-size:0.7em;
+							}
+							p.return-to-shop a.wc-backward {
+								font-size: 0.8em;
+							}
 							.woocommerce-message {
 								font-size: 0.8em;
 								padding: 0.25em;
@@ -11620,16 +11704,14 @@ WooCommerce styles override
 								z-index: 0;
 								margin-bottom: 1em;
 								height: auto;
+								font-size: 90%;
 
 								ul {
 									height: auto;
 
 									li {
 										width: 32.7%;
-										margin: 0 0.2em 0.2em 0;
-										font-size: 0.8em;
-
-										a {
+											a {
 											display: block;
 										}
 									}
@@ -12232,7 +12314,7 @@ WooCommerce styles override
 									width: 80%;
 								}
 								span.product-title {
-									font-size: 70%;
+									font-size: 75%;
 								}
 							}
 							span.woocommerce-Price-amount {
@@ -12677,17 +12759,21 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-								font-size: 65%;
 
 								ul {
 									height: auto;
 
 									li {
-										width: 32.8%;
+										width: 48.8%;
 
 										a {
 											display: block;
 										}
+										a[href*='payment-methods'] {
+											font-size: 100%;
+										}
+										a[href*='edit-account'] {
+											font-size: 100%;										}
 									}
 								}
 							}
@@ -13723,13 +13809,12 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-								font-size: 65%;
 
 								ul {
 									height: auto;
 
 									li {
-										width: 32.7%;
+										width: 48.7%;
 
 										a {
 											display: block;
@@ -14802,13 +14887,12 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-								font-size: 65%;
 
 								ul {
 									height: auto;
 
 									li {
-										width: 32.7%;
+										width: 48.7%;
 
 										a {
 											display: block;
