@@ -627,14 +627,18 @@ WooCommerce styles override
 								color: $color7;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											background-color: #000;
+											button{
+												color:#fff;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -2680,14 +2684,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -3727,14 +3734,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -4852,15 +4862,19 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
+
 							}
 						}
 
@@ -5993,14 +6007,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -6903,6 +6920,9 @@ WooCommerce styles override
 			}
 
 			#primary {
+				.woocommerce-message{
+					font-size:0.9em;
+				}
 				article.product {
 					width: 15%;
 					display: inline-block;
@@ -7070,14 +7090,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -8166,14 +8189,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -9244,14 +9270,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -9627,7 +9656,7 @@ WooCommerce styles override
 
 											td.product-name {
 												a {
-													font-size: 0.85em;
+													font-size: 0.9em;
 												}
 											}
 
@@ -10170,6 +10199,9 @@ WooCommerce styles override
 			}
 
 			#primary {
+				.woocommerce-message{
+					font-size:0.8em;
+				}
 				nav.woocommerce-breadcrumb {
 					a:first-of-type {
 						width: 14%;
@@ -10329,14 +10361,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -10653,38 +10688,51 @@ WooCommerce styles override
 
 							form.woocommerce-cart-form {
 								padding: 0;
+								table.shop_table,
+								table.shop_table thead,
+								table.shop_table tbody,
+								table.shop_table th,
+								table.shop_table td,
+								table.shop_table tr {
+								display: block;
+								}
+								/* Hide table headers (but not display: none;, for accessibility) */
 
 								table.shop_table {
 									thead {
 										line-height: 45px;
 
 										tr {
+											position: absolute;
+											top: -9999px;
+											left: -9999px;
 											th {
 												text-align: left;
 											}
 
 											th.product-remove {
 												text-align: center;
+												width: 100%;
 											}
 
 											th.product-thumbnail {
-												width: 5%;
+												width: 100%;
 											}
 
 											th.product-name {
-												width: 50%;
+												width: 100%;
 											}
 
 											th.product-quantity {
-												width: 12%;
+												width: 100%;
 											}
 
 											th.product-price {
-												width: 10%;
+												width: 100%;
 											}
 
 											th.product-total {
-												width: 10%;
+												width: 100%;
 											}
 										}
 									}
@@ -10696,7 +10744,7 @@ WooCommerce styles override
 
 											td {
 												padding: 0.25em;
-												width: 10%;
+												width: 100%;
 											}
 
 											td.product-remove {
@@ -10706,35 +10754,48 @@ WooCommerce styles override
 											}
 
 											td.product-thumbnail {
-												width: 10%;
+												width: 100%;
 
 												a {
 													img.attachment-woocommerce_thumbnail {
-														margin: 0;
+														widows: 40%;
+														display:block;
+														margin: 0 auto;
 													}
 												}
 											}
 
 											td.product-name {
+												width: 100%;
+
 												a {
-													line-height: 15px;
+													line-height: 30px;
+													text-align: center;
+													font-size: 1.2em;
 												}
 											}
 
 											td.product-quantity {
+												width: 100%;
+
 												div.quantity {
 													label {
 														font-size: 0.85em;
 													}
 
 													input[type='number'] {
-														height: 35px;
+														height: 25px;
+														width:20%;
+														display:block;
+														margin:auto;
 													}
 												}
 											}
 
 											td.product-price {
 												font-size: 0.9em;
+												width: 100%;
+
 
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
@@ -10742,16 +10803,30 @@ WooCommerce styles override
 												}
 
 												span.woocommerce-Price-amount {
-													line-height: 45px;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 												}
 											}
 
 											td.product-subtotal,
 											td.product-total {
 												font-size: 0.9em;
+												width: 100%;
+
 
 												span.woocommerce-Price-amount {
-													line-height: 45px;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 
 													span.woocommerce-Price-currencySymbol {
 														width: 20%;
@@ -10764,6 +10839,7 @@ WooCommerce styles override
 											margin: 0;
 
 											td.actions {
+												height: 55px;
 												button.button {
 													width: 25%;
 
@@ -11423,14 +11499,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -11767,36 +11846,6 @@ WooCommerce styles override
 									thead {
 										line-height: 45px;
 
-										tr {
-											th {
-												text-align: left;
-												font-size: 0.8em;
-											}
-
-											th.product-remove {
-												text-align: center;
-											}
-
-											th.product-thumbnail {
-												width: 5%;
-											}
-
-											th.product-name {
-												width: 50%;
-											}
-
-											th.product-quantity {
-												width: 13%;
-											}
-
-											th.product-price {
-												width: 10%;
-											}
-
-											th.product-total {
-												width: 10%;
-											}
-										}
 									}
 
 									tbody {
@@ -11806,6 +11855,7 @@ WooCommerce styles override
 
 											td {
 												padding: 0.25em;
+												width: 100%;
 											}
 
 											td.product-remove {
@@ -11815,52 +11865,79 @@ WooCommerce styles override
 											}
 
 											td.product-thumbnail {
-												width: 11%;
+												width: 100%;
 
 												a {
 													img.attachment-woocommerce_thumbnail {
-														margin: 0;
+														widows: 40%;
+														display:block;
+														margin: 0 auto;
 													}
 												}
 											}
 
 											td.product-name {
+												width: 100%;
+
 												a {
-													line-height: 15px;
-													font-size: 0.8em;
+													line-height: 30px;
+													text-align: center;
+													font-size: 1em;
 												}
 											}
 
 											td.product-quantity {
+												width: 100%;
+
 												div.quantity {
 													label {
 														font-size: 0.85em;
 													}
 
 													input[type='number'] {
-														height: 35px;
+														height: 25px;
+														width:20%;
+														display:block;
+														margin:auto;
 													}
 												}
 											}
 
 											td.product-price {
 												font-size: 0.9em;
+												width: 100%;
+
 
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
+													width: 20%;
 												}
 
 												span.woocommerce-Price-amount {
-													line-height: 45px;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 												}
 											}
 
 											td.product-subtotal,
 											td.product-total {
 												font-size: 0.9em;
+												width: 100%;
+
 
 												span.woocommerce-Price-amount {
-													line-height: 20px;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 
 													span.woocommerce-Price-currencySymbol {
 														width: 20%;
@@ -11873,16 +11950,17 @@ WooCommerce styles override
 											margin: 0;
 
 											td.actions {
+												height: 55px;
 												button.button {
-													width: 30%;
-													font-size: 1em;
+													width: 25%;
+
 													&:hover {
 														cursor: pointer;
 													}
 												}
 
 												div.coupon {
-													width: 69%;
+													width: 73%;
 
 													label {
 														width: 25%;
@@ -11896,6 +11974,7 @@ WooCommerce styles override
 
 													button.button {
 														font-size: 1em;
+														width: 40%;
 													}
 												}
 											}
@@ -12522,14 +12601,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -12823,36 +12905,6 @@ WooCommerce styles override
 									thead {
 										line-height: 45px;
 
-										tr {
-											th {
-												text-align: left;
-												font-size: 0.8em;
-											}
-
-											th.product-remove {
-												text-align: center;
-											}
-
-											th.product-thumbnail {
-												width: 5%;
-											}
-
-											th.product-name {
-												width: 50%;
-											}
-
-											th.product-quantity {
-												width: 13%;
-											}
-
-											th.product-price {
-												width: 10%;
-											}
-
-											th.product-total {
-												width: 10%;
-											}
-										}
 									}
 
 									tbody {
@@ -12862,6 +12914,7 @@ WooCommerce styles override
 
 											td {
 												padding: 0.25em;
+												width: 100%;
 											}
 
 											td.product-remove {
@@ -12871,52 +12924,79 @@ WooCommerce styles override
 											}
 
 											td.product-thumbnail {
-												width: 11%;
+												width: 100%;
 
 												a {
 													img.attachment-woocommerce_thumbnail {
-														margin: 0;
+														widows: 40%;
+														display:block;
+														margin: 0 auto;
 													}
 												}
 											}
 
 											td.product-name {
+												width: 100%;
+
 												a {
-													line-height: 15px;
-													font-size: 0.8em;
+													line-height: 30px;
+													text-align: center;
+													font-size: 1em;
 												}
 											}
 
 											td.product-quantity {
+												width: 100%;
+
 												div.quantity {
 													label {
 														font-size: 0.85em;
 													}
 
 													input[type='number'] {
-														height: 35px;
+														height: 25px;
+														width:20%;
+														display:block;
+														margin:auto;
 													}
 												}
 											}
 
 											td.product-price {
 												font-size: 0.9em;
+												width: 100%;
+
 
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
+													width: 20%;
 												}
 
 												span.woocommerce-Price-amount {
-													line-height: 45px;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 												}
 											}
 
 											td.product-subtotal,
 											td.product-total {
 												font-size: 0.9em;
+												width: 100%;
+
 
 												span.woocommerce-Price-amount {
-													line-height: 20px;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 
 													span.woocommerce-Price-currencySymbol {
 														width: 20%;
@@ -12929,15 +13009,18 @@ WooCommerce styles override
 											margin: 0;
 
 											td.actions {
+												height: 55px;
 												button.button {
-													font-size: 0.9em;
+													width: 25%;
+													font-size: 1em;
+
 													&:hover {
 														cursor: pointer;
 													}
 												}
 
 												div.coupon {
-													width: 68%;
+													width: 73%;
 
 													label {
 														width: 25%;
@@ -12950,7 +13033,8 @@ WooCommerce styles override
 													}
 
 													button.button {
-														font-size: 0.9em;
+														font-size: 1em;
+														width: 40%;
 													}
 												}
 											}
@@ -13585,14 +13669,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -13872,36 +13959,6 @@ WooCommerce styles override
 									thead {
 										line-height: 45px;
 
-										tr {
-											th {
-												text-align: left;
-												font-size: 0.8em;
-											}
-
-											th.product-remove {
-												text-align: center;
-											}
-
-											th.product-thumbnail {
-												width: 11%;
-											}
-
-											th.product-name {
-												width: 45%;
-											}
-
-											th.product-quantity {
-												width: 13%;
-											}
-
-											th.product-price {
-												width: 12%;
-											}
-
-											th.product-total {
-												width: 12%;
-											}
-										}
 									}
 
 									tbody {
@@ -13911,7 +13968,7 @@ WooCommerce styles override
 
 											td {
 												padding: 0.25em;
-												width: 10%;
+												width: 100%;
 											}
 
 											td.product-remove {
@@ -13921,62 +13978,82 @@ WooCommerce styles override
 											}
 
 											td.product-thumbnail {
-												width: 17%;
+												width: 100%;
 
 												a {
 													img.attachment-woocommerce_thumbnail {
-														margin: 0;
+														widows: 40%;
+														display:block;
+														margin: 0 auto;
 													}
 												}
 											}
 
 											td.product-name {
+												width: 100%;
+
 												a {
-													line-height: 15px;
-													font-size: 0.8em;
+													line-height: 30px;
+													text-align: center;
+													font-size: 1em;
 												}
 											}
 
 											td.product-quantity {
+												width: 100%;
+
 												div.quantity {
 													label {
 														font-size: 0.85em;
 													}
 
 													input[type='number'] {
-														height: 35px;
+														height: 25px;
+														width:20%;
+														display:block;
+														margin:auto;
 													}
 												}
 											}
 
 											td.product-price {
 												font-size: 0.9em;
-												width: 14%;
+												width: 100%;
+
+
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
-													line-height: 15px;
-													width: 22%;
+													width: 20%;
 												}
 
 												span.woocommerce-Price-amount {
-													line-height: 15px;
-													display: block;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 												}
 											}
 
 											td.product-subtotal,
 											td.product-total {
 												font-size: 0.9em;
-												width: 14%;
+												width: 100%;
+
+
 												span.woocommerce-Price-amount {
-													line-height: 15px;
-													display: block;
-													text-align: left;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 
 													span.woocommerce-Price-currencySymbol {
-														width: 22%;
-														display: inline-block;
-														text-align: left;
+														width: 20%;
 													}
 												}
 											}
@@ -13986,15 +14063,17 @@ WooCommerce styles override
 											margin: 0;
 
 											td.actions {
+												height: 55px;
 												button.button {
-													font-size: 0.8em;
+													font-size: 0.9em;
+
 													&:hover {
 														cursor: pointer;
 													}
 												}
 
 												div.coupon {
-													width: 68%;
+													width: 73%;
 
 													label {
 														width: 25%;
@@ -14007,7 +14086,8 @@ WooCommerce styles override
 													}
 
 													button.button {
-														font-size: 0.9em;
+														font-size: 1em;
+														width: 40%;
 													}
 												}
 											}
@@ -14665,14 +14745,17 @@ WooCommerce styles override
 								padding: 0.5em;
 							}
 
-							.mejs-container,
-							.mejs-container .mejs-controls,
-							.mejs-embed,
-							.mejs-embed body {
+							.mejs-container {
 								background-color: $color8;
+								.mejs-inner{
+									.mejs-controls{
 
-								.mejs-button {
-									background-color: $color2;
+										.mejs.button{
+											button{
+												color:#000;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -14946,37 +15029,6 @@ WooCommerce styles override
 								table.shop_table {
 									thead {
 										line-height: 45px;
-
-										tr {
-											th {
-												text-align: left;
-												font-size: 0.8em;
-											}
-
-											th.product-remove {
-												text-align: center;
-											}
-
-											th.product-thumbnail {
-												width: 11%;
-											}
-
-											th.product-name {
-												width: 45%;
-											}
-
-											th.product-quantity {
-												width: 13%;
-											}
-
-											th.product-price {
-												width: 12%;
-											}
-
-											th.product-total {
-												width: 12%;
-											}
-										}
 									}
 
 									tbody {
@@ -14986,6 +15038,7 @@ WooCommerce styles override
 
 											td {
 												padding: 0.25em;
+												width: 100%;
 											}
 
 											td.product-remove {
@@ -14995,60 +15048,82 @@ WooCommerce styles override
 											}
 
 											td.product-thumbnail {
-												width: 23%;
+												width: 100%;
 
 												a {
 													img.attachment-woocommerce_thumbnail {
-														margin: 0;
+														widows: 40%;
+														display:block;
+														margin: 0 auto;
 													}
 												}
 											}
 
 											td.product-name {
+												width: 100%;
+
 												a {
-													line-height: 15px;
-													font-size: 0.75em;
+													line-height: 30px;
+													text-align: center;
+													font-size: 1em;
 												}
 											}
 
 											td.product-quantity {
+												width: 100%;
+
 												div.quantity {
 													label {
 														font-size: 0.85em;
 													}
 
 													input[type='number'] {
-														height: 35px;
+														height: 25px;
+														width:20%;
+														display:block;
+														margin:auto;
 													}
 												}
 											}
 
 											td.product-price {
 												font-size: 0.9em;
-												width: 14%;
+												width: 100%;
+
+
 												span.woocommerce-Price-currencySymbol {
-													display: block;
-													line-height: 15px;
+													display: inline-block;
+													width: 20%;
 												}
 
 												span.woocommerce-Price-amount {
-													line-height: 15px;
-													display: block;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 												}
 											}
 
 											td.product-subtotal,
 											td.product-total {
 												font-size: 0.9em;
-												width: 14%;
+												width: 100%;
+
+
 												span.woocommerce-Price-amount {
-													line-height: 15px;
-													display: block;
-													text-align: left;
+													line-height: 25px;
+													bdi{
+														display: block;
+														margin: auto;
+														width: 15%;
+														font-size: 1.5em;
+													}
 
 													span.woocommerce-Price-currencySymbol {
-														display: block;
-														text-align: left;
+														width: 20%;
 													}
 												}
 											}
@@ -15058,15 +15133,17 @@ WooCommerce styles override
 											margin: 0;
 
 											td.actions {
+												height: 55px;
 												button.button {
-													font-size: 0.8em;
+													width: 25%;
+
 													&:hover {
 														cursor: pointer;
 													}
 												}
 
 												div.coupon {
-													width: 68%;
+													width: 73%;
 
 													label {
 														width: 25%;
@@ -15079,7 +15156,8 @@ WooCommerce styles override
 													}
 
 													button.button {
-														font-size: 0.9em;
+														font-size: 1em;
+														width: 40%;
 													}
 												}
 											}

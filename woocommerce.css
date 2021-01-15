@@ -1103,17 +1103,14 @@ p.no-comments {
 		background-color: #fff;
 		color: #181818;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button {
+		background-color: #000;
+	}
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #fff;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -2949,17 +2946,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -3754,17 +3745,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -4625,17 +4610,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -5622,17 +5601,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -6394,6 +6367,9 @@ p.no-comments {
 		/*regular-posts and woo-commerce*/
 		/*woo-commerce*/
 	}
+	#page #content #primary .woocommerce-message {
+		font-size: 0.9em;
+	}
 	#page #content #primary article.product {
 		width: 15%;
 		display: inline-block;
@@ -6555,17 +6531,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -7521,17 +7491,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -8469,17 +8433,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -8790,7 +8748,7 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a {
-		font-size: 0.85em;
+		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
@@ -9272,6 +9230,9 @@ p.no-comments {
 		/*regular-posts and woo-commerce*/
 		/*woo-commerce*/
 	}
+	#page #content #primary .woocommerce-message {
+		font-size: 0.8em;
+	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
 		width: 14%;
 	}
@@ -9430,17 +9391,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -9706,10 +9661,31 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form {
 		padding: 0;
+		/* Hide table headers (but not display: none;, for accessibility) */
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table th,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table td,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tr,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table th,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table td,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tr {
+		display: block;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead {
 		line-height: 45px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th {
@@ -9718,26 +9694,27 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove {
 		text-align: center;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail {
-		width: 5%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name {
-		width: 50%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity {
-		width: 12%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price {
-		width: 10%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total {
-		width: 10%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
@@ -9750,7 +9727,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td {
 		padding: 0.25em;
-		width: 10%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a {
@@ -9758,15 +9735,27 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail {
-		width: 10%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail {
-		margin: 0;
+		widows: 40%;
+		display: block;
+		margin: 0 auto;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a {
-		line-height: 15px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
@@ -9774,11 +9763,15 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
-		height: 35px;
+		height: 25px;
+		width: 20%;
+		display: block;
+		margin: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price {
 		font-size: 0.9em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
@@ -9787,19 +9780,36 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount {
-		line-height: 45px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi {
+		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total {
 		font-size: 0.9em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount {
-		line-height: 45px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi {
+		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
@@ -9810,6 +9820,10 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions {
+		height: 55px;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button {
@@ -10411,17 +10425,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -10706,35 +10714,6 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead {
 		line-height: 45px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th {
-		text-align: left;
-		font-size: 0.8em;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove {
-		text-align: center;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail {
-		width: 5%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name {
-		width: 50%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity {
-		width: 13%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price {
-		width: 10%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total {
-		width: 10%;
-	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
 		/*cart*/
@@ -10746,6 +10725,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td {
 		padding: 0.25em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a {
@@ -10753,16 +10733,27 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail {
-		width: 11%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail {
-		margin: 0;
+		widows: 40%;
+		display: block;
+		margin: 0 auto;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a {
-		line-height: 15px;
-		font-size: 0.8em;
+		line-height: 30px;
+		text-align: center;
+		font-size: 1em;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
@@ -10770,31 +10761,53 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
-		height: 35px;
+		height: 25px;
+		width: 20%;
+		display: block;
+		margin: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price {
 		font-size: 0.9em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
 		display: inline-block;
+		width: 20%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount {
-		line-height: 45px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi {
+		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total {
 		font-size: 0.9em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount {
-		line-height: 20px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi {
+		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
@@ -10806,10 +10819,13 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
 	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions {
+		height: 55px;
+	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button {
-		width: 30%;
-		font-size: 1em;
+		width: 25%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover {
@@ -10817,7 +10833,7 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon {
-		width: 69%;
+		width: 73%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
@@ -10834,6 +10850,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button {
 		font-size: 1em;
+		width: 40%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#customer_details,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#customer_details {
@@ -11391,17 +11408,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -11643,35 +11654,6 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead {
 		line-height: 45px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th {
-		text-align: left;
-		font-size: 0.8em;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove {
-		text-align: center;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail {
-		width: 5%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name {
-		width: 50%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity {
-		width: 13%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price {
-		width: 10%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total {
-		width: 10%;
-	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
 		/*cart*/
@@ -11683,6 +11665,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td {
 		padding: 0.25em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a {
@@ -11690,16 +11673,27 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail {
-		width: 11%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail {
-		margin: 0;
+		widows: 40%;
+		display: block;
+		margin: 0 auto;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a {
-		line-height: 15px;
-		font-size: 0.8em;
+		line-height: 30px;
+		text-align: center;
+		font-size: 1em;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
@@ -11707,31 +11701,53 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
-		height: 35px;
+		height: 25px;
+		width: 20%;
+		display: block;
+		margin: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price {
 		font-size: 0.9em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
 		display: inline-block;
+		width: 20%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount {
-		line-height: 45px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi {
+		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total {
 		font-size: 0.9em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount {
-		line-height: 20px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi {
+		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
@@ -11743,9 +11759,14 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
 	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions {
+		height: 55px;
+	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button {
-		font-size: 0.9em;
+		width: 25%;
+		font-size: 1em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover {
@@ -11753,7 +11774,7 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon {
-		width: 68%;
+		width: 73%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
@@ -11769,7 +11790,8 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button {
-		font-size: 0.9em;
+		font-size: 1em;
+		width: 40%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#customer_details,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#customer_details {
@@ -12340,17 +12362,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -12576,35 +12592,6 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead {
 		line-height: 45px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th {
-		text-align: left;
-		font-size: 0.8em;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove {
-		text-align: center;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail {
-		width: 11%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name {
-		width: 45%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity {
-		width: 13%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price {
-		width: 12%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total {
-		width: 12%;
-	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
 		/*cart*/
@@ -12616,7 +12603,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td {
 		padding: 0.25em;
-		width: 10%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a {
@@ -12624,16 +12611,27 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail {
-		width: 17%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail {
-		margin: 0;
+		widows: 40%;
+		display: block;
+		margin: 0 auto;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a {
-		line-height: 15px;
-		font-size: 0.8em;
+		line-height: 30px;
+		text-align: center;
+		font-size: 1em;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
@@ -12641,54 +12639,71 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
-		height: 35px;
+		height: 25px;
+		width: 20%;
+		display: block;
+		margin: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price {
 		font-size: 0.9em;
-		width: 14%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
 		display: inline-block;
-		line-height: 15px;
-		width: 22%;
+		width: 20%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount {
-		line-height: 15px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi {
 		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total {
 		font-size: 0.9em;
-		width: 14%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount {
-		line-height: 15px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi {
 		display: block;
-		text-align: left;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 22%;
-		display: inline-block;
-		text-align: left;
+		width: 20%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
 	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions {
+		height: 55px;
+	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover {
@@ -12696,7 +12711,7 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon {
-		width: 68%;
+		width: 73%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
@@ -12712,7 +12727,8 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button {
-		font-size: 0.9em;
+		font-size: 1em;
+		width: 40%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#customer_details,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#customer_details {
@@ -13298,17 +13314,11 @@ p.no-comments {
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body {
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container {
 		background-color: #666666;
 	}
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-controls .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed .mejs-button,
-	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-embed body .mejs-button {
-		background-color: #fff;
+	#page #content #primary div.product div.summary .woocommerce-product-details__short-description .mejs-container .mejs-inner .mejs-controls .mejs.button button {
+		color: #000;
 	}
 	#page #content #primary div.product div.summary form.cart {
 		padding: 0.5em;
@@ -13527,35 +13537,6 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead {
 		line-height: 45px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th {
-		text-align: left;
-		font-size: 0.8em;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-remove {
-		text-align: center;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-thumbnail {
-		width: 11%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-name {
-		width: 45%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-quantity {
-		width: 13%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-price {
-		width: 12%;
-	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total,
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead tr th.product-total {
-		width: 12%;
-	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
 		/*cart*/
@@ -13567,6 +13548,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td {
 		padding: 0.25em;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-remove a {
@@ -13574,16 +13556,27 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail {
-		width: 23%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-thumbnail a img.attachment-woocommerce_thumbnail {
-		margin: 0;
+		widows: 40%;
+		display: block;
+		margin: 0 auto;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-name a {
-		line-height: 15px;
-		font-size: 0.75em;
+		line-height: 30px;
+		text-align: center;
+		font-size: 1em;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity {
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
@@ -13591,52 +13584,71 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
-		height: 35px;
+		height: 25px;
+		width: 20%;
+		display: block;
+		margin: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price {
 		font-size: 0.9em;
-		width: 14%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
-		display: block;
-		line-height: 15px;
+		display: inline-block;
+		width: 20%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount {
-		line-height: 15px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-amount bdi {
 		display: block;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total {
 		font-size: 0.9em;
-		width: 14%;
+		width: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount {
-		line-height: 15px;
+		line-height: 25px;
+	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount bdi,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount bdi {
 		display: block;
-		text-align: left;
+		margin: auto;
+		width: 15%;
+		font-size: 1.5em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		display: block;
-		text-align: left;
+		width: 20%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
 	}
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions,
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions {
+		height: 55px;
+	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button {
-		font-size: 0.8em;
+		width: 25%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions button.button:hover {
@@ -13644,7 +13656,7 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon {
-		width: 68%;
+		width: 73%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
@@ -13660,7 +13672,8 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button {
-		font-size: 0.9em;
+		font-size: 1em;
+		width: 40%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#customer_details,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#customer_details {
