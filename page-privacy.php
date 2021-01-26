@@ -26,9 +26,7 @@
 	<p>
 	<?php
 	esc_html_e(
-		'The policy: This privacy policy is for this website; [www.raythompsonwebdev.co.uk] and served by [1&amp;1 Internet Ltd. Discovery House, 154 Southgate Street, Gloucester, GL1 2EX
-	United Kingdom] and governs the privacy of its users who choose to use it.',
-		'mannering-woocommerce-child'
+		'The policy: This privacy policy is for this website; [www.raythompsonwebdev.co.uk] and served by [1&amp;1 Internet Ltd. Discovery House, 154 Southgate Street, Gloucester, GL1 2EX	United Kingdom] and governs the privacy of its users who choose to use it.',	'mannering-woocommerce-child'
 	);
 	?>
 	</p>

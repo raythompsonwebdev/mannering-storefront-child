@@ -27,7 +27,7 @@ WooCommerce styles override
 
 				section.widget_shopping_cart,
 				section#woocommerce_top_rated_products-2,
-				section#woocommerce_recently_viewed_products-2{
+				section#woocommerce_recently_viewed_products-2 {
 					display: -webkit-flex;
 					display: -ms-flexbox;
 					display: flex;
@@ -39,7 +39,6 @@ WooCommerce styles override
 					justify-content: center;
 					-ms-flex-align: center;
 					align-items: center;
-
 				}
 				section.widget_shopping_cart {
 					width: 100%;
@@ -146,7 +145,7 @@ WooCommerce styles override
 					ul.product_list_widget {
 						margin: 0.5em auto;
 						display: block;
-						width: 75%;
+						width: 85%;
 						li {
 							margin-bottom: 0.5em;
 							a {
@@ -166,7 +165,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 								line-height: 30px;
 								margin: 0 auto;
 								display: block;
@@ -175,7 +174,7 @@ WooCommerce styles override
 									background-color: $color4;
 									line-height: 30px;
 									font-size: 0.9em;
-
+									letter-spacing: 0.1em;
 									span.woocommerce-Price-currencySymbol {
 										width: 30%;
 										display: inline-block;
@@ -393,6 +392,10 @@ WooCommerce styles override
 										font-size: 1.4em;
 										padding: 0.5em 0;
 										text-indent: 0.35em;
+										span {
+											width: auto;
+											display: inline-block;
+										}
 									}
 
 									p.woocommerce-noreviews {
@@ -400,6 +403,10 @@ WooCommerce styles override
 										text-indent: 0.5em;
 										font-size: 0.9em;
 										line-height: 30px;
+									}
+
+									ol.commentlist {
+										margin: 0;
 									}
 								}
 
@@ -499,7 +506,18 @@ WooCommerce styles override
 													}
 												}
 											}
-
+											p.must-log-in {
+												a {
+													width: auto;
+													display: inline-block;
+												}
+											}
+											p.askimet_comment_form_privacy_notice {
+												a {
+													width: auto;
+													display: inline-block;
+												}
+											}
 											p.stars {
 												padding: 0;
 												height: auto;
@@ -582,6 +600,19 @@ WooCommerce styles override
 							background-color: $color7;
 						}
 
+						div.woocommerce-product-rating {
+							a.woocommerce-review-link {
+								width: 50%;
+								display: block;
+								span {
+									width: 5%;
+									padding-right: 0.5em;
+									line-height: 25px;
+									text-align: center;
+								}
+							}
+						}
+
 						p.price {
 							font-size: 1em;
 							text-indent: 0.2em;
@@ -610,6 +641,7 @@ WooCommerce styles override
 										height: 100%;
 										text-align: left;
 										float: left;
+										clear: both;
 									}
 								}
 							}
@@ -629,13 +661,12 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
 											background-color: #000;
-											button{
-												color:#fff;
+											button {
+												color: #fff;
 											}
 										}
 									}
@@ -722,7 +753,7 @@ WooCommerce styles override
 					ul.page-numbers {
 						border: 1px solid $color8;
 						height: auto;
-						margin:0;
+						margin: 0;
 
 						li {
 							width: 5%;
@@ -1313,6 +1344,7 @@ WooCommerce styles override
 								text-align: left;
 								margin: auto;
 								font-weight: bold;
+								letter-spacing: 0.1em;
 
 								del,
 								ins {
@@ -1491,22 +1523,21 @@ WooCommerce styles override
 									line-height: 30px;
 								}
 								a[href*='example'] {
+									display: inline-block;
 								}
 							}
 
-							div.woocommerce-Addresses{
-								margin:0;
-								div.woocommerce-Address{
-									margin:0;
-									header.woocommerce-Address-title{
-										margin:0;
-										h3{
-											color:$color7;
+							div.woocommerce-Addresses {
+								margin: 0;
+								div.woocommerce-Address {
+									margin: 0;
+									header.woocommerce-Address-title {
+										margin: 0;
+										h3 {
+											color: $color7;
 										}
 									}
-
 								}
-
 							}
 
 							form.woocommerce-EditAccountForm {
@@ -1829,6 +1860,7 @@ WooCommerce styles override
 							div.woocommerce-NoticeGroup {
 								ul.woocommerce-error {
 									width: 100%;
+									margin: 0;
 
 									li {
 										line-height: 35px;
@@ -2351,6 +2383,93 @@ WooCommerce styles override
 								li {
 									line-height: 30px;
 									display: block;
+									strong {
+										display: inline-block;
+										width: auto;
+										span.woocommerce-Price-amount {
+											line-height: 30px;
+											margin: 0 auto;
+											display: block;
+											bdi {
+												display: block;
+												width: 100%;
+											}
+
+											span.woocommerce-Price-currencySymbol {
+												width: auto;
+												display: inline-block;
+												line-height: 30px;
+												text-align: center;
+												padding-right: 0.5em;
+											}
+										}
+									}
+								}
+							}
+
+							section.woocommerce-order-details {
+								table.order_details {
+									thead {
+										tr {
+											th {
+												text-align: left;
+											}
+										}
+									}
+									tbody {
+										tr.order_item {
+											td.product-name,
+											td.product-total {
+												a {
+													width: auto;
+													display: inline-block;
+												}
+												span.woocommerce-Price-amount {
+													line-height: 30px;
+													margin: 0 auto;
+													display: block;
+													bdi {
+														display: block;
+														width: 100%;
+													}
+
+													span.woocommerce-Price-currencySymbol {
+														width: auto;
+														display: inline-block;
+														line-height: 30px;
+														text-align: center;
+														padding-right: 0.5em;
+													}
+												}
+											}
+										}
+									}
+									tfoot {
+										tr {
+											th {
+												text-align: left;
+											}
+											td {
+												span.woocommerce-Price-amount {
+													line-height: 30px;
+													margin: 0 auto;
+													display: block;
+													bdi {
+														display: block;
+														width: 100%;
+													}
+
+													span.woocommerce-Price-currencySymbol {
+														width: auto;
+														display: inline-block;
+														line-height: 30px;
+														text-align: center;
+														padding-right: 0.5em;
+													}
+												}
+											}
+										}
+									}
 								}
 							}
 						}
@@ -2477,7 +2596,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -2686,12 +2805,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -3521,7 +3639,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -3736,12 +3854,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -4602,7 +4719,7 @@ WooCommerce styles override
 									}
 								}
 								span.woocommerce-Price-amount {
-									width: 100%;
+									width: 60%;
 
 									bdi {
 										display: block;
@@ -4655,15 +4772,14 @@ WooCommerce styles override
 								width: 100%;
 								font-size: 0.8em;
 								img.attachment-woocommerce_thumbnail {
-									width: 80%;
+									width: 85%;
 								}
 								span.product-title {
-									font-size: 70%;
-									line-height: 15px;
+									font-size: 80%;
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -4679,11 +4795,11 @@ WooCommerce styles override
 				section#woocommerce_recently_viewed_products-2 {
 					padding: 0;
 					ul.product_list_widget {
-						width: 70%;
+						width: 80%;
 						li {
 							margin-bottom: 0.5em;
 							a {
-								font-size: 0.75em;
+								font-size: 0.7em;
 								img.attachment-woocommerce_thumbnail {
 									width: 80%;
 									span.product-title {
@@ -4864,17 +4980,15 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
 								}
-
 							}
 						}
 
@@ -5604,7 +5718,7 @@ WooCommerce styles override
 
 				section.widget_shopping_cart,
 				section#woocommerce_top_rated_products-2,
-				section#woocommerce_recently_viewed_products-2{
+				section#woocommerce_recently_viewed_products-2 {
 					width: 100%;
 					display: flex;
 					-webkit-flex-flow: row wrap;
@@ -5616,10 +5730,7 @@ WooCommerce styles override
 					-webkit-align-items: flex-start;
 					-ms-flex-align: start;
 					align-items: flex-start;
-
 				}
-
-
 
 				section.widget_shopping_cart {
 					width: 100%;
@@ -5630,7 +5741,7 @@ WooCommerce styles override
 						padding: 0;
 						margin: 0;
 						width: 100%;
-						line-height:30px;
+						line-height: 30px;
 					}
 
 					div.hide_cart_widget_if-empty {
@@ -5729,7 +5840,7 @@ WooCommerce styles override
 					h2.widget-title {
 						text-align: center;
 						background-color: $color3;
-						line-height:30px;
+						line-height: 30px;
 					}
 					ul.product_list_widget {
 						width: 100%;
@@ -5750,7 +5861,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -5768,7 +5879,7 @@ WooCommerce styles override
 					h2.widget-title {
 						text-align: center;
 						background-color: $color3;
-						line-height:30px;
+						line-height: 30px;
 					}
 					ul.product_list_widget {
 						width: 100%;
@@ -5905,7 +6016,7 @@ WooCommerce styles override
 														height: 20px;
 													}
 													label {
-														font-size:0.9em;
+														font-size: 0.9em;
 													}
 												}
 
@@ -6009,12 +6120,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -6273,19 +6383,17 @@ WooCommerce styles override
 						}
 
 						div.woocommerce-MyAccount-content {
-							div.woocommerce-Addresses{
-								margin:0;
-								div.woocommerce-Address{
-									margin:0;
-									header.woocommerce-Address-title{
-										margin:0;
-										h3{
-											font-size:0.9em;
+							div.woocommerce-Addresses {
+								margin: 0;
+								div.woocommerce-Address {
+									margin: 0;
+									header.woocommerce-Address-title {
+										margin: 0;
+										h3 {
+											font-size: 0.9em;
 										}
 									}
-
 								}
-
 							}
 							form.woocommerce-EditAccountForm {
 								p.form-row {
@@ -6872,7 +6980,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -6920,8 +7028,8 @@ WooCommerce styles override
 			}
 
 			#primary {
-				.woocommerce-message{
-					font-size:0.9em;
+				.woocommerce-message {
+					font-size: 0.9em;
 				}
 				article.product {
 					width: 15%;
@@ -7092,12 +7200,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -7314,7 +7421,7 @@ WooCommerce styles override
 						padding: 0.25em;
 						.woocommerce {
 							p.cart-empty {
-											font-size:0.8em;
+								font-size: 0.8em;
 							}
 							p.return-to-shop a.wc-backward {
 								font-size: 0.9em;
@@ -7982,7 +8089,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -8191,12 +8298,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -9051,7 +9157,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -9165,14 +9271,11 @@ WooCommerce styles override
 											form.comment-form {
 												padding: 0.5em;
 												p.comment-form-cookies-consent {
-
-
 													input#wp-comment-cookies-consent {
-
 														height: 20px;
 													}
 													label {
-														font-size:0.8em;
+														font-size: 0.8em;
 													}
 												}
 
@@ -9272,12 +9375,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -9460,7 +9562,7 @@ WooCommerce styles override
 							}
 
 							.price {
-								font-size: 0.8em;
+								font-size: 0.9em;
 
 								del,
 								ins {
@@ -9538,18 +9640,16 @@ WooCommerce styles override
 							}
 
 							div.woocommerce-MyAccount-content {
-
-								div.woocommerce-Addresses{
-									margin:0;
-									div.woocommerce-Address{
-										margin:0;
-										header.woocommerce-Address-title{
-											margin:0;
-											h3{
-												font-size:0.8em;
+								div.woocommerce-Addresses {
+									margin: 0;
+									div.woocommerce-Address {
+										margin: 0;
+										header.woocommerce-Address-title {
+											margin: 0;
+											h3 {
+												font-size: 0.8em;
 											}
 										}
-
 									}
 								}
 
@@ -9588,7 +9688,6 @@ WooCommerce styles override
 									width: auto;
 									display: inline-block;
 								}
-
 							}
 
 							form.woocommerce-cart-form {
@@ -10151,7 +10250,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -10199,8 +10298,8 @@ WooCommerce styles override
 			}
 
 			#primary {
-				.woocommerce-message{
-					font-size:0.8em;
+				.woocommerce-message {
+					font-size: 0.8em;
 				}
 				nav.woocommerce-breadcrumb {
 					a:first-of-type {
@@ -10363,12 +10462,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -10557,7 +10655,7 @@ WooCommerce styles override
 							}
 
 							.price {
-								font-size: 0.8em;
+								font-size: 0.9em;
 
 								del,
 								ins {
@@ -10621,14 +10719,12 @@ WooCommerce styles override
 							nav.woocommerce-MyAccount-navigation {
 								font-size: 90%;
 
-
-
 								ul {
 									height: auto;
-									flex-flow:wrap;
+									flex-flow: wrap;
 									li {
 										width: 24.25%;
-										margin-bottom:0.2em;
+										margin-bottom: 0.2em;
 
 										a {
 											display: block;
@@ -10637,7 +10733,8 @@ WooCommerce styles override
 											font-size: 90%;
 										}
 										a[href*='edit-account'] {
-											font-size: 90%;										}
+											font-size: 90%;
+										}
 									}
 								}
 							}
@@ -10694,7 +10791,7 @@ WooCommerce styles override
 								table.shop_table th,
 								table.shop_table td,
 								table.shop_table tr {
-								display: block;
+									display: block;
 								}
 								/* Hide table headers (but not display: none;, for accessibility) */
 
@@ -10759,7 +10856,7 @@ WooCommerce styles override
 												a {
 													img.attachment-woocommerce_thumbnail {
 														widows: 40%;
-														display:block;
+														display: block;
 														margin: 0 auto;
 													}
 												}
@@ -10785,9 +10882,9 @@ WooCommerce styles override
 
 													input[type='number'] {
 														height: 25px;
-														width:20%;
-														display:block;
-														margin:auto;
+														width: 20%;
+														display: block;
+														margin: auto;
 													}
 												}
 											}
@@ -10796,7 +10893,6 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
 													width: 20%;
@@ -10804,7 +10900,7 @@ WooCommerce styles override
 
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -10818,10 +10914,9 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -11290,7 +11385,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -11316,7 +11411,7 @@ WooCommerce styles override
 								img.attachment-woocommerce_thumbnail {
 									width: 80%;
 									span.product-title {
-										font-size: 75%;
+										font-size: 80%;
 									}
 								}
 							}
@@ -11501,12 +11596,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -11705,11 +11799,11 @@ WooCommerce styles override
 
 						a.woocommerce-LoopProduct-link {
 							h2.woocommerce-loop-product__title {
-								font-size: 0.75em;
+								font-size: 0.8em;
 							}
 
 							.price {
-								font-size: 0.8em;
+								font-size: 0.9em;
 
 								del,
 								ins {
@@ -11742,9 +11836,8 @@ WooCommerce styles override
 					div.entry-content {
 						padding: 0.25em;
 						.woocommerce {
-
 							p.cart-empty {
-								font-size:0.7em;
+								font-size: 0.7em;
 							}
 							p.return-to-shop a.wc-backward {
 								font-size: 0.8em;
@@ -11790,7 +11883,7 @@ WooCommerce styles override
 
 									li {
 										width: 32.7%;
-											a {
+										a {
 											display: block;
 										}
 									}
@@ -11845,7 +11938,6 @@ WooCommerce styles override
 								table.shop_table {
 									thead {
 										line-height: 45px;
-
 									}
 
 									tbody {
@@ -11870,7 +11962,7 @@ WooCommerce styles override
 												a {
 													img.attachment-woocommerce_thumbnail {
 														widows: 40%;
-														display:block;
+														display: block;
 														margin: 0 auto;
 													}
 												}
@@ -11896,9 +11988,9 @@ WooCommerce styles override
 
 													input[type='number'] {
 														height: 25px;
-														width:20%;
-														display:block;
-														margin:auto;
+														width: 20%;
+														display: block;
+														margin: auto;
 													}
 												}
 											}
@@ -11907,7 +11999,6 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
 													width: 20%;
@@ -11915,7 +12006,7 @@ WooCommerce styles override
 
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -11929,10 +12020,9 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -12393,11 +12483,11 @@ WooCommerce styles override
 									width: 80%;
 								}
 								span.product-title {
-									font-size: 75%;
+									font-size: 80%;
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -12422,7 +12512,7 @@ WooCommerce styles override
 								img.attachment-woocommerce_thumbnail {
 									width: 80%;
 									span.product-title {
-										font-size: 70%;
+										font-size: 80%;
 									}
 								}
 							}
@@ -12603,12 +12693,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -12775,11 +12864,11 @@ WooCommerce styles override
 
 						a.woocommerce-LoopProduct-link {
 							h2.woocommerce-loop-product__title {
-								font-size: 0.75em;
+								font-size: 0.8em;
 							}
 
 							.price {
-								font-size: 0.75em;
+								font-size: 0.9em;
 
 								del,
 								ins {
@@ -12841,7 +12930,6 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-
 								ul {
 									height: auto;
 
@@ -12855,7 +12943,8 @@ WooCommerce styles override
 											font-size: 100%;
 										}
 										a[href*='edit-account'] {
-											font-size: 100%;										}
+											font-size: 100%;
+										}
 									}
 								}
 							}
@@ -12904,7 +12993,6 @@ WooCommerce styles override
 								table.shop_table {
 									thead {
 										line-height: 45px;
-
 									}
 
 									tbody {
@@ -12929,7 +13017,7 @@ WooCommerce styles override
 												a {
 													img.attachment-woocommerce_thumbnail {
 														widows: 40%;
-														display:block;
+														display: block;
 														margin: 0 auto;
 													}
 												}
@@ -12955,9 +13043,9 @@ WooCommerce styles override
 
 													input[type='number'] {
 														height: 25px;
-														width:20%;
-														display:block;
-														margin:auto;
+														width: 20%;
+														display: block;
+														margin: auto;
 													}
 												}
 											}
@@ -12966,7 +13054,6 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
 													width: 20%;
@@ -12974,7 +13061,7 @@ WooCommerce styles override
 
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -12988,10 +13075,9 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -13459,11 +13545,11 @@ WooCommerce styles override
 									width: 80%;
 								}
 								span.product-title {
-									font-size: 70%;
+									font-size: 85%;
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -13487,7 +13573,7 @@ WooCommerce styles override
 								img.attachment-woocommerce_thumbnail {
 									width: 80%;
 									span.product-title {
-										font-size: 70%;
+										font-size: 85%;
 									}
 								}
 							}
@@ -13671,12 +13757,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -13830,11 +13915,11 @@ WooCommerce styles override
 
 						a.woocommerce-LoopProduct-link {
 							h2.woocommerce-loop-product__title {
-								font-size: 0.7em;
+								font-size: 0.8em;
 							}
 
 							.price {
-								font-size: 0.75em;
+								font-size: 0.9em;
 
 								del,
 								ins {
@@ -13896,7 +13981,6 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-
 								ul {
 									height: auto;
 
@@ -13958,7 +14042,6 @@ WooCommerce styles override
 								table.shop_table {
 									thead {
 										line-height: 45px;
-
 									}
 
 									tbody {
@@ -13983,7 +14066,7 @@ WooCommerce styles override
 												a {
 													img.attachment-woocommerce_thumbnail {
 														widows: 40%;
-														display:block;
+														display: block;
 														margin: 0 auto;
 													}
 												}
@@ -14009,9 +14092,9 @@ WooCommerce styles override
 
 													input[type='number'] {
 														height: 25px;
-														width:20%;
-														display:block;
-														margin:auto;
+														width: 20%;
+														display: block;
+														margin: auto;
 													}
 												}
 											}
@@ -14020,7 +14103,6 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
 													width: 20%;
@@ -14028,7 +14110,7 @@ WooCommerce styles override
 
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -14042,10 +14124,9 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -14519,11 +14600,11 @@ WooCommerce styles override
 									width: 80%;
 								}
 								span.product-title {
-									font-size: 70%;
+									font-size: 80%;
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 100%;
+								width: 60%;
 
 								bdi {
 									display: block;
@@ -14548,7 +14629,7 @@ WooCommerce styles override
 								img.attachment-woocommerce_thumbnail {
 									width: 80%;
 									span.product-title {
-										font-size: 70%;
+										font-size: 85%;
 									}
 								}
 							}
@@ -14719,7 +14800,7 @@ WooCommerce styles override
 
 					div.summary {
 						h1.product_title {
-							font-size: 0.75em;
+							font-size: 0.8em;
 						}
 
 						p.price {
@@ -14747,12 +14828,11 @@ WooCommerce styles override
 
 							.mejs-container {
 								background-color: $color8;
-								.mejs-inner{
-									.mejs-controls{
-
-										.mejs.button{
-											button{
-												color:#000;
+								.mejs-inner {
+									.mejs-controls {
+										.mejs.button {
+											button {
+												color: #000;
 											}
 										}
 									}
@@ -14904,11 +14984,11 @@ WooCommerce styles override
 
 						a.woocommerce-LoopProduct-link {
 							h2.woocommerce-loop-product__title {
-								font-size: 0.7em;
+								font-size: 0.8em;
 							}
 
 							.price {
-								font-size: 0.75em;
+								font-size: 0.9em;
 
 								del,
 								ins {
@@ -14970,7 +15050,6 @@ WooCommerce styles override
 							}
 
 							nav.woocommerce-MyAccount-navigation {
-
 								ul {
 									height: auto;
 
@@ -15053,7 +15132,7 @@ WooCommerce styles override
 												a {
 													img.attachment-woocommerce_thumbnail {
 														widows: 40%;
-														display:block;
+														display: block;
 														margin: 0 auto;
 													}
 												}
@@ -15079,9 +15158,9 @@ WooCommerce styles override
 
 													input[type='number'] {
 														height: 25px;
-														width:20%;
-														display:block;
-														margin:auto;
+														width: 20%;
+														display: block;
+														margin: auto;
 													}
 												}
 											}
@@ -15090,7 +15169,6 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-currencySymbol {
 													display: inline-block;
 													width: 20%;
@@ -15098,7 +15176,7 @@ WooCommerce styles override
 
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;
@@ -15112,10 +15190,9 @@ WooCommerce styles override
 												font-size: 0.9em;
 												width: 100%;
 
-
 												span.woocommerce-Price-amount {
 													line-height: 25px;
-													bdi{
+													bdi {
 														display: block;
 														margin: auto;
 														width: 15%;

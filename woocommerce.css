@@ -608,7 +608,7 @@ p.no-comments {
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget {
 		margin: 0.5em auto;
 		display: block;
-		width: 75%;
+		width: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li {
 		margin-bottom: 0.5em;
@@ -630,7 +630,7 @@ p.no-comments {
 		height: 30px;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 		line-height: 30px;
 		margin: 0 auto;
 		display: block;
@@ -640,6 +640,7 @@ p.no-comments {
 		background-color: #3b3b3f;
 		line-height: 30px;
 		font-size: 0.9em;
+		letter-spacing: 0.1em;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
 		width: 30%;
@@ -845,12 +846,21 @@ p.no-comments {
 		padding: 0.5em 0;
 		text-indent: 0.35em;
 	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments h2.woocommerce-Reviews-title span,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments h2.woocommerce-Reviews-title span {
+		width: auto;
+		display: inline-block;
+	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments p.woocommerce-noreviews,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments p.woocommerce-noreviews {
 		display: block;
 		text-indent: 0.5em;
 		font-size: 0.9em;
 		line-height: 30px;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist {
+		margin: 0;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper {
@@ -981,6 +991,16 @@ p.no-comments {
 		color: #ecac00;
 		cursor: pointer;
 	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.must-log-in a,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.must-log-in a {
+		width: auto;
+		display: inline-block;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.askimet_comment_form_privacy_notice a,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.askimet_comment_form_privacy_notice a {
+		width: auto;
+		display: inline-block;
+	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper #review_form #respond p.stars,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper #review_form #respond p.stars {
 		padding: 0;
@@ -1062,6 +1082,16 @@ p.no-comments {
 		text-indent: 0.5em;
 		background-color: #181818;
 	}
+	#page #content #primary div.product div.summary div.woocommerce-product-rating a.woocommerce-review-link {
+		width: 50%;
+		display: block;
+	}
+	#page #content #primary div.product div.summary div.woocommerce-product-rating a.woocommerce-review-link span {
+		width: 5%;
+		padding-right: 0.5em;
+		line-height: 25px;
+		text-align: center;
+	}
 	#page #content #primary div.product div.summary p.price {
 		font-size: 1em;
 		text-indent: 0.2em;
@@ -1091,6 +1121,7 @@ p.no-comments {
 		height: 100%;
 		text-align: left;
 		float: left;
+		clear: both;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description {
 		width: 100%;
@@ -1742,6 +1773,7 @@ p.no-comments {
 		text-align: left;
 		margin: auto;
 		font-weight: bold;
+		letter-spacing: 0.1em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {
@@ -1910,6 +1942,9 @@ p.no-comments {
 		width: auto;
 		display: inline-block;
 		line-height: 30px;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content p a[href*='example'] {
+		display: inline-block;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content div.woocommerce-Addresses {
 		margin: 0;
@@ -2187,6 +2222,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div.woocommerce-NoticeGroup ul.woocommerce-error {
 		width: 100%;
+		margin: 0;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div.woocommerce-NoticeGroup ul.woocommerce-error li {
 		line-height: 35px;
@@ -2639,6 +2675,72 @@ p.no-comments {
 		line-height: 30px;
 		display: block;
 	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order ul.woocommerce-order-overview li strong {
+		display: inline-block;
+		width: auto;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order ul.woocommerce-order-overview li strong span.woocommerce-Price-amount {
+		line-height: 30px;
+		margin: 0 auto;
+		display: block;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order ul.woocommerce-order-overview li strong span.woocommerce-Price-amount bdi {
+		display: block;
+		width: 100%;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order ul.woocommerce-order-overview li strong span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
+		width: auto;
+		display: inline-block;
+		line-height: 30px;
+		text-align: center;
+		padding-right: 0.5em;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details thead tr th {
+		text-align: left;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-name a,
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-total a {
+		width: auto;
+		display: inline-block;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-name span.woocommerce-Price-amount,
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-total span.woocommerce-Price-amount {
+		line-height: 30px;
+		margin: 0 auto;
+		display: block;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-name span.woocommerce-Price-amount bdi,
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-total span.woocommerce-Price-amount bdi {
+		display: block;
+		width: 100%;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-name span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tbody tr.order_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
+		width: auto;
+		display: inline-block;
+		line-height: 30px;
+		text-align: center;
+		padding-right: 0.5em;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tfoot tr th {
+		text-align: left;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tfoot tr td span.woocommerce-Price-amount {
+		line-height: 30px;
+		margin: 0 auto;
+		display: block;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tfoot tr td span.woocommerce-Price-amount bdi {
+		display: block;
+		width: 100%;
+	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-order section.woocommerce-order-details table.order_details tfoot tr td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
+		width: auto;
+		display: inline-block;
+		line-height: 30px;
+		text-align: center;
+		padding-right: 0.5em;
+	}
 	#page #content #primary mark.count {
 		float: none;
 		width: auto;
@@ -2741,7 +2843,7 @@ p.no-comments {
 		font-size: 90%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -3534,7 +3636,7 @@ p.no-comments {
 		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -4361,7 +4463,7 @@ p.no-comments {
 		font-size: 75%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -4406,14 +4508,13 @@ p.no-comments {
 		font-size: 0.8em;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a img.attachment-woocommerce_thumbnail {
-		width: 80%;
+		width: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a span.product-title {
-		font-size: 70%;
-		line-height: 15px;
+		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -4426,13 +4527,13 @@ p.no-comments {
 		padding: 0;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget {
-		width: 70%;
+		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li {
 		margin-bottom: 0.5em;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a {
-		font-size: 0.75em;
+		font-size: 0.7em;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a img.attachment-woocommerce_thumbnail {
 		width: 80%;
@@ -5368,7 +5469,7 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -6325,7 +6426,7 @@ p.no-comments {
 		font-size: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -7294,7 +7395,7 @@ p.no-comments {
 		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -8224,7 +8325,7 @@ p.no-comments {
 		line-height: 25px;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -8571,7 +8672,7 @@ p.no-comments {
 		font-size: 0.8em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {
@@ -9187,7 +9288,7 @@ p.no-comments {
 		font-size: 75%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -9537,7 +9638,7 @@ p.no-comments {
 		font-size: 0.8em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {
@@ -10222,7 +10323,7 @@ p.no-comments {
 		font-size: 75%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -10248,7 +10349,7 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a img.attachment-woocommerce_thumbnail span.product-title {
-		font-size: 75%;
+		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
 		width: 100%;
@@ -10584,10 +10685,10 @@ p.no-comments {
 		margin: 1em auto;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link h2.woocommerce-loop-product__title {
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {
@@ -11210,10 +11311,10 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a span.product-title {
-		font-size: 75%;
+		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -11237,7 +11338,7 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a img.attachment-woocommerce_thumbnail span.product-title {
-		font-size: 70%;
+		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
 		width: 100%;
@@ -11540,10 +11641,10 @@ p.no-comments {
 		width: 60%;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link h2.woocommerce-loop-product__title {
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price {
-		font-size: 0.75em;
+		font-size: 0.9em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {
@@ -12159,10 +12260,10 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a span.product-title {
-		font-size: 70%;
+		font-size: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -12186,7 +12287,7 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a img.attachment-woocommerce_thumbnail span.product-title {
-		font-size: 70%;
+		font-size: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
 		width: 100%;
@@ -12482,10 +12583,10 @@ p.no-comments {
 		width: 65%;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link h2.woocommerce-loop-product__title {
-		font-size: 0.7em;
+		font-size: 0.8em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price {
-		font-size: 0.75em;
+		font-size: 0.9em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {
@@ -13104,10 +13205,10 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a span.product-title {
-		font-size: 70%;
+		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 100%;
+		width: 60%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
@@ -13131,7 +13232,7 @@ p.no-comments {
 		width: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a img.attachment-woocommerce_thumbnail span.product-title {
-		font-size: 70%;
+		font-size: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
 		width: 100%;
@@ -13295,7 +13396,7 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content #primary div.product div.summary h1.product_title {
-		font-size: 0.75em;
+		font-size: 0.8em;
 	}
 	#page #content #primary div.product div.summary p.price {
 		font-size: 1em;
@@ -13430,10 +13531,10 @@ p.no-comments {
 		width: 70%;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link h2.woocommerce-loop-product__title {
-		font-size: 0.7em;
+		font-size: 0.8em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price {
-		font-size: 0.75em;
+		font-size: 0.9em;
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins {

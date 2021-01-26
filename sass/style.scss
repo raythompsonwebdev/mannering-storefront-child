@@ -19,10 +19,10 @@ License: GNU General Public License v2 or later
 
 */
 
-@import "partials/base";
-@import "partials/fonts";
-@import "partials/variables";
-@import "partials/mixins";
+@import 'partials/base';
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
 
 /*1920*/
 @media only screen and (max-width: 1920px) {
@@ -347,7 +347,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						border: 2px solid $color8;
 						@include boredrady(5px);
 						background: $color2;
@@ -469,12 +469,12 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						width: 75%;
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -563,7 +563,6 @@ License: GNU General Public License v2 or later
 			min-height: 600px;
 			color: $color2;
 
-
 			h1 {
 				font-size: 1.5em;
 				width: 100%;
@@ -620,19 +619,19 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				input[type="text"],
-				input[type="password"],
-				input[type="submit"] {
+				input[type='text'],
+				input[type='password'],
+				input[type='submit'] {
 					font-family: ($FontList);
 
 					display: block;
 					font-weight: normal;
 				}
 
-				input[type="text"],
-				input[type="password"],
-				input[type="email"],
-				input[type="tel"] {
+				input[type='text'],
+				input[type='password'],
+				input[type='email'],
+				input[type='tel'] {
 					width: 100%;
 					border: 2px solid $color8;
 					@include boredrady(5px);
@@ -803,41 +802,8 @@ License: GNU General Public License v2 or later
 
 						.bx-controls {
 							display: block;
-							height: 35px;
+							height: auto;
 						}
-
-						.bx-pager {
-							bottom: 1em;
-							padding: 0;
-							display: block;
-
-							.bx-pager-item {
-								width: 3%;
-								display: inline-block;
-
-
-								a {
-									text-align: center;
-									text-decoration:none;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						position: absolute;
-						top: 0.5em;
-						right: 0.2em;
-						background: $dark-box;
-						color: $color2;
-						padding: 0.1em 0.5em;
-						font-size: 0.75em;
-						text-transform: uppercase;
-						z-index: 1000;
 					}
 				}
 
@@ -869,7 +835,7 @@ License: GNU General Public License v2 or later
 					float: right;
 				}
 
-			/* contact page form */
+				/* contact page form */
 				#contact-form-a {
 					width: 40%;
 					height: auto;
@@ -921,7 +887,7 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						width: 100%;
 						display: block;
 						padding: 0.2em;
@@ -929,7 +895,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						width: 100%;
 						display: block;
 						padding: 0.2em;
@@ -951,7 +917,7 @@ License: GNU General Public License v2 or later
 						font-weight: bold;
 					}
 
-					input[type="submit"],
+					input[type='submit'],
 					#contact-btn {
 						font-family: ($FontList);
 						letter-spacing: 0.05em;
@@ -1036,7 +1002,6 @@ License: GNU General Public License v2 or later
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					min-height: 150px;
@@ -1376,8 +1341,6 @@ License: GNU General Public License v2 or later
 									width: 15%;
 									font-weight: bold;
 								}
-
-
 							}
 						}
 
@@ -1808,7 +1771,7 @@ License: GNU General Public License v2 or later
 						width: 100%;
 						line-height: 30px;
 						font-weight: normal;
-						@include boredrady("none");
+						@include boredrady('none');
 						text-align: center;
 					}
 
@@ -2000,7 +1963,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -2052,7 +2015,7 @@ License: GNU General Public License v2 or later
 			margin: 0;
 			padding: 1%;
 			@include boredrady(5px);
-			display:flex;
+			display: flex;
 
 			.social-btns {
 				height: 40px;
@@ -2151,8 +2114,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /*1440*/
@@ -2166,7 +2127,6 @@ License: GNU General Public License v2 or later
 				display: -webkit-flex;
 				.site-logo {
 					a {
-
 						div.site-firstletter {
 							font-size: 1em;
 						}
@@ -2176,7 +2136,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 94%;
 					hgroup {
-
 						h1#logo {
 							font-size: 2em;
 
@@ -2269,7 +2228,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -2278,7 +2236,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -2309,7 +2267,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -2339,11 +2296,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -2507,27 +2464,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-							padding: 0;
-
-							.bx-pager-item {
-								width: 6%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -2549,13 +2485,13 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 						font-size: 1.2em;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 						font-size: 1.2em;
@@ -2566,7 +2502,7 @@ License: GNU General Public License v2 or later
 						font-size: 1.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						font-size: 1.2em;
 						line-height: 1.5em;
 					}
@@ -2604,11 +2540,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -2806,8 +2740,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -2826,7 +2758,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -3123,7 +3054,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -3201,8 +3132,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /*1280*/
@@ -3215,7 +3144,7 @@ License: GNU General Public License v2 or later
 			.site-branding {
 				display: -webkit-flex;
 				.site-logo {
-					width:5%;
+					width: 5%;
 					a {
 						line-height: 40px;
 
@@ -3235,7 +3164,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 94%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.9em;
 
@@ -3332,7 +3260,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -3341,7 +3268,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -3372,7 +3299,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -3402,11 +3328,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -3583,19 +3509,6 @@ License: GNU General Public License v2 or later
 							}
 						}
 					}
-
-					.bx-pager {
-						bottom: 1em;
-						padding: 0;
-
-						.bx-pager-item {
-							width: 4%;
-
-							a {
-								text-align: center;
-							}
-						}
-					}
 				}
 			}
 
@@ -3617,12 +3530,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -3631,7 +3544,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -3668,11 +3581,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -3864,8 +3775,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -3884,7 +3793,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -4175,7 +4083,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -4253,8 +4161,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /*1024*/
@@ -4267,9 +4173,8 @@ License: GNU General Public License v2 or later
 			.site-branding {
 				display: -webkit-flex;
 				.site-logo {
-					width:5%;
+					width: 5%;
 					a {
-
 						div.site-firstletter {
 							font-size: 1em;
 						}
@@ -4278,7 +4183,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 95%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.8em;
 
@@ -4369,7 +4273,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -4378,7 +4281,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -4409,7 +4312,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -4439,11 +4341,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -4597,27 +4499,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-							padding: 0;
-
-							.bx-pager-item {
-								width: 5%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -4642,12 +4523,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -4656,7 +4537,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -4693,11 +4574,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -4889,8 +4768,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -4909,7 +4786,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -5198,7 +5074,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -5276,8 +5152,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 @media only screen and (max-width: 960px) {
@@ -5290,7 +5164,6 @@ License: GNU General Public License v2 or later
 				display: -webkit-flex;
 				.site-logo {
 					a {
-
 						div.site-firstletter {
 							font-size: 1em;
 						}
@@ -5300,7 +5173,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 93%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.7em;
 
@@ -5392,7 +5264,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -5401,7 +5272,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -5432,7 +5303,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -5462,11 +5332,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -5632,27 +5502,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-							padding: 0;
-
-							.bx-pager-item {
-								width: 6%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -5677,12 +5526,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -5691,7 +5540,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -5728,11 +5577,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -5922,8 +5769,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -5943,7 +5788,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -6229,7 +6073,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -6307,8 +6151,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /*800*/
@@ -6322,7 +6164,6 @@ License: GNU General Public License v2 or later
 				display: -webkit-flex;
 				.site-logo {
 					a {
-
 						div.screen-reader-text {
 							overflow: hidden;
 
@@ -6339,7 +6180,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 93%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.6em;
 
@@ -6428,7 +6268,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -6437,7 +6276,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -6468,7 +6307,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -6498,11 +6336,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -6671,26 +6509,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 6%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -6715,12 +6533,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -6729,7 +6547,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -6766,11 +6584,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -6959,8 +6775,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -6979,7 +6793,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -7265,7 +7078,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -7343,8 +7156,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait -Apple iPhone 6#### */
@@ -7372,7 +7183,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 91%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.5em;
 
@@ -7462,7 +7272,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -7471,7 +7280,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -7502,7 +7311,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -7532,11 +7340,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -7700,26 +7508,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 7%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -7765,12 +7553,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -7779,7 +7567,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -7818,11 +7606,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -8012,8 +7798,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -8032,7 +7816,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -8318,7 +8101,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -8396,8 +8179,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -8410,7 +8191,7 @@ License: GNU General Public License v2 or later
 			.site-branding {
 				display: -webkit-flex;
 				.site-logo {
-					width:8%;
+					width: 8%;
 					a {
 						div.screen-reader-text {
 							overflow: hidden;
@@ -8428,7 +8209,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 90%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.4em;
 							height: 30px;
@@ -8519,7 +8299,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -8528,7 +8307,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -8559,7 +8338,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -8589,11 +8367,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -8756,26 +8534,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 8%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -8800,12 +8558,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -8814,7 +8572,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -8851,11 +8609,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -9049,8 +8805,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -9069,7 +8823,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -9357,7 +9110,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -9435,8 +9188,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### I Phone 5 Landscape #### */
@@ -9451,7 +9202,6 @@ License: GNU General Public License v2 or later
 				.site-logo {
 					width: 10%;
 					a {
-
 						div.site-firstletter {
 							font-size: 1em;
 						}
@@ -9460,7 +9210,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 87%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.4em;
 
@@ -9556,7 +9305,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -9615,11 +9364,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -9734,7 +9483,6 @@ License: GNU General Public License v2 or later
 
 					.bx-wrapper {
 						left: 0;
-
 						.bx-viewport {
 							//height: 125px !important;
 							ul.bxslider {
@@ -9789,26 +9537,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							padding: 0;
-
-							.bx-pager-item {
-								width: 9%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
-					}
-
-					.button-icon-download {
-						margin-left: 15px;
-					}
-
-					#slider-stopper {
-						right: 0.2em;
 					}
 				}
 			}
@@ -9833,12 +9561,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -9847,7 +9575,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -9884,11 +9612,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -10079,8 +9805,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -10099,7 +9823,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -10387,7 +10110,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -10465,8 +10188,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -10480,7 +10201,6 @@ License: GNU General Public License v2 or later
 				display: -webkit-flex;
 				.site-logo {
 					a {
-
 						div.site-firstletter {
 							font-size: 1em;
 						}
@@ -10490,7 +10210,6 @@ License: GNU General Public License v2 or later
 				.site-title {
 					width: 87%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.5em;
 							height: 30px;
@@ -10566,8 +10285,8 @@ License: GNU General Public License v2 or later
 		.menu-toggle {
 			position: fixed;
 			z-index: 100;
-			top: 4em;
-			left: 67vw;
+			top: 0.5em;
+			left: 82vw;
 			padding: 0.7em;
 			font-size: 1em;
 			text-transform: uppercase;
@@ -10582,10 +10301,6 @@ License: GNU General Public License v2 or later
 		}
 
 		/* Make sure the button doesn"t hide when menu is open. */
-
-		.toggled .menu-toggle.hide {
-			bottom: 1em;
-		}
 
 		nav#site-navigation {
 			position: fixed;
@@ -10630,10 +10345,9 @@ License: GNU General Public License v2 or later
 				}
 			}
 		}
-		.open{
-			display:block;
+		.open {
+			display: block;
 		}
-
 
 		aside#secondary {
 			min-height: 200px;
@@ -10645,7 +10359,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -10654,7 +10367,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -10685,7 +10398,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -10714,11 +10426,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -10894,18 +10606,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 9%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
 					}
 				}
 			}
@@ -10930,12 +10630,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -10944,7 +10644,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -10981,11 +10681,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -11178,8 +10876,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -11198,7 +10894,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -11487,7 +11182,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -11564,8 +11259,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -11574,11 +11267,9 @@ License: GNU General Public License v2 or later
 		width: 98%;
 
 		header.site-header {
-
 			.site-branding {
-
 				.site-logo {
-					width:11%;
+					width: 11%;
 					a {
 						div.site-firstletter {
 							font-size: 1em;
@@ -11587,9 +11278,8 @@ License: GNU General Public License v2 or later
 				}
 
 				.site-title {
-					width:87%;
+					width: 87%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.4em;
 
@@ -11648,10 +11338,9 @@ License: GNU General Public License v2 or later
 		}
 
 		.menu-toggle {
-			left: 67vw;
+			left: 82vw;
 			font-size: 0.9em;
 		}
-
 
 		nav#site-navigation {
 			top: 3.2em;
@@ -11692,7 +11381,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.85em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -11701,7 +11389,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -11732,7 +11420,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -11762,11 +11449,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -11937,18 +11624,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 9%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
 					}
 				}
 			}
@@ -11973,12 +11648,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -11987,7 +11662,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -12024,11 +11699,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -12217,8 +11890,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -12237,7 +11908,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -12526,7 +12196,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -12603,8 +12273,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -12617,7 +12285,6 @@ License: GNU General Public License v2 or later
 			.site-branding {
 				display: -webkit-flex;
 				.site-logo {
-
 					a {
 						div.screen-reader-text {
 							overflow: hidden;
@@ -12633,9 +12300,8 @@ License: GNU General Public License v2 or later
 					}
 				}
 				.site-title {
-					width:83%;
+					width: 83%;
 					hgroup {
-
 						h1#logo {
 							font-size: 1.3em;
 
@@ -12693,8 +12359,8 @@ License: GNU General Public License v2 or later
 		}
 
 		.menu-toggle {
-			left: 62vw;
-			font-size: 0.85em;
+			left: 82vw;
+			font-size: 0.8em;
 		}
 
 		nav#site-navigation {
@@ -12736,7 +12402,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.8em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -12745,7 +12410,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.8em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 0.8em;
 						width: 31%;
 					}
@@ -12776,7 +12441,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -12805,11 +12469,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -12877,11 +12541,11 @@ License: GNU General Public License v2 or later
 			min-height: 600px;
 
 			h1 {
-				font-size: 0.9em;
+				font-size: 1em;
 			}
 
 			h2 {
-				font-size: 0.85em;
+				font-size: 0.9em;
 			}
 
 			p {
@@ -12977,18 +12641,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 9%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
 					}
 				}
 			}
@@ -13013,12 +12665,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -13027,7 +12679,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -13064,11 +12716,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -13244,10 +12894,10 @@ License: GNU General Public License v2 or later
 					align-items: center;
 
 					.grid-1-of-5 {
-						width: 70%;
+						width: 75%;
 						float: none;
 						display: block;
-						margin: 4em auto;
+						margin: 1em auto;
 
 						a.images-1-of-5 {
 							cursor: pointer;
@@ -13270,8 +12920,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -13290,7 +12938,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -13589,7 +13236,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.8em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -13665,8 +13312,6 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -13752,10 +13397,9 @@ License: GNU General Public License v2 or later
 		}
 
 		.menu-toggle {
-			left: 62vw;
-			font-size: 0.8em;
+			left: 82vw;
+			font-size: 0.75em;
 		}
-
 
 		nav#site-navigation {
 			top: 3.2em;
@@ -13796,7 +13440,6 @@ License: GNU General Public License v2 or later
 				font-size: 0.8em;
 			}
 
-
 			#search_form {
 				padding: 3%;
 
@@ -13805,7 +13448,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.8em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 0.8em;
 						width: 31%;
 					}
@@ -13836,7 +13479,6 @@ License: GNU General Public License v2 or later
 				}
 			}
 
-
 			.blogs {
 				height: 14.34871%;
 				width: 98%;
@@ -13865,11 +13507,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -13937,11 +13579,11 @@ License: GNU General Public License v2 or later
 			min-height: 600px;
 
 			h1 {
-				font-size: 0.9em;
+				font-size: 1em;
 			}
 
 			h2 {
-				font-size: 0.85em;
+				font-size: 0.9em;
 			}
 
 			p {
@@ -14039,18 +13681,6 @@ License: GNU General Public License v2 or later
 								}
 							}
 						}
-
-						.bx-pager {
-							bottom: 1em;
-
-							.bx-pager-item {
-								width: 9%;
-
-								a {
-									text-align: center;
-								}
-							}
-						}
 					}
 				}
 			}
@@ -14075,12 +13705,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -14089,7 +13719,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -14126,11 +13756,9 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-
 				#mapcontainer {
 					display: block;
 				}
-
 
 				article.textbox {
 					h1 {
@@ -14317,8 +13945,6 @@ License: GNU General Public License v2 or later
 								&:hover {
 									background-color: $color10;
 								}
-
-
 							}
 						}
 
@@ -14337,7 +13963,6 @@ License: GNU General Public License v2 or later
 
 			div#container {
 				width: 100%;
-
 
 				ul#tabs {
 					margin-left: 0%;
@@ -14627,7 +14252,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.8em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -14700,6 +14325,4 @@ License: GNU General Public License v2 or later
 			}
 		}
 	}
-
-
 }
