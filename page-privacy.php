@@ -26,7 +26,8 @@
 	<p>
 	<?php
 	esc_html_e(
-		'The policy: This privacy policy is for this website; [www.raythompsonwebdev.co.uk] and served by [1&amp;1 Internet Ltd. Discovery House, 154 Southgate Street, Gloucester, GL1 2EX	United Kingdom] and governs the privacy of its users who choose to use it.',	'mannering-woocommerce-child'
+		'The policy: This privacy policy is for this website; [www.raythompsonwebdev.co.uk] and served by [1&amp;1 Internet Ltd. Discovery House, 154 Southgate Street, Gloucester, GL1 2EX	United Kingdom] and governs the privacy of its users who choose to use it.',
+		'mannering-woocommerce-child'
 	);
 	?>
 	</p>
@@ -153,7 +154,7 @@
 	<ul>
 		<li><a href="<?php echo esc_url( 'https://ico.org.uk/media/for-organisations/data-protection-reform/overview-of-the-gdpr-1-13.pdf', 'display' ); ?>" alt="<?php esc_attr_e( 'Overview of the GDPR - General Data Protection Regulation', 'mannering-woocommerce-child' ); ?>" target="new"><?php esc_html_e( 'Overview of the GDPR - General Data Protection Regulation', 'mannering-woocommerce-child' ); ?></a></li>
 
-		<li><a href="<?php echo esc_url( 'https://www.gov.uk/data-protection', 'display' ); ?>" alt="<?php esc_attr_e( 'Data Protection Act 1998' , 'mannering-woocommerce-child'); ?>" target="new">Data Protection Act 1998</a></li>
+		<li><a href="<?php echo esc_url( 'https://www.gov.uk/data-protection', 'display' ); ?>" alt="<?php esc_attr_e( 'Data Protection Act 1998', 'mannering-woocommerce-child' ); ?>" target="new">Data Protection Act 1998</a></li>
 
 		<li><a href="<?php echo esc_url( 'https://ico.org.uk/for-organisations/guide-to-pecr/', 'display' ); ?>" alt="<?php esc_attr_e( 'Privacy and Electronic Communications Regulations 2003', 'mannering-woocommerce-child' ); ?>" target="new">Privacy and Electronic Communications Regulations 2003</a></li>
 

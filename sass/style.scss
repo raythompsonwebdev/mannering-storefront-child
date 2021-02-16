@@ -19,13 +19,14 @@ License: GNU General Public License v2 or later
 
 */
 
-@import 'partials/base';
-@import 'partials/fonts';
-@import 'partials/variables';
-@import 'partials/mixins';
+@import "partials/base";
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/mixins";
 
 /*1920*/
 @media only screen and (max-width: 1920px) {
+
 	/* wrapper */
 	#page {
 		margin-left: auto;
@@ -296,6 +297,7 @@ License: GNU General Public License v2 or later
 			background-color: $color6;
 			height: auto;
 			margin: 0;
+
 			@include boredrady(5px);
 			clear: both;
 
@@ -309,6 +311,7 @@ License: GNU General Public License v2 or later
 				display: inline-block;
 				font-size: 1.4em;
 				letter-spacing: 0.2em;
+
 				@include boredrady(5px 5px 0 0);
 				padding: 0.5em 0;
 			}
@@ -323,6 +326,7 @@ License: GNU General Public License v2 or later
 				text-align: center;
 				line-height: 40px;
 				color: $color2;
+
 				@include boredrady(5px 5px 0 0);
 				@include transitioner(all 0.5s ease-in-out);
 
@@ -340,6 +344,7 @@ License: GNU General Public License v2 or later
 				padding: 3%;
 				background: $color9;
 				display: block;
+
 				@include boredrady(5px);
 
 				#searchForm {
@@ -347,8 +352,9 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						border: 2px solid $color8;
+
 						@include boredrady(5px);
 						background: $color2;
 						display: inline-block;
@@ -363,6 +369,7 @@ License: GNU General Public License v2 or later
 
 					select {
 						border: 2px solid $color8;
+
 						@include boredrady(5px);
 						background: $color2;
 						display: inline-block;
@@ -384,6 +391,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 						display: inline-block;
 						border: 2px solid $comment-border;
+
 						@include boredrady(5px);
 						background-color: $color1;
 						-webkit-appearance: none;
@@ -392,7 +400,7 @@ License: GNU General Public License v2 or later
 						&:hover {
 							letter-spacing: 0.08em;
 							background-color: $color2;
-							margin: 0px auto;
+							margin: 0 auto;
 							width: 15%;
 							height: 35px;
 							line-height: 1.7em;
@@ -422,6 +430,7 @@ License: GNU General Public License v2 or later
 				width: 98%;
 				margin: 5% auto;
 				border: solid $color5 1px;
+
 				@include boredrady(5px);
 
 				h2 {
@@ -436,6 +445,7 @@ License: GNU General Public License v2 or later
 					margin: 0;
 					letter-spacing: 0.2em;
 					font-weight: normal;
+
 					@include boredrady(5px);
 				}
 
@@ -469,12 +479,12 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						width: 75%;
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -619,21 +629,22 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				input[type='text'],
-				input[type='password'],
-				input[type='submit'] {
+				input[type="text"],
+				input[type="password"],
+				input[type="submit"] {
 					font-family: ($FontList);
 
 					display: block;
 					font-weight: normal;
 				}
 
-				input[type='text'],
-				input[type='password'],
-				input[type='email'],
-				input[type='tel'] {
+				input[type="text"],
+				input[type="password"],
+				input[type="email"],
+				input[type="tel"] {
 					width: 100%;
 					border: 2px solid $color8;
+
 					@include boredrady(5px);
 					background: $color2;
 					display: block;
@@ -766,7 +777,7 @@ License: GNU General Public License v2 or later
 											li {
 												color: $color8;
 												padding: 8px 20px;
-												background: url(../images/list_img.png) no-repeat 0px;
+												background: url(../images/list_img.png) no-repeat 0;
 												cursor: pointer;
 
 												&:hover {
@@ -783,15 +794,16 @@ License: GNU General Public License v2 or later
 											background-color: $color7;
 											color: $color2;
 											text-decoration: none;
+
 											@include boredrady(5px);
 											outline: 0;
 											text-align: center;
+
 											@include transitioner(all 0.2s ease-in-out);
 											margin-top: 0.5em;
-											text-align: center;
 
 											&:hover {
-												text-shadow: 0px 1px 1px $color7;
+												text-shadow: 0 1px 1px $color7;
 												background-color: $color1;
 											}
 										}
@@ -887,7 +899,7 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						width: 100%;
 						display: block;
 						padding: 0.2em;
@@ -895,7 +907,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						width: 100%;
 						display: block;
 						padding: 0.2em;
@@ -917,7 +929,7 @@ License: GNU General Public License v2 or later
 						font-weight: bold;
 					}
 
-					input[type='submit'],
+					input[type="submit"],
 					#contact-btn {
 						font-family: ($FontList);
 						letter-spacing: 0.05em;
@@ -1032,10 +1044,9 @@ License: GNU General Public License v2 or later
 						width: 20%;
 						height: 25px;
 						float: left;
-						margin: 0.5em 0px 0px 1.5em;
+						margin: 0.5em 0 0 1.5em;
 						background-color: $color9;
 						line-height: 25px;
-						text-align: center;
 
 						&:hover {
 							color: $color9;
@@ -1203,9 +1214,10 @@ License: GNU General Public License v2 or later
 								display: block;
 								width: 100%;
 								text-align: center;
-								margin: 0px;
-								padding: 0px;
+								margin: 0;
+								padding: 0;
 								border: 2px solid $comment-border;
+
 								@include boredrady(5px);
 								@include mannshadow(0 0 0.5em rgba(0, 0, 0, 0.8));
 								color: $color2;
@@ -1289,6 +1301,7 @@ License: GNU General Public License v2 or later
 						-ms-flex: 0 1 auto;
 						flex: 0 0 auto;
 						margin: 0.25em;
+
 						@include transitioner(all 0.5s ease-in-out);
 						@include boredrady(5px);
 						padding: 0;
@@ -1302,11 +1315,13 @@ License: GNU General Public License v2 or later
 
 							img {
 								border: 2px solid $color3;
+
 								@include transitioner(all 0.5s ease-in-out);
 								max-width: 50%;
 								margin: auto;
 
 								&:hover {
+
 									@include transforming-things(scale(1.05));
 									border: 3px solid $color1;
 								}
@@ -1329,10 +1344,12 @@ License: GNU General Public License v2 or later
 								color: $color2;
 								text-align: center;
 								cursor: pointer;
+
 								@include transitioner(all 0.2s ease-in-out);
 								text-decoration: none;
 								font-size: 0.95em;
-								@include boredrady(0px 0px 3px 3px);
+
+								@include boredrady(0 0 3px 3px);
 
 								&:hover {
 									background-color: $color10;
@@ -1356,6 +1373,7 @@ License: GNU General Public License v2 or later
 								font-weight: normal;
 								letter-spacing: 0.1em;
 								font-family: ($FontList);
+
 								@include boredrady(5px);
 							}
 
@@ -1494,6 +1512,7 @@ License: GNU General Public License v2 or later
 							font-size: 1.5em;
 							text-align: center;
 							color: $color9;
+
 							@include transitioner(all 0.2s ease-in-out);
 							display: block;
 							height: 100%;
@@ -1628,7 +1647,6 @@ License: GNU General Public License v2 or later
 					-webkit-flex: 0 0 auto;
 					-ms-flex: 0 0 auto;
 					flex: 0 0 auto;
-					margin-bottom: 30px;
 					position: relative;
 					overflow: hidden;
 					border: 3px solid $color4;
@@ -1656,11 +1674,13 @@ License: GNU General Public License v2 or later
 						background: rgba(51, 51, 51, 0.9);
 						text-align: center;
 						opacity: 0;
+
 						@include transitioner(all 200ms ease-in-out);
 						@include transforming-things(rotate(45deg));
 
 						&:hover {
 							opacity: 1;
+
 							@include transforming-things(rotate(0));
 							cursor: pointer;
 						}
@@ -1751,6 +1771,7 @@ License: GNU General Public License v2 or later
 				.product-box {
 					border: 2px solid $color8;
 					padding: 10px 1% 1% 1%;
+
 					@include boredrady(5px);
 					background-color: $color6;
 					margin: 0.5em;
@@ -1771,7 +1792,8 @@ License: GNU General Public License v2 or later
 						width: 100%;
 						line-height: 30px;
 						font-weight: normal;
-						@include boredrady('none');
+
+						@include boredrady("none");
 						text-align: center;
 					}
 
@@ -1836,7 +1858,7 @@ License: GNU General Public License v2 or later
 										width: 20%;
 										display: inline-block;
 										margin: 0;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 										height: 100%;
 										text-align: center;
@@ -1847,7 +1869,7 @@ License: GNU General Public License v2 or later
 										width: 76%;
 										display: block;
 										margin: 0;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 0.85em;
 										height: 100%;
 										line-height: 30px;
@@ -1963,7 +1985,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -1999,6 +2021,7 @@ License: GNU General Public License v2 or later
 							&:hover {
 								background-color: $color4;
 								text-decoration: none !important;
+
 								@include transitioner(all 0.2s ease-in-out);
 							}
 						}
@@ -2014,6 +2037,7 @@ License: GNU General Public License v2 or later
 			width: 100%;
 			margin: 0;
 			padding: 1%;
+
 			@include boredrady(5px);
 			display: flex;
 
@@ -2236,7 +2260,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -2296,11 +2320,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -2485,13 +2509,13 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 						font-size: 1.2em;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 						font-size: 1.2em;
@@ -2502,7 +2526,7 @@ License: GNU General Public License v2 or later
 						font-size: 1.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						font-size: 1.2em;
 						line-height: 1.5em;
 					}
@@ -2964,14 +2988,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -3054,7 +3078,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -3268,7 +3292,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -3328,11 +3352,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -3530,12 +3554,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -3544,7 +3568,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -3993,14 +4017,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -4083,7 +4107,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -4281,7 +4305,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -4341,11 +4365,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -4523,12 +4547,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -4537,7 +4561,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -4984,14 +5008,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -5074,7 +5098,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -5272,7 +5296,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -5332,11 +5356,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -5526,12 +5550,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -5540,7 +5564,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -5983,14 +6007,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -6073,7 +6097,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -6276,7 +6300,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -6336,11 +6360,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -6533,12 +6557,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -6547,7 +6571,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -6988,14 +7012,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -7078,7 +7102,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -7280,7 +7304,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -7340,11 +7364,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -7553,12 +7577,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -7567,7 +7591,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -8011,14 +8035,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -8101,7 +8125,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -8307,7 +8331,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -8367,11 +8391,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -8558,12 +8582,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -8572,7 +8596,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -9020,14 +9044,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -9110,7 +9134,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -9305,7 +9329,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -9364,11 +9388,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -9561,12 +9585,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -9575,7 +9599,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -10020,14 +10044,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -10110,7 +10134,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -10332,6 +10356,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.9em;
 						text-align: center;
 						display: block;
+
 						@include box-sizing($type: border-box);
 
 						&:hover {
@@ -10367,7 +10392,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -10426,11 +10451,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -10630,12 +10655,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -10644,7 +10669,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -11092,14 +11117,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -11182,7 +11207,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -11389,7 +11414,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -11449,11 +11474,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -11648,12 +11673,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -11662,7 +11687,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -12106,14 +12131,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 1em;
 									}
 
@@ -12196,7 +12221,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -12410,7 +12435,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.8em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 0.8em;
 						width: 31%;
 					}
@@ -12469,11 +12494,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -12665,12 +12690,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -12679,7 +12704,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -13146,14 +13171,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 0.9em;
 									}
 
@@ -13236,7 +13261,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.8em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 
@@ -13448,7 +13473,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.8em;
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						font-size: 0.8em;
 						width: 31%;
 					}
@@ -13507,11 +13532,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type='text'] {
+					input[type="text"] {
 						height: 35px;
 					}
 
-					input[type='submit'] {
+					input[type="submit"] {
 						width: 20%;
 					}
 				}
@@ -13705,12 +13730,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type='text'] {
+					input[type="text"] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type='email'] {
+					input[type="email"] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -13719,7 +13744,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type='text'] {
+					select [type="text"] {
 						line-height: 1.5em;
 					}
 
@@ -14162,14 +14187,14 @@ License: GNU General Public License v2 or later
 							}
 
 							ul {
-								margin: 7px 0px;
+								margin: 7px 0;
 
 								li {
 									font-family: ($FontList);
 
 									span:first-of-type {
 										width: 20%;
-										text-indent: 0px;
+										text-indent: 0;
 										font-size: 0.9em;
 									}
 
@@ -14252,7 +14277,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.8em;
 
 										&::after {
-											content: '/';
+											content: "/";
 										}
 									}
 

@@ -135,6 +135,7 @@ WooCommerce styles override
 								margin: 0.5em 0;
 								line-height: 25px;
 								height: 25px;
+
 								@include boredrady(5px);
 							}
 						}
@@ -232,6 +233,7 @@ WooCommerce styles override
 					}
 				}
 			}
+
 			/* global contact form style */
 			form {
 				button.button {
@@ -241,6 +243,7 @@ WooCommerce styles override
 					width: 15%;
 					background-color: $color1;
 					color: $color7;
+
 					@include boredrady(5px);
 					@include transitioner(all 0.2s ease-in-out);
 
@@ -311,6 +314,7 @@ WooCommerce styles override
 						text-align: center;
 						background-color: $color2;
 						color: $color7;
+
 						@include boredrady(5px);
 					}
 
@@ -354,7 +358,7 @@ WooCommerce styles override
 									text-align: center;
 									display: block;
 									padding: 0;
-									text-shadow: 0px 0px 0px $color7;
+									text-shadow: 0 0 0 $color7;
 
 									&:hover {
 										background-color: $color2;
@@ -495,8 +499,10 @@ WooCommerce styles override
 														color: $color2;
 														text-decoration: none;
 														text-align: center;
+
 														@include boredrady(5px);
 														outline: 0;
+
 														@include transitioner(all 0.2s ease-in-out);
 														&:hover {
 															background: $color2;
@@ -536,7 +542,7 @@ WooCommerce styles override
 														line-height: 40px;
 													}
 
-													a:before {
+													a::before {
 														height: 100%;
 														width: 100%;
 														line-height: 40px;
@@ -873,6 +879,7 @@ WooCommerce styles override
 								img.attachment-woocommerce_thumbnail {
 									margin: 0.5em auto;
 									border: 2px solid $color3;
+
 									@include transitioner(all 0.5s ease-in-out);
 									&:hover {
 										@include transforming-things(scale(1.05));
@@ -891,6 +898,7 @@ WooCommerce styles override
 
 									position: relative;
 									width: 4em;
+
 									@include boredrady(5px);
 								}
 
@@ -1154,7 +1162,6 @@ WooCommerce styles override
 								}
 
 								div.coupon {
-									display: block;
 									float: left;
 									height: 45px;
 									width: 80%;
@@ -1241,6 +1248,7 @@ WooCommerce styles override
 						img.attachment-woocommerce_thumbnail {
 							width: auto;
 							border: 2px solid $color3;
+
 							@include transitioner(all 0.5s ease-in-out);
 
 							margin: auto;
@@ -1251,12 +1259,12 @@ WooCommerce styles override
 						}
 
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 							display: block;
 							padding: 0;
 							border: 2px solid $color9;
+
 							@include transitioner(all 0.2s ease-in-out);
 							@include boredrady(5px);
 							@include mannshadow(0 0 0.5em rgba(0, 0, 0, 0.8));
@@ -1272,6 +1280,7 @@ WooCommerce styles override
 								color: $color9;
 								font-weight: bold;
 								cursor: pointer;
+
 								@include mannshadow(0 2px 1px rgba(0, 0, 0, 0.8));
 							}
 
@@ -1279,6 +1288,7 @@ WooCommerce styles override
 								background-color: $dark-box;
 								color: $color10;
 								font-weight: bold;
+
 								@include mannshadow(0 2px 1px rgba(0, 0, 0, 0.8));
 							}
 						}
@@ -1320,6 +1330,7 @@ WooCommerce styles override
 							text-align: center;
 							background-color: $color2;
 							color: $color7;
+
 							@include boredrady(5px);
 						}
 
@@ -1336,6 +1347,7 @@ WooCommerce styles override
 								font-size: 1em;
 								line-height: 25px;
 								margin: 0 0 0.5em 0;
+
 								@include boredrady(5px);
 							}
 
@@ -1353,6 +1365,7 @@ WooCommerce styles override
 									margin-top: 0.5em;
 									background-color: $color7;
 									color: $color2;
+
 									@include boredrady(5px);
 
 									span.woocommerce-Price-amount {
@@ -1386,15 +1399,16 @@ WooCommerce styles override
 						a.added_to_cart {
 							font-size: 1em;
 							margin: 0.5em auto;
-							line-height: 30px;
 							display: block;
 							background: $color1;
 							color: $color2;
 							text-decoration: none;
 							text-align: center;
 							line-height: 35px;
+
 							@include boredrady(5px);
 							outline: 0;
+
 							@include transitioner(all 0.2s ease-in-out);
 							width: 90%;
 
@@ -1763,12 +1777,9 @@ WooCommerce styles override
 											}
 
 											div.coupon {
-												display: block;
 												float: left;
 												height: 45px;
 												width: 80%;
-												display: -webkit-flex;
-												display: -ms-flexbox;
 												display: flex;
 												-webkit-flex-flow: row wrap;
 												-ms-flex-flow: row wrap;
@@ -1829,6 +1840,7 @@ WooCommerce styles override
 								}
 							}
 						}
+
 						/* login form */
 						form.woocommerce-form-login {
 							p.form-row {
@@ -2188,6 +2200,7 @@ WooCommerce styles override
 								width: 20%;
 								display: inline-block;
 								border: 2px solid $color1;
+
 								@include boredrady(5px);
 								@include mannshadow(0 0 0.5em rgba(0, 0, 0, 0.8));
 								color: $color2;
@@ -2742,7 +2755,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -2974,7 +2987,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -3790,7 +3802,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -4031,7 +4043,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -4568,6 +4579,7 @@ WooCommerce styles override
 						}
 					}
 				}
+
 				/*woo-commerce*/
 				mark.count {
 					padding: 0.3em;
@@ -4919,7 +4931,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -5157,7 +5169,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -6053,7 +6064,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -6294,7 +6305,6 @@ WooCommerce styles override
 
 				li.product {
 					a.button {
-						margin-top: 1em;
 						width: 80%;
 						margin: 1em auto;
 					}
@@ -7127,7 +7137,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -7374,7 +7384,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -7935,6 +7944,7 @@ WooCommerce styles override
 						}
 					}
 				}
+
 				/*woo-commerce*/
 				mark.count {
 					padding: 0.3em;
@@ -8239,7 +8249,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -8465,7 +8475,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -9314,7 +9323,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -9547,7 +9556,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -10399,7 +10407,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -10640,7 +10648,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -10793,6 +10800,7 @@ WooCommerce styles override
 								table.shop_table tr {
 									display: block;
 								}
+
 								/* Hide table headers (but not display: none;, for accessibility) */
 
 								table.shop_table {
@@ -11532,7 +11540,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -11784,7 +11792,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -12631,7 +12638,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -12850,7 +12857,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -13696,7 +13702,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -13904,7 +13910,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}
@@ -14766,7 +14771,7 @@ WooCommerce styles override
 											p.stars {
 												padding: 0.5em 0;
 
-												a:before {
+												a::before {
 													line-height: 1.5em;
 												}
 
@@ -14973,7 +14978,6 @@ WooCommerce styles override
 
 					li.product {
 						a.button {
-							margin-top: 1em;
 							width: 80%;
 							margin: 1em auto;
 						}

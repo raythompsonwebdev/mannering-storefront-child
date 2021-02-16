@@ -30,7 +30,7 @@
 				);
 				$mannering_woocommerce_child_wc_query = new WP_Query( $mannering_woocommerce_child_params );
 				?>
-			<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) :  ?>
+			<?php if ( $mannering_woocommerce_child_wc_query->have_posts() ) : ?>
 				<?php
 				while ( $mannering_woocommerce_child_wc_query->have_posts() ) :
 					$mannering_woocommerce_child_wc_query->the_post();
@@ -100,7 +100,7 @@
 				<?php wp_reset_postdata(); ?>
 			<?php else : ?>
 			<p>
-				<?php esc_html__( 'No Products', 'mannering-woocommerce-child' );  ?>
+				<?php esc_html__( 'No Products', 'mannering-woocommerce-child' ); ?>
 			</p>
 			<?php endif; ?>
 

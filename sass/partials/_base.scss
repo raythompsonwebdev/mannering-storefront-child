@@ -2,8 +2,9 @@
 @import "_mixins.scss";
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
+
 	@include box-sizing($type: border-box);
 }
 
@@ -50,15 +51,18 @@ audio:not([controls]) {
 
 ::-webkit-input-placeholder {
 	color: dark;
+
 	/*  #e74c3c */
 }
 
 :-moz-placeholder {
+
 	/* Firefox 18- */
 	color: #e74c3c;
 }
 
 ::-moz-placeholder {
+
 	/* Firefox 19+ */
 	color: #e74c3c;
 }
@@ -453,7 +457,8 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
 		Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -694,9 +699,6 @@ textarea {
 --------------------------------------------------------------*/
 
 
-
-
-
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
@@ -929,6 +931,7 @@ textarea {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
+
 	/*rtl:ignore*/
 	float: left;
 
@@ -938,6 +941,7 @@ textarea {
 }
 
 .alignright {
+
 	/*rtl:ignore*/
 	float: right;
 
@@ -960,8 +964,8 @@ body {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
-	width:100%;
-	overflow-x:hidden;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .browsehappy {
