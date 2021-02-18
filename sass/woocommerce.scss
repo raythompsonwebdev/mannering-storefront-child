@@ -94,7 +94,8 @@ WooCommerce styles override
 										}
 
 										span.woocommerce-Price-currencySymbol {
-											width: 40%;
+											width: auto;
+											padding-right: 0.25em;
 											display: inline-block;
 											line-height: 30px;
 											text-align: center;
@@ -121,7 +122,8 @@ WooCommerce styles override
 								}
 
 								span.woocommerce-Price-currencySymbol {
-									width: 40%;
+									width: auto;
+									padding-right: 0.25em;
 									display: inline-block;
 									line-height: 30px;
 									text-align: center;
@@ -148,7 +150,7 @@ WooCommerce styles override
 						display: block;
 						width: 85%;
 						li {
-							margin-bottom: 0.5em;
+							margin: 1em 0;
 							a {
 								width: 100%;
 								text-align: center;
@@ -166,7 +168,7 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 60%;
+								width: 45%;
 								line-height: 30px;
 								margin: 0 auto;
 								display: block;
@@ -177,13 +179,17 @@ WooCommerce styles override
 									font-size: 0.9em;
 									letter-spacing: 0.1em;
 									span.woocommerce-Price-currencySymbol {
-										width: 30%;
+										width: auto;
+										padding-right: 0.25em;
 										display: inline-block;
 										line-height: 30px;
 										text-align: center;
 									}
 								}
 							}
+						}
+						.star-rating {
+							margin: auto;
 						}
 					}
 				}
@@ -194,7 +200,7 @@ WooCommerce styles override
 						display: block;
 						width: 70%;
 						li {
-							margin-bottom: 0.5em;
+							margin: 1em 0;
 							a {
 								width: 100%;
 								text-align: center;
@@ -222,7 +228,8 @@ WooCommerce styles override
 									line-height: 30px;
 
 									span.woocommerce-Price-currencySymbol {
-										width: 40%;
+										width: auto;
+										padding-right: 0.25em;
 										display: inline-block;
 										line-height: 30px;
 										text-align: center;
@@ -371,7 +378,7 @@ WooCommerce styles override
 						.panel {
 							background-color: $color3;
 							padding: 0.5em;
-							min-height: 400px;
+							height: auto;
 							margin: 0;
 
 							h2 {
@@ -393,9 +400,10 @@ WooCommerce styles override
 
 									h2.woocommerce-Reviews-title {
 										background-color: $color7;
-										font-size: 1.4em;
-										padding: 0.5em 0;
+										font-size: 1.3em;
 										text-indent: 0.35em;
+										padding: 0;
+										margin-bottom: 0.2em;
 										span {
 											width: auto;
 											display: inline-block;
@@ -411,7 +419,49 @@ WooCommerce styles override
 
 									ol.commentlist {
 										margin: 0;
+										li.review {
+											div.comment_container {
+												.star-rating {
+													margin: 0;
+												}
+												img.avatar {
+													float: left;
+													margin-right: 0.5em;
+													width: 6%;
+												}
+												div.comment-text {
+													p.meta {
+														clear: both;
+														display: inline-block;
+														width: 92%;
+														em {
+															display: inline-block;
+														}
+														span.woocommerce-review__dash {
+															width: 2%;
+															display: inline-block;
+														}
+														.woocommerce-review__verified {
+															display: inline-block;
+														}
+													}
+													div.description {
+														background-color: $color2;
+														padding: 0.2em;
+														p {
+															color: $color7;
+															line-height: 1.5em;
+														}
+													}
+												}
+											}
+										}
 									}
+								}
+
+								p.woocommerce-verification-required {
+									color: $slider-text;
+									line-height: 40px;
 								}
 
 								div#review_form_wrapper {
@@ -591,7 +641,7 @@ WooCommerce styles override
 
 					div.summary {
 						width: 85%;
-						min-height: 250px;
+						height: auto;
 						display: inline-block;
 						margin: 0;
 
@@ -607,14 +657,25 @@ WooCommerce styles override
 						}
 
 						div.woocommerce-product-rating {
+							.star-rating {
+								margin: 0;
+								line-height: 35px;
+								height: 35px;
+								.rating {
+									display: inline-block;
+								}
+							}
 							a.woocommerce-review-link {
 								width: 50%;
 								display: block;
-								span {
+								color: $color2;
+								line-height: 40px;
+								span.count {
 									width: 5%;
 									padding-right: 0.5em;
 									line-height: 25px;
 									text-align: center;
+									line-height: 40px;
 								}
 							}
 						}
@@ -642,7 +703,8 @@ WooCommerce styles override
 									line-height: 35px;
 									font-size: 125%;
 									span.woocommerce-Price-currencySymbol {
-										width: 5%;
+										width: auto;
+										padding-right: 0.25em;
 										display: block;
 										height: 100%;
 										text-align: left;
@@ -910,7 +972,8 @@ WooCommerce styles override
 										display: block;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 20%;
+											width: auto;
+											padding-right: 0.25em;
 											display: block;
 											line-height: 35px;
 											float: left;
@@ -1101,7 +1164,8 @@ WooCommerce styles override
 								width: 8%;
 
 								span.woocommerce-Price-currencySymbol {
-									width: 15%;
+									width: auto;
+									padding-right: 0.25em;
 									display: inline-block;
 									color: $color7;
 								}
@@ -1127,7 +1191,8 @@ WooCommerce styles override
 									display: block;
 
 									span.woocommerce-Price-currencySymbol {
-										width: 15%;
+										width: auto;
+										padding-right: 0.25em;
 										display: inline-block;
 										line-height: 45px;
 										text-align: center;
@@ -1296,7 +1361,7 @@ WooCommerce styles override
 						span.price {
 							font-size: 1em;
 							color: #fff;
-							width: 45%;
+							width: 35%;
 
 							span.woocommerce-Price-amount {
 								width: 100%;
@@ -1308,7 +1373,8 @@ WooCommerce styles override
 								}
 
 								span.woocommerce-Price-currencySymbol {
-									width: 40%;
+									width: auto;
+									padding-right: 0.25em;
 									display: inline-block;
 									line-height: 35px;
 									text-align: center;
@@ -1377,7 +1443,8 @@ WooCommerce styles override
 										text-align: left;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 25%;
+											width: auto;
+											padding-right: 0.25em;
 											display: block;
 											height: 100%;
 											float: left;
@@ -1425,23 +1492,6 @@ WooCommerce styles override
 					.woocommerce {
 						.woocommerce-notices-wrapper {
 							margin: 0;
-
-							.woocommerce-message {
-								color: $color3;
-								width: 100%;
-								padding: 0.5em;
-
-								a {
-									color: $color3;
-									display: inline-block;
-									line-height: 40px;
-									width: auto;
-
-									&:hover {
-										font-weight: bold;
-									}
-								}
-							}
 						}
 
 						p.cart-empty {
@@ -1520,12 +1570,16 @@ WooCommerce styles override
 						/* My Account Content */
 						div.woocommerce-MyAccount-content {
 							width: 100%;
-							margin-top: 0.5em;
+							margin-top: 0.25em;
+							padding: 0.25em;
+							background-color: $color2;
 
 							p {
 								color: $color7;
 								margin: 0;
 								padding: 0;
+								line-height: 30px;
+								text-indent: 0.2em;
 
 								strong {
 									line-height: 30px;
@@ -1550,6 +1604,9 @@ WooCommerce styles override
 										h3 {
 											color: $color7;
 										}
+									}
+									address {
+										color: $color7;
 									}
 								}
 							}
@@ -1604,10 +1661,11 @@ WooCommerce styles override
 						form.woocommerce-cart-form {
 							padding: 0;
 							white-space: normal;
+							background-color: $color2;
 
 							/* billing page */
 							table.shop_table {
-								padding: 1em 0;
+								padding: 0.25em;
 								width: 100%;
 
 								thead {
@@ -1717,7 +1775,8 @@ WooCommerce styles override
 											width: 8%;
 
 											span.woocommerce-Price-currencySymbol {
-												width: 15%;
+												width: auto;
+												padding-right: 0.25em;
 												display: inline-block;
 												color: $color7;
 											}
@@ -1743,7 +1802,8 @@ WooCommerce styles override
 												display: block;
 
 												span.woocommerce-Price-currencySymbol {
-													width: 15%;
+													width: auto;
+													padding-right: 0.25em;
 													display: inline-block;
 													line-height: 45px;
 													text-align: center;
@@ -1843,8 +1903,10 @@ WooCommerce styles override
 
 						/* login form */
 						form.woocommerce-form-login {
+							background-color: $color2;
+							padding: 1em;
 							p.form-row {
-								margin: 1.5em 0;
+								margin: 1em 0;
 								.woocommerce-form__label-for-checkbox {
 									width: 40%;
 									display: flex;
@@ -1938,11 +2000,12 @@ WooCommerce styles override
 
 							div#order_review {
 								color: $color3;
-								padding: 1em;
+								background-color: $color2;
+								padding: 0.25em;
 
 								table.shop_table {
 									color: $color3;
-									padding: 1em;
+									padding: 0.5em;
 									width: 100%;
 
 									thead {
@@ -1981,7 +2044,8 @@ WooCommerce styles override
 													display: block;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 20%;
+														width: auto;
+														padding-right: 0.25em;
 														display: inline-block;
 														line-height: 45px;
 													}
@@ -2010,7 +2074,8 @@ WooCommerce styles override
 													text-indent: 0;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 20%;
+														width: auto;
+														padding-right: 0.25em;
 														display: inline-block;
 														line-height: 45px;
 														text-indent: 0;
@@ -2126,6 +2191,7 @@ WooCommerce styles override
 										background-color: $color3;
 
 										.woocommerce-terms-and-conditions-wrapper {
+											width: auto;
 											.woocommerce-privacy-policy-text {
 												color: $color7;
 
@@ -2269,7 +2335,8 @@ WooCommerce styles override
 														display: block;
 
 														span.woocommerce-Price-currencySymbol {
-															width: 5%;
+															width: auto;
+															padding-right: 0.25em;
 															display: inline-block;
 															line-height: 45px;
 															text-align: center;
@@ -2373,7 +2440,8 @@ WooCommerce styles override
 											display: block;
 
 											span.woocommerce-Price-currencySymbol {
-												width: 5%;
+												width: auto;
+												padding-right: 0.25em;
 												display: inline-block;
 												line-height: 45px;
 												text-align: center;
@@ -2559,14 +2627,14 @@ WooCommerce styles override
 										}
 
 										span.woocommerce-Price-currencySymbol {
-											width: 40%;
+											width: auto;
 										}
 									}
 								}
 							}
 						}
 						p.woocommerce-mini-cart__total {
-							font-size: 0.9em;
+							font-size: 0.75em;
 							strong {
 								line-height: 30px;
 							}
@@ -2580,7 +2648,7 @@ WooCommerce styles override
 								}
 
 								span.woocommerce-Price-currencySymbol {
-									width: 40%;
+									width: auto;
 								}
 							}
 						}
@@ -2598,6 +2666,7 @@ WooCommerce styles override
 
 					ul.product_list_widget {
 						li {
+							margin: 1em 0;
 							a {
 								width: 100%;
 
@@ -2609,13 +2678,13 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 60%;
+								width: 45%;
 
 								bdi {
 									display: block;
 
 									span.woocommerce-Price-currencySymbol {
-										width: 35%;
+										width: auto;
 									}
 								}
 							}
@@ -2627,7 +2696,6 @@ WooCommerce styles override
 					ul.product_list_widget {
 						width: 70%;
 						li {
-							margin-bottom: 0.5em;
 							a {
 								font-size: 0.8em;
 								img.attachment-woocommerce_thumbnail {
@@ -2699,7 +2767,7 @@ WooCommerce styles override
 									background-color: $color3;
 
 									h2.woocommerce-Reviews-title {
-										font-size: 1.3em;
+										font-size: 1.2em;
 									}
 
 									p.woocommerce-noreviews {
@@ -2806,7 +2874,7 @@ WooCommerce styles override
 								font-size: 1em;
 
 								span.woocommerce-Price-currencySymbol {
-									width: 5%;
+									width: auto;
 								}
 							}
 						}
@@ -2942,7 +3010,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -2992,7 +3060,7 @@ WooCommerce styles override
 						}
 
 						span.price {
-							width: 45%;
+							width: 35%;
 							span.woocommerce-Price-amount {
 								width: 100%;
 							}
@@ -3021,7 +3089,7 @@ WooCommerce styles override
 
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -3045,14 +3113,14 @@ WooCommerce styles override
 					.woocommerce {
 						.woocommerce-notices-wrapper {
 							margin: 0;
+						}
 
-							.woocommerce-message {
-								a {
-									line-height: 40px;
+						.woocommerce-message {
+							a {
+								line-height: 40px;
 
-									&:hover {
-										font-weight: bold;
-									}
+								&:hover {
+									font-weight: bold;
 								}
 							}
 						}
@@ -3221,7 +3289,7 @@ WooCommerce styles override
 												line-height: 45px;
 
 												span.woocommerce-Price-currencySymbol {
-													width: 15%;
+													width: auto;
 												}
 											}
 										}
@@ -3309,7 +3377,7 @@ WooCommerce styles override
 													margin: auto;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 20%;
+														width: auto;
 													}
 												}
 											}
@@ -3324,7 +3392,7 @@ WooCommerce styles override
 													width: 100%;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 20%;
+														width: auto;
 													}
 												}
 											}
@@ -3459,7 +3527,7 @@ WooCommerce styles override
 													line-height: 45px;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 5%;
+														width: auto;
 													}
 												}
 											}
@@ -3523,7 +3591,7 @@ WooCommerce styles override
 										line-height: 30px;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 5%;
+											width: auto;
 											line-height: 30px;
 										}
 									}
@@ -3597,7 +3665,7 @@ WooCommerce styles override
 										}
 
 										span.woocommerce-Price-currencySymbol {
-											width: 40%;
+											width: auto;
 											line-height: 30px;
 										}
 									}
@@ -3620,7 +3688,7 @@ WooCommerce styles override
 								}
 
 								span.woocommerce-Price-currencySymbol {
-									width: 40%;
+									width: auto;
 
 									line-height: 30px;
 								}
@@ -3651,14 +3719,14 @@ WooCommerce styles override
 								}
 							}
 							span.woocommerce-Price-amount {
-								width: 60%;
+								width: 45%;
 
 								bdi {
 									display: block;
 									font-size: 0.8em;
 
 									span.woocommerce-Price-currencySymbol {
-										width: 30%;
+										width: auto;
 									}
 								}
 							}
@@ -3670,7 +3738,6 @@ WooCommerce styles override
 					ul.product_list_widget {
 						width: 70%;
 						li {
-							margin-bottom: 0.5em;
 							a {
 								font-size: 0.75em;
 								img.attachment-woocommerce_thumbnail {
@@ -3745,7 +3812,7 @@ WooCommerce styles override
 									background-color: $color3;
 
 									h2.woocommerce-Reviews-title {
-										font-size: 1.25em;
+										font-size: 1.2em;
 									}
 
 									p.woocommerce-noreviews {
@@ -3854,7 +3921,7 @@ WooCommerce styles override
 								font-size: 0.9em;
 
 								span.woocommerce-Price-currencySymbol {
-									width: 4%;
+									width: auto;
 								}
 							}
 						}
@@ -3998,7 +4065,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -4068,7 +4135,7 @@ WooCommerce styles override
 
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -4089,14 +4156,14 @@ WooCommerce styles override
 					.woocommerce {
 						.woocommerce-notices-wrapper {
 							margin: 0;
+						}
 
-							.woocommerce-message {
-								a {
-									line-height: 40px;
+						.woocommerce-message {
+							a {
+								line-height: 40px;
 
-									&:hover {
-										font-weight: bold;
-									}
+								&:hover {
+									font-weight: bold;
 								}
 							}
 						}
@@ -4270,7 +4337,7 @@ WooCommerce styles override
 												line-height: 45px;
 
 												span.woocommerce-Price-currencySymbol {
-													width: 15%;
+													width: auto;
 												}
 											}
 										}
@@ -4358,7 +4425,7 @@ WooCommerce styles override
 													margin: auto;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 20%;
+														width: auto;
 													}
 												}
 											}
@@ -4373,7 +4440,7 @@ WooCommerce styles override
 													width: 100%;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 20%;
+														width: auto;
 													}
 												}
 											}
@@ -4506,7 +4573,7 @@ WooCommerce styles override
 													display: block;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 5%;
+														width: auto;
 													}
 												}
 											}
@@ -4570,7 +4637,7 @@ WooCommerce styles override
 										line-height: 30px;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 5%;
+											width: auto;
 											line-height: 30px;
 										}
 									}
@@ -4672,7 +4739,7 @@ WooCommerce styles override
 										}
 
 										span.woocommerce-Price-currencySymbol {
-											width: 40%;
+											width: auto;
 											display: inline-block;
 											line-height: 30px;
 											text-align: center;
@@ -4698,7 +4765,7 @@ WooCommerce styles override
 								}
 
 								span.woocommerce-Price-currencySymbol {
-									width: 40%;
+									width: auto;
 									display: inline-block;
 									line-height: 30px;
 									text-align: center;
@@ -4737,7 +4804,7 @@ WooCommerce styles override
 										display: block;
 										font-size: 80%;
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -4749,7 +4816,6 @@ WooCommerce styles override
 						ul.product_list_widget {
 							width: 70%;
 							li {
-								margin-bottom: 0.5em;
 								a {
 									font-size: 0.75em;
 									img.attachment-woocommerce_thumbnail {
@@ -4797,7 +4863,7 @@ WooCommerce styles override
 									display: block;
 									font-size: 0.75em;
 									span.woocommerce-Price-currencySymbol {
-										width: 30%;
+										width: auto;
 									}
 								}
 							}
@@ -4809,7 +4875,6 @@ WooCommerce styles override
 					ul.product_list_widget {
 						width: 80%;
 						li {
-							margin-bottom: 0.5em;
 							a {
 								font-size: 0.7em;
 								img.attachment-woocommerce_thumbnail {
@@ -4874,7 +4939,7 @@ WooCommerce styles override
 									background-color: $color3;
 
 									h2.woocommerce-Reviews-title {
-										font-size: 1.2em;
+										font-size: 1.15em;
 									}
 
 									p.woocommerce-noreviews {
@@ -4980,7 +5045,7 @@ WooCommerce styles override
 
 							span.woocommerce-Price-amount {
 								span.woocommerce-Price-currencySymbol {
-									width: 3%;
+									width: auto;
 								}
 							}
 						}
@@ -5125,7 +5190,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -5190,7 +5255,7 @@ WooCommerce styles override
 
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -5397,7 +5462,7 @@ WooCommerce styles override
 													line-height: 45px;
 
 													span.woocommerce-Price-currencySymbol {
-														width: 15%;
+														width: auto;
 													}
 												}
 											}
@@ -5485,7 +5550,7 @@ WooCommerce styles override
 														margin: auto;
 
 														span.woocommerce-Price-currencySymbol {
-															width: 20%;
+															width: auto;
 														}
 													}
 												}
@@ -5501,7 +5566,7 @@ WooCommerce styles override
 														line-height: 40px;
 
 														span.woocommerce-Price-currencySymbol {
-															width: 20%;
+															width: auto;
 														}
 													}
 												}
@@ -5634,7 +5699,7 @@ WooCommerce styles override
 														display: block;
 
 														span.woocommerce-Price-currencySymbol {
-															width: 5%;
+															width: auto;
 														}
 													}
 												}
@@ -5698,7 +5763,7 @@ WooCommerce styles override
 											line-height: 30px;
 
 											span.woocommerce-Price-currencySymbol {
-												width: 5%;
+												width: auto;
 												line-height: 30px;
 											}
 										}
@@ -5804,7 +5869,7 @@ WooCommerce styles override
 										}
 
 										span.woocommerce-Price-currencySymbol {
-											width: 40%;
+											width: auto;
 											display: inline-block;
 											line-height: 30px;
 											text-align: center;
@@ -5830,7 +5895,7 @@ WooCommerce styles override
 								}
 
 								span.woocommerce-Price-currencySymbol {
-									width: 20%;
+									width: auto;
 									font-size: 0.8em;
 									display: inline-block;
 									line-height: 30px;
@@ -5878,7 +5943,7 @@ WooCommerce styles override
 									display: block;
 
 									span.woocommerce-Price-currencySymbol {
-										width: 30%;
+										width: auto;
 									}
 								}
 							}
@@ -6119,7 +6184,7 @@ WooCommerce styles override
 								font-size: 0.85em;
 
 								span.woocommerce-Price-currencySymbol {
-									width: 3%;
+									width: auto;
 								}
 							}
 						}
@@ -6260,7 +6325,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -6326,7 +6391,7 @@ WooCommerce styles override
 
 								span.woocommerce-Price-amount {
 									span.woocommerce-Price-currencySymbol {
-										width: 30%;
+										width: auto;
 									}
 								}
 							}
@@ -7340,7 +7405,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -8435,7 +8500,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -9512,7 +9577,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -10603,7 +10668,7 @@ WooCommerce styles override
 										line-height: 30px;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 											line-height: 30px;
 										}
 									}
@@ -11736,8 +11801,7 @@ WooCommerce styles override
 										line-height: 30px;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
-											line-height: 30px;
+											width: auto;
 										}
 									}
 								}
@@ -12822,7 +12886,7 @@ WooCommerce styles override
 										line-height: 30px;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -13885,7 +13949,7 @@ WooCommerce styles override
 										line-height: 30px;
 
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}
@@ -14953,7 +15017,7 @@ WooCommerce styles override
 								span.price {
 									span.woocommerce-Price-amount {
 										span.woocommerce-Price-currencySymbol {
-											width: 30%;
+											width: auto;
 										}
 									}
 								}

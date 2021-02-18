@@ -187,7 +187,7 @@ add_action( 'wp_enqueue_scripts', 'mannering_woocommerce_child_add_google_fonts'
  * Block Editor Styling.
  */
 function mannering_woocommerce_child_block_editor_fonts() {
-	wp_enqueue_style( 'mannering-woocommerce-child-block-editor-fonts', 'https://fonts.googleapis.com/css?family=Poppins', array(), CLASHVIBES_VERSION );
+	wp_enqueue_style( 'mannering-woocommerce-child-block-editor-fonts', 'https://fonts.googleapis.com/css?family=Poppins', array(), MANNERING_WOOCOMMERCE_CHILD_VERSION );
 
 }
 add_action( 'enqueue_block_editor_assets', 'mannering_woocommerce_child_block_editor_fonts' );

@@ -67,18 +67,15 @@ audio:not([controls]) {
 
 ::-webkit-input-placeholder {
 	color: dark;
-
 	/*  #e74c3c */
 }
 
 :-moz-placeholder {
-
 	/* Firefox 18- */
 	color: #e74c3c;
 }
 
 ::-moz-placeholder {
-
 	/* Firefox 19+ */
 	color: #e74c3c;
 }
@@ -121,19 +118,14 @@ audio:not([controls]) {
 	- Alignments
 
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
-
 /* Normalize
 --------------------------------------------- */
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
 	 ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -145,11 +137,9 @@ html {
 
 /* Sections
 	 ========================================================================== */
-
 /**
  * Remove the margin in all browsers.
  */
-
 /**
  * Render the `main` element consistently in IE.
  */
@@ -168,7 +158,6 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
-
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -190,7 +179,6 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
-
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -256,7 +244,6 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
-
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -266,7 +253,6 @@ img {
 
 /* Forms
 	 ========================================================================== */
-
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -412,7 +398,6 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
-
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -429,7 +414,6 @@ summary {
 
 /* Misc
 	 ========================================================================== */
-
 /**
  * Add the correct display in IE 10+.
  */
@@ -446,7 +430,6 @@ template {
 
 /* Box sizing
 --------------------------------------------- */
-
 /* Inherit box-sizing to more easily change it"s value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -462,7 +445,6 @@ html {
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-
 /* Typography
 --------------------------------------------- */
 body,
@@ -705,7 +687,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -876,10 +857,8 @@ textarea {
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
-
 /* Jetpack infinite scroll
 --------------------------------------------- */
-
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -894,10 +873,8 @@ textarea {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-
 /* Accessibility
 --------------------------------------------- */
-
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	border: 0;
@@ -940,20 +917,16 @@ textarea {
 /* Alignments
 --------------------------------------------- */
 .alignleft {
-
 	/*rtl:ignore*/
 	float: left;
-
 	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
-
 	/*rtl:ignore*/
 	float: right;
-
 	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
@@ -982,6 +955,7 @@ body {
 	color: #181818;
 	background-color: #333;
 }
+
 .browsehappy a {
 	display: inline-block;
 }
@@ -993,16 +967,13 @@ body {
 @font-face {
 	font-family: "Harabara_Bold";
 	src: url("fonts/Harabara_Bold/Harabara.eot");
-
 	/* IE9 Compat Modes */
 	src: url("fonts/Harabara_Bold/Harabara.eot?#iefix") format("embedded-opentype"), url("fonts/Harabara_Bold/Harabara.woff") format("woff"), url("fonts/Harabara_Bold/Harabara.ttf") format("truetype"), url("fon		Harabara_Bold/Harabara.svg#svgFontName") format("svg");
-
 	/* Legacy iOS */
 }
 
 /*1920*/
 @media only screen and (max-width: 1920px) {
-
 	/* wrapper */
 	#page {
 		margin-left: auto;
@@ -1253,9 +1224,7 @@ body {
 		-o-border-radius: 5px;
 		border-radius: 5px;
 		clear: both;
-
 		/* Search-box */
-
 		/* Search-box end */
 	}
 	#page aside#secondary h1 {
@@ -1312,7 +1281,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		border: 2px solid #666;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
@@ -1434,11 +1403,11 @@ body {
 		text-align: center;
 		margin: 0;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		width: 75%;
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -1506,19 +1475,12 @@ body {
 		padding: 0;
 		min-height: 600px;
 		color: #fff;
-
 		/* global contact form style */
-
 		/* front-page slider */
-
 		/*blog comments section*/
-
 		/*front-page grid*/
-
 		/* Music-Page-Tabs-Menu */
-
 		/* video page video gallery */
-
 		/*search results*/
 	}
 	#page #content h1 {
@@ -1571,17 +1533,17 @@ body {
 		width: auto;
 		display: inline-block;
 	}
-	#page #content form input[type="text"],
-	#page #content form input[type="password"],
-	#page #content form input[type="submit"] {
+	#page #content form input[type='text'],
+	#page #content form input[type='password'],
+	#page #content form input[type='submit'] {
 		font-family: "Poppins", sans-serif;
 		display: block;
 		font-weight: normal;
 	}
-	#page #content form input[type="text"],
-	#page #content form input[type="password"],
-	#page #content form input[type="email"],
-	#page #content form input[type="tel"] {
+	#page #content form input[type='text'],
+	#page #content form input[type='password'],
+	#page #content form input[type='email'],
+	#page #content form input[type='tel'] {
 		width: 100%;
 		border: 2px solid #666;
 		-webkit-border-radius: 5px;
@@ -1758,15 +1720,10 @@ body {
 	#page #content main#primary {
 		margin: 0;
 		padding: 0;
-
 		/* contact page form */
-
 		/* error labels */
-
 		/* about-page-images */
-
 		/* contact-page-details */
-
 		/* contact-page-map */
 	}
 	#page #content main#primary .main_img {
@@ -1821,14 +1778,14 @@ body {
 		text-decoration: none;
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		width: 100%;
 		display: block;
 		padding: 0.2em;
 		height: 35px;
 		font-size: 1em;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		width: 100%;
 		display: block;
 		padding: 0.2em;
@@ -1847,7 +1804,7 @@ body {
 		font-size: 1em;
 		font-weight: bold;
 	}
-	#page #content main#primary #contact-form-a input[type="submit"],
+	#page #content main#primary #contact-form-a input[type='submit'],
 	#page #content main#primary #contact-form-a #contact-btn {
 		font-family: "Poppins", sans-serif;
 		letter-spacing: 0.05em;
@@ -1856,7 +1813,7 @@ body {
 		font-size: 1em;
 		box-shadow: none;
 	}
-	#page #content main#primary #contact-form-a input[type="submit"]:hover,
+	#page #content main#primary #contact-form-a input[type='submit']:hover,
 	#page #content main#primary #contact-form-a #contact-btn:hover {
 		background-color: #fff;
 		width: 50%;
@@ -1990,7 +1947,7 @@ body {
 	#page #content div.post h2,
 	#page #content article.page h2 {
 		margin-bottom: 0.2em;
-		color: #3a3a3a;
+		color: #181818;
 	}
 	#page #content div.post h2 a,
 	#page #content article.page h2 a {
@@ -2014,7 +1971,7 @@ body {
 	#page #content div.post div.entry-content,
 	#page #content article.page div.entry-content {
 		padding: 1em;
-		background-color: #fff;
+		margin: 0;
 	}
 	#page #content div.post div.postmetadata,
 	#page #content article.page div.postmetadata {
@@ -2269,7 +2226,6 @@ body {
 		font-family: "Poppins", sans-serif;
 	}
 	#page #content div#container {
-
 		/* Navigation - Tabs */
 	}
 	#page #content div#container .audioExcerpt {
@@ -2662,7 +2618,6 @@ body {
 		float: left;
 		padding-left: 1em;
 		display: block;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -2807,7 +2762,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -3030,7 +2985,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -3076,10 +3031,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -3212,12 +3167,12 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 		font-size: 1.2em;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 		font-size: 1.2em;
@@ -3226,7 +3181,7 @@ body {
 		padding: 0.2em;
 		font-size: 1.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		font-size: 1.2em;
 		line-height: 1.5em;
 	}
@@ -3565,7 +3520,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -3649,7 +3603,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -3807,7 +3761,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -3853,10 +3807,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -4001,18 +3955,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -4338,7 +4292,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -4422,7 +4375,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -4568,7 +4521,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -4614,10 +4567,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -4747,18 +4700,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -5082,7 +5035,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -5166,7 +5118,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -5308,7 +5260,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -5354,10 +5306,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -5496,18 +5448,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -5829,7 +5781,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -5913,7 +5864,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -6059,7 +6010,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -6105,10 +6056,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -6250,18 +6201,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -6580,7 +6531,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -6664,7 +6614,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -6811,7 +6761,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -6857,10 +6807,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -7013,18 +6963,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -7346,7 +7296,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -7430,7 +7379,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -7580,7 +7529,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -7626,10 +7575,10 @@ body {
 		font-size: 1.3em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -7766,18 +7715,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -8106,7 +8055,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -8190,7 +8138,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -8332,7 +8280,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -8378,10 +8326,10 @@ body {
 		font-size: 1.2em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -8524,18 +8472,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -8857,7 +8805,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -8941,7 +8888,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -8998,7 +8945,6 @@ body {
 @media only screen and (max-width: 480px) {
 	#page {
 		width: 98%;
-
 		/* Make sure the button doesn"t hide when menu is open. */
 	}
 	#page header.site-header {
@@ -9141,7 +9087,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -9187,10 +9133,10 @@ body {
 		font-size: 1.1em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -9338,18 +9284,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -9674,7 +9620,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -9758,7 +9703,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -9906,7 +9851,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 1em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 1em;
 		width: 31%;
 	}
@@ -9952,10 +9897,10 @@ body {
 		font-size: 1em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -10100,18 +10045,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -10433,7 +10378,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -10517,7 +10461,7 @@ body {
 		font-size: 0.85em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		display: block;
@@ -10673,7 +10617,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 0.8em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 0.8em;
 		width: 31%;
 	}
@@ -10719,10 +10663,10 @@ body {
 		font-size: 1em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -10861,18 +10805,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -11220,7 +11164,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -11304,7 +11247,7 @@ body {
 		font-size: 0.8em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		font-size: 0.8em;
@@ -11456,7 +11399,7 @@ body {
 	#page aside#secondary #search_form #searchForm label {
 		font-size: 0.8em;
 	}
-	#page aside#secondary #search_form #searchForm input[type="text"] {
+	#page aside#secondary #search_form #searchForm input[type='text'] {
 		font-size: 0.8em;
 		width: 31%;
 	}
@@ -11502,10 +11445,10 @@ body {
 		font-size: 1em;
 		line-height: 40px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="text"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='text'] {
 		height: 35px;
 	}
-	#page aside#secondary article.side-bar-box form#searchform input[type="submit"] {
+	#page aside#secondary article.side-bar-box form#searchform input[type='submit'] {
 		width: 20%;
 	}
 	#page aside#secondary article.side-bar-box ul {
@@ -11648,18 +11591,18 @@ body {
 	#page #content main#primary #contact-form-a a:hover {
 		line-height: 1.5em;
 	}
-	#page #content main#primary #contact-form-a input[type="text"] {
+	#page #content main#primary #contact-form-a input[type='text'] {
 		padding: 0.2em;
 		height: 35px;
 	}
-	#page #content main#primary #contact-form-a input[type="email"] {
+	#page #content main#primary #contact-form-a input[type='email'] {
 		padding: 0.2em;
 		height: 35px;
 	}
 	#page #content main#primary #contact-form-a textarea {
 		padding: 0.2em;
 	}
-	#page #content main#primary #contact-form-a select [type="text"] {
+	#page #content main#primary #contact-form-a select [type='text'] {
 		line-height: 1.5em;
 	}
 	#page #content main#primary #contact-form-a #contact-btn {
@@ -11982,7 +11925,6 @@ body {
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo {
 		width: 65%;
 		padding-left: 1em;
-
 		/* Search/Results boxes end*/
 	}
 	#page #content #results .product-box figure.product-box-img .product-box-cartinfo h4 {
@@ -12066,7 +12008,7 @@ body {
 		font-size: 0.8em;
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#current_time::after {
-		content: "/";
+		content: '/';
 	}
 	#page #content #results .product-box figure.product-box-img figcaption ul.product-box-info li div#duration {
 		font-size: 0.8em;
@@ -12113,3 +12055,5 @@ body {
 		width: auto;
 	}
 }
+
+/*# sourceMappingURL=style.css.map */

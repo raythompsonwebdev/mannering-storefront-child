@@ -22,8 +22,8 @@ get_header(); ?>
 
 <main id="primary" class="group">
 
-	<h1>
-		<?php esc_html_e( 'Contact Us', 'mannering-woocommerce-child' ); ?>
+<h1>
+		<?php the_title(); ?>
 	</h1>
 
 	<br />

@@ -38,7 +38,6 @@
 				}
 			}
 		}
-
 	}
 	.woocommerce-product-gallery.woocommerce-product-gallery--columns-2 {
 		.flex-control-thumbs {
@@ -145,8 +144,9 @@
 	width: 5.3em;
 	font-family: star;
 	font-weight: 400;
+	margin: auto;
 	&::before {
-		content: "\53\53\53\53\53";
+		content: '\53\53\53\53\53';
 		opacity: 0.25;
 		float: left;
 		top: 0;
@@ -161,7 +161,7 @@
 		position: absolute;
 		padding-top: 1.5em;
 		&::before {
-			content: "\53\53\53\53\53";
+			content: '\53\53\53\53\53';
 			top: 0;
 			position: absolute;
 			left: 0;
@@ -189,18 +189,18 @@ p.stars {
 			height: 1em;
 			line-height: 1;
 			font-family: star;
-			content: "\53";
+			content: '\53';
 			color: #404040;
 			text-indent: 0;
 			opacity: 0.25;
 		}
 		&:hover ~ a::before {
-			content: "\53";
+			content: '\53';
 			color: #404040;
 			opacity: 0.25;
 		}
 		&::before {
-			content: "\53";
+			content: '\53';
 			color: #ebab00;
 			opacity: 1;
 		}
@@ -208,19 +208,19 @@ p.stars {
 }
 
 p.stars.selected a.active::before {
-	content: "\53";
+	content: '\53';
 	color: #ebab00;
 	opacity: 1;
 }
 
 p.stars.selected a.active ~ a::before {
-	content: "\53";
+	content: '\53';
 	color: #404040;
 	opacity: 0.25;
 }
 
 p.stars.selected a:not(.active)::before {
-	content: "\53";
+	content: '\53';
 	color: #ebab00;
 	opacity: 1;
 }
@@ -273,6 +273,24 @@ p.stars.selected a:not(.active)::before {
 p.no-comments {
 	background-color: #666;
 	clear: both;
+}
+
+.woocommerce-message {
+	color: $color3;
+	width: 100%;
+	text-indent: 0.25em;
+
+	.wc-forward {
+		color: $color2;
+		display: inline-block;
+		line-height: 40px;
+		width: auto;
+
+		&:hover {
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
 }
 
 .woocommerce-info,

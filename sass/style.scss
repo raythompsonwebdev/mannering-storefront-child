@@ -19,14 +19,13 @@ License: GNU General Public License v2 or later
 
 */
 
-@import "partials/base";
-@import "partials/fonts";
-@import "partials/variables";
-@import "partials/mixins";
+@import 'partials/base';
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
 
 /*1920*/
 @media only screen and (max-width: 1920px) {
-
 	/* wrapper */
 	#page {
 		margin-left: auto;
@@ -352,7 +351,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						border: 2px solid $color8;
 
 						@include boredrady(5px);
@@ -479,12 +478,12 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						width: 75%;
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -629,19 +628,19 @@ License: GNU General Public License v2 or later
 					}
 				}
 
-				input[type="text"],
-				input[type="password"],
-				input[type="submit"] {
+				input[type='text'],
+				input[type='password'],
+				input[type='submit'] {
 					font-family: ($FontList);
 
 					display: block;
 					font-weight: normal;
 				}
 
-				input[type="text"],
-				input[type="password"],
-				input[type="email"],
-				input[type="tel"] {
+				input[type='text'],
+				input[type='password'],
+				input[type='email'],
+				input[type='tel'] {
 					width: 100%;
 					border: 2px solid $color8;
 
@@ -899,7 +898,7 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						width: 100%;
 						display: block;
 						padding: 0.2em;
@@ -907,7 +906,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						width: 100%;
 						display: block;
 						padding: 0.2em;
@@ -929,7 +928,7 @@ License: GNU General Public License v2 or later
 						font-weight: bold;
 					}
 
-					input[type="submit"],
+					input[type='submit'],
 					#contact-btn {
 						font-family: ($FontList);
 						letter-spacing: 0.05em;
@@ -993,7 +992,6 @@ License: GNU General Public License v2 or later
 					line-height: 25px;
 					color: $color2;
 				}
-
 				/* about-page-images */
 				.aboutpage-img {
 					width: 7%;
@@ -1091,7 +1089,7 @@ License: GNU General Public License v2 or later
 
 				h2 {
 					margin-bottom: 0.2em;
-					color: $color3;
+					color: $color7;
 
 					a {
 						color: $color3;
@@ -1115,7 +1113,7 @@ License: GNU General Public License v2 or later
 
 				div.entry-content {
 					padding: 1em;
-					background-color: $color2;
+					margin: 0;
 				}
 
 				div.postmetadata {
@@ -1321,7 +1319,6 @@ License: GNU General Public License v2 or later
 								margin: auto;
 
 								&:hover {
-
 									@include transforming-things(scale(1.05));
 									border: 3px solid $color1;
 								}
@@ -1793,7 +1790,7 @@ License: GNU General Public License v2 or later
 						line-height: 30px;
 						font-weight: normal;
 
-						@include boredrady("none");
+						@include boredrady('none');
 						text-align: center;
 					}
 
@@ -1985,7 +1982,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -2260,7 +2257,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -2320,11 +2317,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -2509,13 +2506,13 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 						font-size: 1.2em;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 						font-size: 1.2em;
@@ -2526,7 +2523,7 @@ License: GNU General Public License v2 or later
 						font-size: 1.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						font-size: 1.2em;
 						line-height: 1.5em;
 					}
@@ -3078,7 +3075,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -3292,7 +3289,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -3352,11 +3349,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -3554,12 +3551,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -3568,7 +3565,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -4107,7 +4104,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -4305,7 +4302,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -4365,11 +4362,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -4547,12 +4544,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -4561,7 +4558,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -5098,7 +5095,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -5296,7 +5293,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -5356,11 +5353,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -5550,12 +5547,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -5564,7 +5561,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -6097,7 +6094,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -6300,7 +6297,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -6360,11 +6357,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -6557,12 +6554,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -6571,7 +6568,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -7102,7 +7099,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -7304,7 +7301,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -7364,11 +7361,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -7577,12 +7574,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -7591,7 +7588,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -8125,7 +8122,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -8331,7 +8328,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -8391,11 +8388,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -8582,12 +8579,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -8596,7 +8593,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -9134,7 +9131,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -9329,7 +9326,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -9388,11 +9385,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -9585,12 +9582,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -9599,7 +9596,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -10134,7 +10131,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -10392,7 +10389,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -10451,11 +10448,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -10655,12 +10652,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -10669,7 +10666,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -11207,7 +11204,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -11414,7 +11411,7 @@ License: GNU General Public License v2 or later
 						font-size: 1em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 1em;
 						width: 31%;
 					}
@@ -11474,11 +11471,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -11673,12 +11670,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -11687,7 +11684,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -12221,7 +12218,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.85em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -12435,7 +12432,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.8em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 0.8em;
 						width: 31%;
 					}
@@ -12494,11 +12491,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -12690,12 +12687,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -12704,7 +12701,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -13261,7 +13258,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.8em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 
@@ -13473,7 +13470,7 @@ License: GNU General Public License v2 or later
 						font-size: 0.8em;
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						font-size: 0.8em;
 						width: 31%;
 					}
@@ -13532,11 +13529,11 @@ License: GNU General Public License v2 or later
 				}
 
 				form#searchform {
-					input[type="text"] {
+					input[type='text'] {
 						height: 35px;
 					}
 
-					input[type="submit"] {
+					input[type='submit'] {
 						width: 20%;
 					}
 				}
@@ -13730,12 +13727,12 @@ License: GNU General Public License v2 or later
 						}
 					}
 
-					input[type="text"] {
+					input[type='text'] {
 						padding: 0.2em;
 						height: 35px;
 					}
 
-					input[type="email"] {
+					input[type='email'] {
 						padding: 0.2em;
 						height: 35px;
 					}
@@ -13744,7 +13741,7 @@ License: GNU General Public License v2 or later
 						padding: 0.2em;
 					}
 
-					select [type="text"] {
+					select [type='text'] {
 						line-height: 1.5em;
 					}
 
@@ -14277,7 +14274,7 @@ License: GNU General Public License v2 or later
 										font-size: 0.8em;
 
 										&::after {
-											content: "/";
+											content: '/';
 										}
 									}
 

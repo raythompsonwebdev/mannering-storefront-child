@@ -6,10 +6,8 @@ WooCommerce styles override
 @font-face {
 	font-family: "Harabara_Bold";
 	src: url("fonts/Harabara_Bold/Harabara.eot");
-
 	/* IE9 Compat Modes */
 	src: url("fonts/Harabara_Bold/Harabara.eot?#iefix") format("embedded-opentype"), url("fonts/Harabara_Bold/Harabara.woff") format("woff"), url("fonts/Harabara_Bold/Harabara.ttf") format("truetype"), url("fon		Harabara_Bold/Harabara.svg#svgFontName") format("svg");
-
 	/* Legacy iOS */
 }
 
@@ -19,10 +17,12 @@ WooCommerce styles override
 .single-product div.product {
 	position: relative;
 }
+
 .single-product div.product .woocommerce-product-gallery {
 	position: relative;
 	float: left;
 }
+
 .single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
 	position: absolute;
 	top: 2em;
@@ -30,60 +30,78 @@ WooCommerce styles override
 	display: block;
 	z-index: 99;
 }
+
 .single-product div.product .woocommerce-product-gallery .flex-viewport {
 	margin-bottom: 1em;
 }
+
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
 	margin: 0;
 	padding: 0;
 }
+
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li {
 	list-style: none;
 	cursor: pointer;
 	float: left;
 }
+
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
 	opacity: 0.5;
 }
+
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img.flex-active {
 	opacity: 1;
 }
+
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li:hover img {
 	opacity: 1;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
 	width: 48.1%;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n) {
 	margin-right: 0;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n + 1) {
 	clear: both;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
 	width: 30.79667%;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n) {
 	margin-right: 0;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n + 1) {
 	clear: both;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
 	width: 22.15%;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n) {
 	margin-right: 0;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n + 1) {
 	clear: both;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
 	width: 16.96%;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n) {
 	margin-right: 0;
 }
+
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n + 1) {
 	clear: both;
 }
@@ -103,7 +121,6 @@ WooCommerce styles override
 /**
 			* General WooCommerce components
 			*/
-
 /**
 			* Header cart
 			*/
@@ -137,15 +154,18 @@ WooCommerce styles override
 	width: 5.3em;
 	font-family: star;
 	font-weight: 400;
+	margin: auto;
 }
+
 .star-rating::before {
-	content: "\53\53\53\53\53";
+	content: '\53\53\53\53\53';
 	opacity: 0.25;
 	float: left;
 	top: 0;
 	left: 0;
 	position: absolute;
 }
+
 .star-rating span {
 	overflow: hidden;
 	float: left;
@@ -154,8 +174,9 @@ WooCommerce styles override
 	position: absolute;
 	padding-top: 1.5em;
 }
+
 .star-rating span::before {
-	content: "\53\53\53\53\53";
+	content: '\53\53\53\53\53';
 	top: 0;
 	position: absolute;
 	left: 0;
@@ -172,6 +193,7 @@ p.stars a {
 	margin-right: 1px;
 	font-weight: 400;
 }
+
 p.stars a::before {
 	display: block;
 	position: absolute;
@@ -181,36 +203,38 @@ p.stars a::before {
 	height: 1em;
 	line-height: 1;
 	font-family: star;
-	content: "\53";
+	content: '\53';
 	color: #404040;
 	text-indent: 0;
 	opacity: 0.25;
 }
+
 p.stars a:hover ~ a::before {
-	content: "\53";
+	content: '\53';
 	color: #404040;
 	opacity: 0.25;
 }
+
 p.stars a::before {
-	content: "\53";
+	content: '\53';
 	color: #ebab00;
 	opacity: 1;
 }
 
 p.stars.selected a.active::before {
-	content: "\53";
+	content: '\53';
 	color: #ebab00;
 	opacity: 1;
 }
 
 p.stars.selected a.active ~ a::before {
-	content: "\53";
+	content: '\53';
 	color: #404040;
 	opacity: 0.25;
 }
 
 p.stars.selected a:not(.active)::before {
-	content: "\53";
+	content: '\53';
 	color: #ebab00;
 	opacity: 1;
 }
@@ -265,6 +289,24 @@ p.no-comments {
 	clear: both;
 }
 
+.woocommerce-message {
+	color: #3a3a3a;
+	width: 100%;
+	text-indent: 0.25em;
+}
+
+.woocommerce-message .wc-forward {
+	color: #fff;
+	display: inline-block;
+	line-height: 40px;
+	width: auto;
+}
+
+.woocommerce-message .wc-forward:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
@@ -288,6 +330,7 @@ p.no-comments {
 	z-index: 9999;
 	line-height: 1.8em;
 }
+
 .demo_store a {
 	display: inline-block;
 	width: auto;
@@ -299,10 +342,12 @@ p.no-comments {
 .widget_price_filter .price_slider {
 	margin-bottom: 1.5em;
 }
+
 .widget_price_filter .price_slider .ui-slider {
 	position: relative;
 	text-align: left;
 }
+
 .widget_price_filter .price_slider .ui-slider .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
@@ -315,13 +360,16 @@ p.no-comments {
 	margin-top: -0.25em;
 	opacity: 1;
 }
+
 .widget_price_filter .price_slider .ui-slider .ui-slider-handle:last-child {
 	margin-left: -1em;
 }
+
 .widget_price_filter .price_slider .ui-slider .ui-slider-handle:hover,
 .widget_price_filter .price_slider .ui-slider .ui-slider-handle.ui-state-active {
 	box-shadow: 0 0 0 0.25em rgba(0, 0, 0, 0.1);
 }
+
 .widget_price_filter .price_slider .ui-slider .ui-slider-range {
 	position: absolute;
 	z-index: 1;
@@ -329,9 +377,11 @@ p.no-comments {
 	border: 0;
 	background: #ebab00;
 }
+
 .widget_price_filter .price_slider .ui-slider-horizontal {
 	height: 0.5em;
 }
+
 .widget_price_filter .price_slider .ui-slider-horizontal .ui-slider-range {
 	height: 100%;
 }
@@ -340,6 +390,7 @@ p.no-comments {
 	text-align: right;
 	line-height: 2.4;
 }
+
 .widget_price_filter .price_slider_amount .button {
 	float: left;
 }
@@ -356,7 +407,6 @@ p.no-comments {
 	.demo_store a {
 		display: inline-block;
 	}
-
 	/**
 	 * Header cart
 	 */
@@ -420,7 +470,6 @@ p.no-comments {
 	table.shop_table_responsive tbody tr td::before {
 		display: none;
 	}
-
 	/**
  * Checkout
  */
@@ -440,7 +489,6 @@ p.no-comments {
 
 @media only screen and (max-width: 1920px) {
 	#page #content {
-
 		/* global contact form style */
 	}
 	#page #content aside#secondary {
@@ -534,7 +582,8 @@ p.no-comments {
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.cart_list li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
@@ -558,7 +607,8 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
@@ -582,7 +632,7 @@ p.no-comments {
 		width: 85%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li {
-		margin-bottom: 0.5em;
+		margin: 1em 0;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a {
 		width: 100%;
@@ -601,7 +651,7 @@ p.no-comments {
 		height: 30px;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 60%;
+		width: 45%;
 		line-height: 30px;
 		margin: 0 auto;
 		display: block;
@@ -614,10 +664,14 @@ p.no-comments {
 		letter-spacing: 0.1em;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
+	}
+	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget .star-rating {
+		margin: auto;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 {
 		padding: 0;
@@ -628,7 +682,7 @@ p.no-comments {
 		width: 70%;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li {
-		margin-bottom: 0.5em;
+		margin: 1em 0;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a {
 		width: 100%;
@@ -658,7 +712,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
@@ -695,11 +750,9 @@ p.no-comments {
 		width: 84%;
 		float: left;
 		display: block;
-
 		/**
 							* Shop tables
 							*/
-
 		/**
 							* Shop Page Products
 							*/
@@ -795,7 +848,7 @@ p.no-comments {
 	#page #content #primary div.product .woocommerce-tabs .panel {
 		background-color: #3a3a3a;
 		padding: 0.5em;
-		min-height: 400px;
+		height: auto;
 		margin: 0;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel h2 {
@@ -815,9 +868,10 @@ p.no-comments {
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments h2.woocommerce-Reviews-title,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments h2.woocommerce-Reviews-title {
 		background-color: #181818;
-		font-size: 1.4em;
-		padding: 0.5em 0;
+		font-size: 1.3em;
 		text-indent: 0.35em;
+		padding: 0;
+		margin-bottom: 0.2em;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments h2.woocommerce-Reviews-title span,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments h2.woocommerce-Reviews-title span {
@@ -834,6 +888,50 @@ p.no-comments {
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist {
 		margin: 0;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container .star-rating,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container .star-rating {
+		margin: 0;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container img.avatar,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container img.avatar {
+		float: left;
+		margin-right: 0.5em;
+		width: 6%;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta {
+		clear: both;
+		display: inline-block;
+		width: 92%;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta em,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta em {
+		display: inline-block;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta span.woocommerce-review__dash,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta span.woocommerce-review__dash {
+		width: 2%;
+		display: inline-block;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta .woocommerce-review__verified,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container div.comment-text p.meta .woocommerce-review__verified {
+		display: inline-block;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container div.comment-text div.description,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container div.comment-text div.description {
+		background-color: #fff;
+		padding: 0.2em;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments ol.commentlist li.review div.comment_container div.comment-text div.description p,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments ol.commentlist li.review div.comment_container div.comment-text div.description p {
+		color: #181818;
+		line-height: 1.5em;
+	}
+	#page #content #primary div.product .woocommerce-tabs .panel #reviews p.woocommerce-verification-required,
+	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews p.woocommerce-verification-required {
+		color: #cd1f25;
+		line-height: 40px;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#review_form_wrapper,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#review_form_wrapper {
@@ -1041,7 +1139,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product div.summary {
 		width: 85%;
-		min-height: 250px;
+		height: auto;
 		display: inline-block;
 		margin: 0;
 	}
@@ -1055,15 +1153,26 @@ p.no-comments {
 		text-indent: 0.5em;
 		background-color: #181818;
 	}
+	#page #content #primary div.product div.summary div.woocommerce-product-rating .star-rating {
+		margin: 0;
+		line-height: 35px;
+		height: 35px;
+	}
+	#page #content #primary div.product div.summary div.woocommerce-product-rating .star-rating .rating {
+		display: inline-block;
+	}
 	#page #content #primary div.product div.summary div.woocommerce-product-rating a.woocommerce-review-link {
 		width: 50%;
 		display: block;
+		color: #fff;
+		line-height: 40px;
 	}
-	#page #content #primary div.product div.summary div.woocommerce-product-rating a.woocommerce-review-link span {
+	#page #content #primary div.product div.summary div.woocommerce-product-rating a.woocommerce-review-link span.count {
 		width: 5%;
 		padding-right: 0.5em;
 		line-height: 25px;
 		text-align: center;
+		line-height: 40px;
 	}
 	#page #content #primary div.product div.summary p.price {
 		font-size: 1em;
@@ -1089,7 +1198,8 @@ p.no-comments {
 		font-size: 125%;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
+		padding-right: 0.25em;
 		display: block;
 		height: 100%;
 		text-align: left;
@@ -1334,14 +1444,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
+		padding-right: 0.25em;
 		display: block;
 		line-height: 35px;
 		float: left;
 		text-align: center;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 90%;
 		font-size: 0.9em;
 		display: block;
@@ -1349,8 +1460,8 @@ p.no-comments {
 		text-align: center;
 		line-height: 35px;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #fff;
 		color: #181818;
 	}
@@ -1441,7 +1552,6 @@ p.no-comments {
 		width: 10%;
 	}
 	#page #content #primary table.shop_table_responsive tbody {
-
 		/* cart */
 	}
 	#page #content #primary table.shop_table_responsive tbody tr.cart_item {
@@ -1487,7 +1597,7 @@ p.no-comments {
 		color: #181818;
 		font-size: 0.85em;
 	}
-	#page #content #primary table.shop_table_responsive tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary table.shop_table_responsive tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		width: 90%;
 		display: block;
 		margin: 0;
@@ -1497,7 +1607,8 @@ p.no-comments {
 		width: 8%;
 	}
 	#page #content #primary table.shop_table_responsive tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		color: #181818;
 	}
@@ -1522,7 +1633,8 @@ p.no-comments {
 	}
 	#page #content #primary table.shop_table_responsive tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary table.shop_table_responsive tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 45px;
 		text-align: center;
@@ -1577,9 +1689,9 @@ p.no-comments {
 		-ms-flex: 0 0 auto;
 		flex: 0 0 auto;
 	}
-	#page #content #primary table.shop_table_responsive tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary table.shop_table_responsive tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary table.shop_table_responsive tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary table.shop_table_responsive tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary table.shop_table_responsive tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary table.shop_table_responsive tbody tr td.actions div.coupon input[type='email'] {
 		line-height: 45px;
 		height: 45px;
 		width: 30%;
@@ -1686,7 +1798,7 @@ p.no-comments {
 	#page #content #primary ul.products li.product span.price {
 		font-size: 1em;
 		color: #fff;
-		width: 45%;
+		width: 35%;
 	}
 	#page #content #primary ul.products li.product span.price span.woocommerce-Price-amount {
 		width: 100%;
@@ -1698,7 +1810,8 @@ p.no-comments {
 		display: block;
 	}
 	#page #content #primary ul.products li.product span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 35px;
 		text-align: center;
@@ -1770,7 +1883,8 @@ p.no-comments {
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 25%;
+		width: auto;
+		padding-right: 0.25em;
 		display: block;
 		height: 100%;
 		float: left;
@@ -1809,41 +1923,18 @@ p.no-comments {
 		color: #3a3a3a;
 	}
 	#page #content #primary div.entry-content .woocommerce {
-
 		/* Checkout Info */
-
 		/* My Account Navigation */
-
 		/* My Account Content */
-
 		/* cart-page-form */
-
 		/* login form */
-
 		/* woocommerce-checkout page */
-
 		/* proceed to cart */
-
 		/* basket total */
-
 		/* order screen */
 	}
 	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper {
 		margin: 0;
-	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message {
-		color: #3a3a3a;
-		width: 100%;
-		padding: 0.5em;
-	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message a {
-		color: #3a3a3a;
-		display: inline-block;
-		line-height: 40px;
-		width: auto;
-	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message a:hover {
-		font-weight: bold;
 	}
 	#page #content #primary div.entry-content .woocommerce p.cart-empty {
 		color: #fff;
@@ -1908,12 +1999,16 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content {
 		width: 100%;
-		margin-top: 0.5em;
+		margin-top: 0.25em;
+		padding: 0.25em;
+		background-color: #fff;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content p {
 		color: #181818;
 		margin: 0;
 		padding: 0;
+		line-height: 30px;
+		text-indent: 0.2em;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content p strong {
 		line-height: 30px;
@@ -1923,7 +2018,7 @@ p.no-comments {
 		display: inline-block;
 		line-height: 30px;
 	}
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content p a[href*="example"] {
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content p a[href*='example'] {
 		display: inline-block;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content div.woocommerce-Addresses {
@@ -1938,6 +2033,9 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content div.woocommerce-Addresses div.woocommerce-Address header.woocommerce-Address-title h3 {
 		color: #181818;
 	}
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content div.woocommerce-Addresses div.woocommerce-Address address {
+		color: #181818;
+	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row {
 		margin: 0;
 	}
@@ -1947,8 +2045,8 @@ p.no-comments {
 		display: inline-block;
 		line-height: 40px;
 	}
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button {
@@ -1977,11 +2075,11 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form {
 		padding: 0;
 		white-space: normal;
-
+		background-color: #fff;
 		/* billing page */
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table {
-		padding: 1em 0;
+		padding: 0.25em;
 		width: 100%;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table thead {
@@ -2014,7 +2112,6 @@ p.no-comments {
 		width: 10%;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/* cart */
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item {
@@ -2060,7 +2157,7 @@ p.no-comments {
 		color: #181818;
 		font-size: 0.85em;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		width: 90%;
 		display: block;
 		margin: 0;
@@ -2070,7 +2167,8 @@ p.no-comments {
 		width: 8%;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		color: #181818;
 	}
@@ -2095,7 +2193,8 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 45px;
 		text-align: center;
@@ -2149,9 +2248,9 @@ p.no-comments {
 		-ms-flex: 0 0 auto;
 		flex: 0 0 auto;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		line-height: 45px;
 		height: 45px;
 		width: 30%;
@@ -2176,8 +2275,12 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions input {
 		margin: 0;
 	}
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-form-login {
+		background-color: #fff;
+		padding: 1em;
+	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-form-login p.form-row {
-		margin: 1.5em 0;
+		margin: 1em 0;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-form-login p.form-row .woocommerce-form__label-for-checkbox {
 		width: 40%;
@@ -2197,7 +2300,6 @@ p.no-comments {
 		line-height: 35px;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout {
-
 		/* woocommerce-checkoutform */
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div.woocommerce-NoticeGroup ul.woocommerce-error {
@@ -2212,7 +2314,6 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#customer_details {
 		background-color: #3a3a3a;
 		padding: 1em;
-
 		/*cols*/
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#customer_details .col-1,
@@ -2260,11 +2361,12 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review {
 		color: #3a3a3a;
-		padding: 1em;
+		background-color: #fff;
+		padding: 0.25em;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table {
 		color: #3a3a3a;
-		padding: 1em;
+		padding: 0.5em;
 		width: 100%;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table thead {
@@ -2296,7 +2398,8 @@ p.no-comments {
 		display: block;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 45px;
 	}
@@ -2323,7 +2426,8 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 45px;
 		text-indent: 0;
@@ -2412,6 +2516,10 @@ p.no-comments {
 		padding: 1em;
 		background-color: #3a3a3a;
 	}
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row .woocommerce-terms-and-conditions-wrapper,
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order .woocommerce-terms-and-conditions-wrapper {
+		width: auto;
+	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row .woocommerce-terms-and-conditions-wrapper .woocommerce-privacy-policy-text,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order .woocommerce-terms-and-conditions-wrapper .woocommerce-privacy-policy-text {
 		color: #181818;
@@ -2439,10 +2547,10 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order p label {
 		display: block;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row p label input[type="checkbox"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row p label input[type="radio"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order p label input[type="checkbox"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order p label input[type="radio"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row p label input[type='checkbox'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row p label input[type='radio'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order p label input[type='checkbox'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment .place-order p label input[type='radio'] {
 		margin: 0 0.5em;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review div#payment div.form-row p label span,
@@ -2552,7 +2660,8 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.cart-subtotal td strong span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.order-total td strong span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 45px;
 		text-align: center;
@@ -2637,7 +2746,8 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
+		padding-right: 0.25em;
 		display: inline-block;
 		line-height: 45px;
 		text-align: center;
@@ -2788,10 +2898,10 @@ p.no-comments {
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.cart_list li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total {
-		font-size: 0.9em;
+		font-size: 0.75em;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total strong {
 		line-height: 30px;
@@ -2805,7 +2915,7 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__buttons a {
 		text-decoration: none;
@@ -2813,6 +2923,9 @@ p.no-comments {
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 {
 		padding: 0;
+	}
+	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li {
+		margin: 1em 0;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li a {
 		width: 100%;
@@ -2824,22 +2937,19 @@ p.no-comments {
 		font-size: 90%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 60%;
+		width: 45%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 35%;
+		width: auto;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 {
 		padding: 0;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget {
 		width: 70%;
-	}
-	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li {
-		margin-bottom: 0.5em;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a {
 		font-size: 0.8em;
@@ -2861,7 +2971,6 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
@@ -2904,7 +3013,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments h2.woocommerce-Reviews-title,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments h2.woocommerce-Reviews-title {
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments p.woocommerce-noreviews,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments p.woocommerce-noreviews {
@@ -3025,7 +3134,7 @@ p.no-comments {
 		font-size: 1em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -3129,15 +3238,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -3163,7 +3272,7 @@ p.no-comments {
 		margin: 1em auto;
 	}
 	#page #content #primary ul.products li.product span.price {
-		width: 45%;
+		width: 35%;
 	}
 	#page #content #primary ul.products li.product span.price span.woocommerce-Price-amount {
 		width: 100%;
@@ -3185,7 +3294,7 @@ p.no-comments {
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content #primary ul.products li.type-product a.add_to_cart_button,
 	#page #content #primary ul.products li.type-product a.added_to_cart {
@@ -3201,10 +3310,10 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper {
 		margin: 0;
 	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message a {
+	#page #content #primary div.entry-content .woocommerce .woocommerce-message a {
 		line-height: 40px;
 	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message a:hover {
+	#page #content #primary div.entry-content .woocommerce .woocommerce-message a:hover {
 		font-weight: bold;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-info {
@@ -3236,8 +3345,8 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button {
@@ -3301,7 +3410,7 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
@@ -3320,7 +3429,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
@@ -3334,9 +3443,9 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 20%;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button {
@@ -3372,7 +3481,7 @@ p.no-comments {
 		margin: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount {
@@ -3380,7 +3489,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.woocommerce-shipping-totals th {
 		text-align: left;
@@ -3470,7 +3579,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.woocommerce-shipping-totals th {
 		text-indent: 0.5em;
@@ -3513,7 +3622,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.cart-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.order-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 		line-height: 30px;
 	}
 }
@@ -3577,7 +3686,7 @@ p.no-comments {
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.cart_list li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 		line-height: 30px;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total {
@@ -3596,7 +3705,7 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 		line-height: 30px;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__buttons a {
@@ -3617,23 +3726,20 @@ p.no-comments {
 		font-size: 80%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount {
-		width: 60%;
+		width: 45%;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi {
 		display: block;
 		font-size: 0.8em;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 {
 		padding: 0;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget {
 		width: 70%;
-	}
-	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li {
-		margin-bottom: 0.5em;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a {
 		font-size: 0.75em;
@@ -3656,9 +3762,7 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary article.product {
@@ -3702,7 +3806,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments h2.woocommerce-Reviews-title,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments h2.woocommerce-Reviews-title {
-		font-size: 1.25em;
+		font-size: 1.2em;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments p.woocommerce-noreviews,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments p.woocommerce-noreviews {
@@ -3825,7 +3929,7 @@ p.no-comments {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 4%;
+		width: auto;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -3932,15 +4036,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -3981,7 +4085,7 @@ p.no-comments {
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content #primary ul.products li.type-product a.add_to_cart_button,
 	#page #content #primary ul.products li.type-product a.added_to_cart {
@@ -3994,10 +4098,10 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper {
 		margin: 0;
 	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message a {
+	#page #content #primary div.entry-content .woocommerce .woocommerce-message a {
 		line-height: 40px;
 	}
-	#page #content #primary div.entry-content .woocommerce .woocommerce-notices-wrapper .woocommerce-message a:hover {
+	#page #content #primary div.entry-content .woocommerce .woocommerce-message a:hover {
 		font-weight: bold;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-info {
@@ -4028,8 +4132,8 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button {
@@ -4099,7 +4203,7 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol {
@@ -4118,7 +4222,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
 		margin: 0;
@@ -4132,9 +4236,9 @@ p.no-comments {
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 20%;
 	}
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button {
@@ -4170,7 +4274,7 @@ p.no-comments {
 		margin: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount {
@@ -4178,7 +4282,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.woocommerce-shipping-totals th {
 		text-align: left;
@@ -4264,7 +4368,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.woocommerce-shipping-totals th {
 		text-indent: 0.5em;
@@ -4307,7 +4411,7 @@ p.no-comments {
 	}
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.cart-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.order-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 		line-height: 30px;
 	}
 	#page #content #primary mark.count {
@@ -4396,7 +4500,7 @@ p.no-comments {
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.cart_list li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
@@ -4419,7 +4523,7 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
@@ -4452,16 +4556,13 @@ p.no-comments {
 		font-size: 80%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_recently_viewed_products-2 {
 		padding: 0;
 	}
 	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_recently_viewed_products-2 ul.product_list_widget {
 		width: 70%;
-	}
-	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_recently_viewed_products-2 ul.product_list_widget li {
-		margin-bottom: 0.5em;
 	}
 	#page #content aside#secondary section.widget_shopping_cart section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a {
 		font-size: 0.75em;
@@ -4503,16 +4604,13 @@ p.no-comments {
 		font-size: 0.75em;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 {
 		padding: 0;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget {
 		width: 80%;
-	}
-	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li {
-		margin-bottom: 0.5em;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 ul.product_list_widget li a {
 		font-size: 0.7em;
@@ -4534,11 +4632,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary article.product {
@@ -4572,7 +4667,7 @@ p.no-comments {
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments h2.woocommerce-Reviews-title,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments h2.woocommerce-Reviews-title {
-		font-size: 1.2em;
+		font-size: 1.15em;
 	}
 	#page #content #primary div.product .woocommerce-tabs .panel #reviews div#comments p.woocommerce-noreviews,
 	#page #content #primary div.product .woocommerce-tabs .panel .woocommerce-Reviews div#comments p.woocommerce-noreviews {
@@ -4691,7 +4786,7 @@ p.no-comments {
 		font-size: 0.8em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 3%;
+		width: auto;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -4799,15 +4894,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -4844,7 +4939,7 @@ p.no-comments {
 	}
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price del span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary ul.products li.type-product a.woocommerce-LoopProduct-link .price ins span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content #primary ul.products li.type-product a.add_to_cart_button,
 	#page #content #primary ul.products li.type-product a.added_to_cart {
@@ -4911,10 +5006,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -5002,8 +5097,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
@@ -5030,7 +5125,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 15%;
+		width: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr {
@@ -5048,12 +5143,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 20%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -5102,7 +5197,7 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td.product-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount,
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount,
@@ -5115,7 +5210,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.woocommerce-shipping-totals th,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tfoot tr.woocommerce-shipping-totals th {
@@ -5233,7 +5328,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.cart-subtotal td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.order-total td span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.woocommerce-shipping-totals th,
 	#page #content #primary article.page div.entry-content .woocommerce div.cart-collaterals div.cart_totals table.shop_table tbody tr.woocommerce-shipping-totals th {
@@ -5292,7 +5387,7 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.order-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.cart-subtotal span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary article.page div.entry-content .woocommerce div.cart-collaterals div.cart_totals tr.order-total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 5%;
+		width: auto;
 		line-height: 30px;
 	}
 	#page #content #primary mark.count {
@@ -5302,11 +5397,8 @@ p.no-comments {
 
 @media only screen and (max-width: 960px) {
 	#page #content {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content aside#secondary {
@@ -5396,7 +5488,7 @@ p.no-comments {
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content ul.cart_list li.woocommerce-mini-cart-item span.quantity span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 40%;
+		width: auto;
 		display: inline-block;
 		line-height: 30px;
 		text-align: center;
@@ -5419,7 +5511,7 @@ p.no-comments {
 		width: 100%;
 	}
 	#page #content aside#secondary section.widget_shopping_cart div.widget_shopping_cart_content p.woocommerce-mini-cart__total span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 20%;
+		width: auto;
 		font-size: 0.8em;
 		display: inline-block;
 		line-height: 30px;
@@ -5462,7 +5554,7 @@ p.no-comments {
 		display: block;
 	}
 	#page #content aside#secondary section#woocommerce_top_rated_products-2 ul.product_list_widget li span.woocommerce-Price-amount bdi span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content aside#secondary section#woocommerce_recently_viewed_products-2 {
 		padding: 0;
@@ -5684,7 +5776,7 @@ p.no-comments {
 		font-size: 0.85em;
 	}
 	#page #content #primary div.product div.summary p.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 3%;
+		width: auto;
 	}
 	#page #content #primary div.product div.summary .woocommerce-product-details__short-description p {
 		padding: 0.5em;
@@ -5788,15 +5880,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -5833,7 +5925,7 @@ p.no-comments {
 	}
 	#page #content ul.products li.type-product a.woocommerce-LoopProduct-link .price del span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content ul.products li.type-product a.woocommerce-LoopProduct-link .price ins span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
 	#page #content ul.products li.type-product a.add_to_cart_button,
 	#page #content ul.products li.type-product a.added_to_cart {
@@ -5908,10 +6000,10 @@ p.no-comments {
 	#page #content article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -5999,8 +6091,8 @@ p.no-comments {
 	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
@@ -6045,12 +6137,12 @@ p.no-comments {
 	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 20%;
 	}
-	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -6450,11 +6542,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary .woocommerce-message {
@@ -6721,15 +6810,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 85%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -6829,8 +6918,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a {
 		display: block;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="payment-methods"],
-	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="payment-methods"] {
+	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='payment-methods'],
+	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='payment-methods'] {
 		font-size: 85%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content p,
@@ -6845,10 +6934,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -6942,8 +7031,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
@@ -6996,12 +7085,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 20%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -7422,11 +7511,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
@@ -7682,15 +7768,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.8em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -7792,10 +7878,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -7858,7 +7944,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -7890,8 +7975,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
@@ -7936,12 +8021,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 20%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -7978,7 +8063,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td,
@@ -8355,11 +8439,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
@@ -8627,15 +8708,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 90%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -8754,10 +8835,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -8819,7 +8900,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -8850,8 +8930,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 35px;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-price span.woocommerce-Price-currencySymbol,
@@ -8901,12 +8981,12 @@ p.no-comments {
 		width: 25%;
 		font-size: 0.9em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -8942,7 +9022,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td,
@@ -9323,11 +9402,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary .woocommerce-message {
@@ -9596,16 +9672,16 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 		line-height: 30px;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -9705,12 +9781,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a {
 		display: block;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="payment-methods"],
-	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="payment-methods"] {
+	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='payment-methods'],
+	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='payment-methods'] {
 		font-size: 90%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="edit-account"],
-	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="edit-account"] {
+	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='edit-account'],
+	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='edit-account'] {
 		font-size: 90%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content,
@@ -9729,10 +9805,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -9760,7 +9836,6 @@ p.no-comments {
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form {
 		padding: 0;
-
 		/* Hide table headers (but not display: none;, for accessibility) */
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table,
@@ -9818,7 +9893,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -9862,8 +9936,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 25px;
 		width: 20%;
 		display: block;
@@ -9942,12 +10016,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 25%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -9984,7 +10058,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-checkout div#order_review table.shop_table tbody tr.cart_item td,
@@ -10363,11 +10436,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
@@ -10636,16 +10706,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
-		line-height: 30px;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.85em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -10783,10 +10852,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -10820,7 +10889,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -10864,8 +10932,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 25px;
 		width: 20%;
 		display: block;
@@ -10944,12 +11012,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 25%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -11355,11 +11423,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
@@ -11612,15 +11677,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.8em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -11710,12 +11775,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a {
 		display: block;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="payment-methods"],
-	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="payment-methods"] {
+	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='payment-methods'],
+	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='payment-methods'] {
 		font-size: 100%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="edit-account"],
-	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*="edit-account"] {
+	#page #content #primary div.post div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='edit-account'],
+	#page #content #primary article.page div.entry-content .woocommerce nav.woocommerce-MyAccount-navigation ul li a[href*='edit-account'] {
 		font-size: 100%;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row,
@@ -11726,10 +11791,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -11763,7 +11828,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -11807,8 +11871,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 25px;
 		width: 20%;
 		display: block;
@@ -11888,12 +11952,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 25%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -12308,11 +12372,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb {
@@ -12569,15 +12630,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.8em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -12667,10 +12728,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -12704,7 +12765,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -12748,8 +12808,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 25px;
 		width: 20%;
 		display: block;
@@ -12828,12 +12888,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 25%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -13255,11 +13315,8 @@ p.no-comments {
 		line-height: 30px;
 	}
 	#page #content #primary {
-
 		/*##woo-commerce -shop -indv-product*/
-
 		/*regular-posts and woo-commerce*/
-
 		/*woo-commerce*/
 	}
 	#page #content #primary nav.woocommerce-breadcrumb a:first-of-type {
@@ -13520,15 +13577,15 @@ p.no-comments {
 	}
 	#page #content #primary section.related ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 	#page #content #primary section.products ul.products li a span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
-		width: 30%;
+		width: auto;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"],
-	#page #content #primary section.products ul.products li a[rel^="nofollow"] {
+	#page #content #primary section.related ul.products li a[rel^='nofollow'],
+	#page #content #primary section.products ul.products li a[rel^='nofollow'] {
 		width: 75%;
 		font-size: 0.75em;
 	}
-	#page #content #primary section.related ul.products li a[rel^="nofollow"]:hover,
-	#page #content #primary section.products ul.products li a[rel^="nofollow"]:hover {
+	#page #content #primary section.related ul.products li a[rel^='nofollow']:hover,
+	#page #content #primary section.products ul.products li a[rel^='nofollow']:hover {
 		background-color: #3b3b3b;
 		color: #ecac00;
 	}
@@ -13614,10 +13671,10 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row label {
 		line-height: 40px;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row input[type='email'] {
 		margin: 0;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce div.woocommerce-MyAccount-content form.woocommerce-EditAccountForm p.form-row button.button,
@@ -13652,7 +13709,6 @@ p.no-comments {
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody,
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody {
-
 		/*cart*/
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item,
@@ -13696,8 +13752,8 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity label {
 		font-size: 0.85em;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type="number"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr.cart_item td.product-quantity div.quantity input[type='number'] {
 		height: 25px;
 		width: 20%;
 		display: block;
@@ -13776,12 +13832,12 @@ p.no-comments {
 	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon label {
 		width: 25%;
 	}
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="text"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="password"],
-	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type="email"] {
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='text'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='password'],
+	#page #content #primary article.page div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon input[type='email'] {
 		font-size: 0.9em;
 	}
 	#page #content #primary div.post div.entry-content .woocommerce form.woocommerce-cart-form table.shop_table tbody tr td.actions div.coupon button.button,
@@ -14038,3 +14094,5 @@ p.no-comments {
 		padding: 0.3em;
 	}
 }
+
+/*# sourceMappingURL=woocommerce.css.map */
