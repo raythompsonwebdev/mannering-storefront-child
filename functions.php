@@ -269,3 +269,33 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+// add_filter('woocommerce_email_styles', 'raythompsonwebdev_com_email_styles');
+// /**
+// * change e-mail header color. emails_style.css file
+// */
+// function raythompsonwebdev_com_email_styles($css){
+// $css .= "template_header {background-color : #c90;}";
+// return $css;
+// }
+
+#changing breadcrumbs
+add_filter('woocommerce_breadcrumb_defaults', 'mannering_woocommerce_child_breadcrumbs');
+/**
+* change e-mail header color. emails_style.css file
+*/
+function mannering_woocommerce_child_breadcrumbs($breadcrumb){
+	$breadcrumb['delimiter'] = ' &gt ';
+	return $breadcrumb;
+}
+
+#change currency
+// add_filter('woocommerce_currency_symbol','mannering_woocommerce_child_currency_symbol', 30, 2);
+// /**
+// * change e-mail header color. emails_style.css file
+// */
+// function mannering_woocommerce_child_currency_symbol($currency_symbol, $currency){
+// 	$currency_symbol = 'UK £';
+// 	return $currency_symbol;
+// }
